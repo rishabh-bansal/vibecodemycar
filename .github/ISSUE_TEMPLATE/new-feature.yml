@@ -1,0 +1,26 @@
+name: Feature request or recipe
+description: A feature you want, or a coding recipe you know works.
+title: "[feature] <feature> on <car>"
+labels: [feature]
+body:
+  - type: input
+    id: feature
+    attributes:
+      label: Feature
+      placeholder: Mirror dip on reverse
+    validations:
+      required: true
+  - type: input
+    id: car
+    attributes:
+      label: Car(s)
+      placeholder: Kushaq / Slavia 2023
+  - type: textarea
+    id: recipe
+    attributes:
+      label: Recipe, if you know it
+      description: Control unit, DID, byte/bit, value per choice, and what it was before. Say whether you tested it.
+  - type: textarea
+    id: why
+    attributes:
+      label: Anything else

@@ -1,0 +1,113 @@
+{
+  "rear-wiper-automatic-activation": {
+    "recipe": "csmqb-mqb-09-auto-rear-wiper",
+    "note": "Washer.MQB_09_AutoRearWiper: 09 DID 0D20, new BCM bit0.4 / old BCM bit0.3 (MQBAlternativeContainerForUnit09)."
+  },
+  "pulsation-of-start-button": {
+    "recipe": "csmqb-start-button-heart-bit",
+    "note": "B7 first-match 0574 then 1304, bits 0.4+0.5 (InteriorLights.StartButtonHeartBit)."
+  },
+  "low-ambient-temperature-warning": {
+    "recipe": "csadapt-10186",
+    "note": "Cluster 17 050E byte13 \"Icy Weather Warning Upper Threshold\" (°C, raw-10); default 4 °C. The low threshold (byte14, csadapt-10185) is the hysteresis bound and is left alone - keep it below the new value."
+  },
+  "coming-home-time": {
+    "recipe": "csadapt-10188",
+    "note": "BCM 09 0A57 byte5, seconds. New-gen BCM container only; old BCM (0D04) has no duration channel in the vendor data."
+  },
+  "start-stop-system-deactivation": {
+    "recipe": "csadapt-10105",
+    "note": "Climatronic 08 0600 byte8 bit4 'Start Stop Function Deactivation Climate Unit Method': vendor ENABLE = 0, DISABLE = 1, shown as On (Start/Stop works) / Off. Which value means permanent-off is not stated in the vendor data; the On/Off reading assumes ENABLE/DISABLE name the Start/Stop function. Needs a live check."
+  },
+  "remote-trunk-release": {
+    "recipe": "csadapt-10081",
+    "note": "B7 0579 byte0 bit4 \"Tailgate Opening And Closing From Key Fob\" - works where a Kessy/B7 unit exists.",
+    "settings": {
+      "Enabled": "res-enable",
+      "Disabled": "res-disable"
+    }
+  },
+  "rear-windshield-heater-duration": {
+    "recipe": "csadapt-10037",
+    "note": "BCM 09 0D06 byte1, seconds (vendor factor 40 s/step)."
+  },
+  "navigation-compass-in-dashboard": {
+    "recipe": "csadapt-10183",
+    "note": "Cluster 17 0600 byte10 bit6. Compass position (byte9 bit3, csadapt-10184) is a separate optional setting.",
+    "settings": {
+      "Enabled": "res-enable",
+      "Disabled": "res-disable"
+    }
+  },
+  "multimedia-startup-logo": {
+    "recipe": "comfort:multimedia-startup-logo"
+  },
+  "heated-seats-memory": {
+    "recipe": "comfort:heated-seats-memory",
+    "settings": {
+      "Off": "res-codingdb-opt-notactive",
+      "On": "res-codingdb-opt-active",
+      "On for 10 minutes": "res-codingdb-opt-activefor10minutes"
+    }
+  },
+  "hazard-switch-brightness": {
+    "recipe": "csadapt-10287",
+    "note": "BCM 09 09DB byte55 'Interior Brightness After Ignition Was Turned On (%)', 0 = off. UNVERIFIED match: the vendor label names interior brightness, not the hazard switch. The hazard-switch LED itself is a lamp record (vendor tables disagree: PQ26-style 055B 'WARNBLK TASTER C54' vs MQB 055F '35 LED Warnblinktaster C48'; the Kushaq reads 055B/055E/055F as type-0x24 LEDs at dim AB 0x64), whose dim byte would be the direct channel. Confirm with a capture before trusting this mapping."
+  },
+  "comfort-operation-for-sunroof": {
+    "recipe": "csmqb-automatically-open-and-close-sunroof-holding-key-fob-keys"
+  },
+  "haldex-awd-settings": {
+    "recipe": "csadapt-10001",
+    "settings": {
+      "Standard": "res-codingdb-opt-normal",
+      "Increased traction": "res-codingdb-opt-highpower",
+      "Reduced noise": "res-codingdb-opt-lownoise"
+    }
+  },
+  "trunk-opening-closing-sound": {
+    "recipe": "csmqb-mqb-6-d-tailgate-sound"
+  },
+  "easy-entry": {
+    "recipe": "group:comfort-entry-driver-seat",
+    "note": "Requires driver seat with memory. 3 parts: 36 0600, 5F 0B3C/0B1B, 5F 0B3D/0B1D."
+  },
+  "easy-entry-for-passenger": {
+    "recipe": "group:comfort-entry-passenger-seat",
+    "note": "Requires seats with memory. 4 parts: 06 0600, 5F 0B3C/0B1B, 5F 0B3D/0B1D, 36 0600 bit6.4."
+  },
+  "air-recirculation-memory": {
+    "recipe": "csadapt-10011",
+    "settings": {
+      "Off": "res-codingdb-opt-notactive",
+      "On": "res-codingdb-opt-active",
+      "Depending on parking time": "res-codingdb-opt-keepactivedependingonparkingtime"
+    }
+  },
+  "microphone-sensitivity": {
+    "recipe": "csadapt-10013"
+  },
+  "teardrop-wiping": {
+    "recipe": "group:teardrop-mode-additional-wipers-pass-on-the-windshield"
+  },
+  "allow-car-settings-while-moving": {
+    "recipe": "csadapt-10335",
+    "note": "MIB3 only: 5F 0B1B byte23 bit5 '[MIB3] Dashboard settings in MMI: Over threshold high' - unlocks the dashboard (instrument cluster) settings menu above the speed threshold. The recipe refuses on MIB2.5 or an unidentified head unit (when.mib3).",
+    "settings": {
+      "Unlocked": "res-enable",
+      "Locked": "res-disable"
+    }
+  },
+  "am-radio": {
+    "recipe": "csmqb-mqb-5-f-amradio",
+    "note": "MIB2.5 0600 byte14 bit1 / MIB3 0559 byte4 bit7, inverted (Enabled = 0)."
+  },
+  "front-windshield-heater-duration": {
+    "recipe": "csadapt-10039",
+    "note": "BCM 09 0D06 byte2, seconds (vendor factor 40 s/step)."
+  },
+  "green-engineering-menu-discover": {
+    "recipe": "csmqb-mqb-5-f-developer-mode-activation",
+    "note": "5F 243F byte0 = 1 (session 0x4F first)."
+  }
+}

@@ -1,0 +1,1097 @@
+{
+  "recipes": {
+    "csmqb-mqb-03-escmenu": {
+      "kind": "ops",
+      "raw": false,
+      "did": "0600",
+      "password": null,
+      "choices": [
+        {
+          "id": "menu-01",
+          "label": "No menu",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "menu-02",
+          "label": "ESC On/ASR Off",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "menu-03",
+          "label": "ESC On/ESC Sport",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "menu-04",
+          "label": "ESC On/ESC Off",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "menu-05",
+          "label": "ESC On/ASR Off/ESC Off",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 5
+            }
+          ]
+        },
+        {
+          "id": "menu-06",
+          "label": "ESC On/ESC Sport/ESC Off",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 6
+            }
+          ]
+        },
+        {
+          "id": "menu-07",
+          "label": "ESC On/ASR Off/ESC Off (variant 7)",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 7
+            }
+          ]
+        },
+        {
+          "id": "menu-08",
+          "label": "ESC On/ESC Sport/ESC Off (variant 8)",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 8
+            }
+          ]
+        },
+        {
+          "id": "menu-09",
+          "label": "ESC On/ASR Off/ESC Sport",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 9
+            }
+          ]
+        },
+        {
+          "id": "menu-0a",
+          "label": "ESC On/ASR Off/ESC Sport (variant 10)",
+          "ops": [
+            {
+              "byte": 29,
+              "bit": 0,
+              "len": 4,
+              "value": 10
+            }
+          ]
+        }
+      ],
+      "stateBits": [
+        [
+          29,
+          0
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          29,
+          2
+        ],
+        [
+          29,
+          3
+        ]
+      ]
+    },
+    "csadapt-10137": {
+      "kind": "field",
+      "raw": false,
+      "issues": [],
+      "did": "0600",
+      "password": null,
+      "field": {
+        "byteOffset": 13,
+        "bitOffset": 1,
+        "bitLength": 2,
+        "byteOrder": "big"
+      },
+      "choices": [
+        {
+          "id": "disabled",
+          "label": "Disabled",
+          "value": 0
+        },
+        {
+          "id": "enabled",
+          "label": "Enabled",
+          "value": 1
+        },
+        {
+          "id": "via-menu",
+          "label": "Adjustable via multimedia menu",
+          "value": 3
+        }
+      ],
+      "auxWrites": [],
+      "stateBits": [
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          2
+        ]
+      ]
+    },
+    "group:adaptive-lane-assist-patch-for-menu-item-activation": {
+      "kind": "group",
+      "raw": false,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled"
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled"
+        }
+      ]
+    },
+    "csadapt-10044": {
+      "scalar": {
+        "byteOffset": 0,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": 0,
+        "min": 5,
+        "max": 15,
+        "unit": "km/h"
+      }
+    },
+    "csadapt-10005": {
+      "name": "Hill Start Assistant"
+    }
+  },
+  "steps": {
+    "csmqb-mqb-a5-adaptavie-lane-assist-patch-part1-p1": {
+      "kind": "alt",
+      "raw": false,
+      "did": null,
+      "password": null,
+      "variants": [
+        {
+          "selector": "MQBAlternativeContainer",
+          "did": "0B3D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 25,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 13
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 25,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "selector": "MQBAlternativeContainer",
+          "did": "0B1D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 25,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 67
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 25,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 49
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 25,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "newRecipes": {
+    "assist:lane-assist-save-state": {
+      "id": "assist:lane-assist-save-state",
+      "name": "Lane Assist Save State",
+      "kind": "alt",
+      "category": "assistance",
+      "domain": "driver-assist",
+      "unit": "A5",
+      "requestId": "74F",
+      "responseId": "7B9",
+      "password": "20103",
+      "did": "0600",
+      "variants": [
+        {
+          "selector": "device",
+          "devicePattern": "*3Q*980654*",
+          "did": "0600",
+          "password": "20103",
+          "kind": "field",
+          "field": {
+            "byteOffset": 14,
+            "bitOffset": 2,
+            "bitLength": 2,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "value": 0
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "value": 1
+            },
+            {
+              "id": "last-setting",
+              "label": "Last Setting",
+              "value": 2
+            }
+          ],
+          "auxWrites": [],
+          "stateBits": [
+            [
+              14,
+              2
+            ],
+            [
+              14,
+              3
+            ]
+          ]
+        },
+        {
+          "selector": "device",
+          "devicePattern": "*2Q*980653*",
+          "did": "0600",
+          "password": "20103",
+          "kind": "field",
+          "field": {
+            "byteOffset": 9,
+            "bitOffset": 0,
+            "bitLength": 2,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "value": 0
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "value": 1
+            },
+            {
+              "id": "last-setting",
+              "label": "Last Setting",
+              "value": 2
+            }
+          ],
+          "auxWrites": [],
+          "stateBits": [
+            [
+              9,
+              0
+            ],
+            [
+              9,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "assist:adaptive-lane-assist": {
+      "id": "assist:adaptive-lane-assist",
+      "name": "Adaptive Lane Assist",
+      "kind": "alt",
+      "category": "assistance",
+      "domain": "driver-assist",
+      "unit": "A5",
+      "requestId": "74F",
+      "responseId": "7B9",
+      "password": "20103",
+      "did": "0600",
+      "variants": [
+        {
+          "selector": "device",
+          "devicePattern": "*3Q*980654*",
+          "did": "0600",
+          "password": "20103",
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "stateBits": [
+            [
+              14,
+              5
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              14,
+              7
+            ]
+          ]
+        },
+        {
+          "selector": "device",
+          "devicePattern": "*2Q*980653*",
+          "did": "0600",
+          "password": "20103",
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 8,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 8,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 8,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "stateBits": [
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        {
+          "selector": "device",
+          "devicePattern": "*5WA980653*",
+          "did": "0600",
+          "password": "20103",
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 8,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 8,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 8,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 6,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 8,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "stateBits": [
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    "assist:adaptive-lane-guidance": {
+      "id": "assist:adaptive-lane-guidance",
+      "name": "Adaptive Lane Guidance",
+      "kind": "group",
+      "category": "assistance",
+      "domain": "driver-assist",
+      "unit": "A5",
+      "requestId": "74F",
+      "responseId": "7B9",
+      "password": "20103",
+      "did": null,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled"
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled"
+        }
+      ],
+      "steps": [
+        {
+          "id": "assist:adaptive-lane-guidance-a5-0600",
+          "name": "Adaptive Lane Assist",
+          "kind": "alt",
+          "category": "assistance",
+          "domain": "driver-assist",
+          "unit": "A5",
+          "requestId": "74F",
+          "responseId": "7B9",
+          "password": "20103",
+          "did": "0600",
+          "variants": [
+            {
+              "selector": "device",
+              "devicePattern": "*3Q*980654*",
+              "did": "0600",
+              "password": "20103",
+              "kind": "ops",
+              "choices": [
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 14,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 1
+                    },
+                    {
+                      "byte": 14,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 14,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "ops": [
+                    {
+                      "byte": 14,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 14,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 1
+                    },
+                    {
+                      "byte": 14,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "stateBits": [
+                [
+                  14,
+                  5
+                ],
+                [
+                  14,
+                  6
+                ],
+                [
+                  14,
+                  7
+                ]
+              ]
+            },
+            {
+              "selector": "device",
+              "devicePattern": "*2Q*980653*",
+              "did": "0600",
+              "password": "20103",
+              "kind": "ops",
+              "choices": [
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 8,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 1
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "ops": [
+                    {
+                      "byte": 8,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "stateBits": [
+                [
+                  8,
+                  5
+                ],
+                [
+                  8,
+                  6
+                ],
+                [
+                  8,
+                  7
+                ]
+              ]
+            },
+            {
+              "selector": "device",
+              "devicePattern": "*5WA980653*",
+              "did": "0600",
+              "password": "20103",
+              "kind": "ops",
+              "choices": [
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 8,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 1
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "ops": [
+                    {
+                      "byte": 8,
+                      "bit": 7,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 6,
+                      "len": 1,
+                      "value": 0
+                    },
+                    {
+                      "byte": 8,
+                      "bit": 5,
+                      "len": 1,
+                      "value": 0
+                    }
+                  ]
+                }
+              ],
+              "stateBits": [
+                [
+                  8,
+                  5
+                ],
+                [
+                  8,
+                  6
+                ],
+                [
+                  8,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "assist:adaptive-lane-guidance-5f-menu",
+          "name": "Adaptive lane assist menu item (5F)",
+          "category": "assistance",
+          "kind": "alt",
+          "domain": "driver-assist",
+          "unit": "5F",
+          "requestId": "773",
+          "responseId": "7DD",
+          "password": null,
+          "deviceCode": null,
+          "did": null,
+          "variants": [
+            {
+              "selector": "MQBAlternativeContainer",
+              "did": "0B3D",
+              "password": null,
+              "kind": "ops",
+              "choices": [
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 25,
+                      "bit": 0,
+                      "len": 8,
+                      "value": 13
+                    }
+                  ]
+                },
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "ops": [
+                    {
+                      "byte": 25,
+                      "bit": 0,
+                      "len": 8,
+                      "value": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "selector": "MQBAlternativeContainer",
+              "did": "0B1D",
+              "password": null,
+              "kind": "ops",
+              "choices": [
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 25,
+                      "bit": 0,
+                      "len": 8,
+                      "value": 67
+                    }
+                  ],
+                  "when": {
+                    "mib3": true
+                  }
+                },
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "ops": [
+                    {
+                      "byte": 25,
+                      "bit": 0,
+                      "len": 8,
+                      "value": 49
+                    }
+                  ],
+                  "when": {
+                    "mib3": false
+                  }
+                },
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "ops": [
+                    {
+                      "byte": 25,
+                      "bit": 0,
+                      "len": 8,
+                      "value": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "assist:adaptive-lane-guidance-a5-09a3",
+          "name": "A5 adaptation",
+          "category": "assistance",
+          "kind": "alt",
+          "domain": "driver-assist",
+          "unit": "A5",
+          "requestId": "74F",
+          "responseId": "7B9",
+          "password": "20103",
+          "did": "09A3",
+          "variants": [
+            {
+              "selector": "device",
+              "devicePattern": "*3Q*980654*",
+              "did": "09A3",
+              "password": "20103",
+              "kind": "field",
+              "field": {
+                "byteOffset": 0,
+                "bitOffset": 6,
+                "bitLength": 1,
+                "byteOrder": "big"
+              },
+              "choices": [
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "value": 0,
+                  "optValue": "00"
+                },
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "value": 1,
+                  "optValue": "01"
+                }
+              ],
+              "auxWrites": [
+                {
+                  "byteOffset": 0,
+                  "bitOffset": 5,
+                  "bitLength": 1,
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "assist:adaptive-lane-guidance-a5-09a4",
+          "name": "A5 adaptation",
+          "category": "assistance",
+          "kind": "alt",
+          "domain": "driver-assist",
+          "unit": "A5",
+          "requestId": "74F",
+          "responseId": "7B9",
+          "password": "20103",
+          "did": "09A4",
+          "variants": [
+            {
+              "selector": "device",
+              "devicePattern": "*3Q*980654*",
+              "did": "09A4",
+              "password": "20103",
+              "kind": "field",
+              "field": {
+                "byteOffset": 0,
+                "bitOffset": 7,
+                "bitLength": 1,
+                "byteOrder": "big"
+              },
+              "choices": [
+                {
+                  "id": "disabled",
+                  "label": "Disabled",
+                  "value": 1,
+                  "optValue": "00"
+                },
+                {
+                  "id": "enabled",
+                  "label": "Enabled",
+                  "value": 0,
+                  "optValue": "01"
+                }
+              ],
+              "auxWrites": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "notes": {
+    "csmqb-mqb-03-escmenu": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Brakes.decompiled.cs MQB_03_ESCMenu: 03/0600, array[29] = (array[29] & 0xF0) | value; options 01..0A (hex) with the titles used here (vendor repeats titles for 5/7, 6/8, 9/10, so the later ones get a variant suffix). Password \"\" in vendor -> unit-default 20103. Low nibble of byte 29 = op {byte:29,bit:0,len:4}.",
+    "csadapt-10137": "Car Scanner embedded mqbadaptations.db (decoded TRNS, record idx 11, codingDB_LaneAssistSteeringWheelVibrations_Name, 74F/7B9 DID 0600): options RES_DISABLE \"BIT:13:2=0;13:1=0\", RES_ENABLE \"BIT:13:2=0;13:1=1\", codingDB_opt_SelectionViaMenu \"BIT:13:2=1;13:1=1\". Same bit indexing as SwitchBitInByte (LSB index). PWD empty -> unit-default 20103.",
+    "csmqb-mqb-a5-adaptavie-lane-assist-patch-part1-p1": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Assistance.decompiled.cs MQB_A5_AdaptavieLaneAssistPatch: MQBAlternativeCoding(\"5F\", container 0B3D: enable array[25]=13 else 0; container 0B1D: IsMIB3() ? (enable 67 else 0) : (enable 49 else 0)). Base MQBAlternativeContainer = first DID that reads non-empty, in order 0B3D then 0B1D. Password \"\" -> unit-default 20103.",
+    "group:adaptive-lane-assist-patch-for-menu-item-activation": "MQBMultipleCoding(5F alt, A5 09A3, A5 09A4) from MQB_A5_AdaptavieLaneAssistPatch; every step has enabled/disabled choices.",
+    "assist:lane-assist-save-state": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Assistance.decompiled.cs MQB_A5_LaneAssistSaveState: A5 0600 pw 20103. CheckDevice(\"3Q*980654\"): Enabled 14.3=0,14.2=1; Disabled 14.3=0,14.2=0; Last setting (\"10\") 14.3=1,14.2=0. CheckDevice(\"2Q*980653\"): same pattern on 9.1/9.0. Vendor CheckDevice wraps the pattern as *pattern* and matches F187/ECU name. Corpus recipe csmqb-mqb-a5-lane-assist-save-state only had the 3Q0 branch.",
+    "assist:adaptive-lane-assist": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Assistance.decompiled.cs MQB_A5_AdaptavieLaneAssist: A5 0600 pw 20103. 3Q*980654: Enable 14.7=1,14.6=0,14.5=0 / else 14.7=0,14.6=1,14.5=0. 2Q*980653 or *5WA980653*: Enable 8.7=1,8.6=0,8.5=0 / else 8.7=0,8.6=0,8.5=0. Corpus csmqb-mqb-a5-adaptavie-lane-assist only had the 3Q0 branch.",
+    "assist:adaptive-lane-guidance": "Group = MQB_A5_AdaptavieLaneAssist (A5 0600, device alt) + MQB_A5_AdaptavieLaneAssistPatch (5F 0B3D/0B1D alt, A5 09A3 bit6 with bit5=1, A5 09A4 bit7 inverted). 09A3/09A4 are only touched by the vendor when the A5 part matches 3Q*980654 (otherwise the block is written back unchanged); on 2Q0 cameras those DIDs may not exist. Audit 2026-11-03: the 09A3/09A4 steps have only the 3Q*980654 variant, so on a 2Q*980653 / *5WA980653* camera (which the vendor A5 0600 part supports) the whole group refuses before writing; supporting them needs an engine notion of a device-scoped optional step.",
+    "csadapt-10044": "mqbadaptations.db idx 8 (codingDB_ParkAssistDeactivationSpeed_Name): 70A/774 DID 25E9, SBI 0, DL 1, MUL 1, OFS 0; PWD empty, PWH 71679 (= unit-10 default). Unit km/h added for display only. min/max 5..15 km/h from the catalogue card range (Taigun/Virtus: 'Adjust the speed ... (5-15 km/h)'); the vendor record has no bounds, so without them any 0..255 km/h could be requested.",
+    "csadapt-10005": "mqbadaptations.db idx 19: codingDB_HillStartAssistant_Name, 713/77D DID 0E0D, PWD 20103, options Normal 00 / Early 01 / Late 02. 0E15 (csadapt-10003, idx 17) is codingDB_DynamicStartingAssist_Name (a different function), and 0E39 (csadapt-10036, idx 20) is HillStartAssistantActivationThreshold; neither is the release-point setting, so no alt is built.",
+    "acc-distance-settings-menu": "no-implementation (capture-required, low): REMAINING_FEATURES #75 - needs the unit 13 ACC radar (absent on MQB-A0-IN); the VW/Skoda 5F channel names (Car_Function_List_BAP_Gen2 ACC, menu_display_ACC) are a guess with no DID/bit in any source. Vendor has only ACC_OperationMode, ACC_WaitTime, OvertakingRightPrevention, ActiveCruiseControlAlgorythmSelection, cruise activation - none is the 5F ACC menu. searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "brake-check-when-using-acc": "no-implementation (capture-required, low): REMAINING_FEATURES #77. The method would be a brake-light function (0x18, two sources: Golf 7 PDF + vendor mqb_light_functions) in a free slot of the hazard-button LED lamp record, but the record is not identified on the A0 BCM: the MQB table puts 'Leuchte35 LED Warnblinktaster' at 055F while the PQ26 table in the same vendor file puts the hazard button at 055B (055F = alarm LED), and the live Kushaq 055B/055E/055F are all type 0x24 LEDs with A = 0x3E/0x3F/0x40 (codes >= 0x3B untrusted on the A0 BCM). No vendor recipe names the slot/function, so writing either record risks re-purposing the wrong LED. Needs a VCDS diff (set 'Leuchte35 ... Lichtfunktion C' = Bremslicht, read 055B..055F). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "high-beam-without-ignition": "no-implementation (capture-required, low): REMAINING_FEATURES #82 - no channel in any source; only 'Lichthupe generell' (function code 0x0F) is documented (vag-coding Fabia NJ), and nothing ties it to terminal-15. Needs a VCDS keyword search ('Lichthupe', 'Kl15') + diff on BCM 09. High-beam recipes in the corpus are HBA step1-3, HBA save state and fog-with-high-beam only. searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "alternating-park-position-for-wipers": "no-implementation (capture-required, low, probably absent): REMAINING_FEATURES #76 - no channel found (only 'Wischer stop bei KL15 aus'); APP probably needs a LIN wiper motor. Vendor wiper builders cover start/end/service position, park after ignition off/hood open, teardrop, rear wiper only. searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "park-assist-activation-tone": "no-implementation (capture-required, low): REMAINING_FEATURES #85 - only a VCDS keyword lead ('Quittungston' on unit 10); no DID/bit in any source. REMAINING_FEATURES #78-81/#85: unit 10 park-pilot volume/frequency stages 1..9 are documented only as VCDS channel names (T6 MAS01426..01429); the DID/byte is unknown and nothing in the vendor corpus touches unit 10 except 25E9 (deactivation speed) and 0600 (lane-assist patch, csadapt-10243). Needs a read of 10 0600/adaptations + VCDS diff (front settings also need front sensors). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "front-parking-assist-tone": "no-implementation (capture-required, med channel / unknown DID): REMAINING_FEATURES #78-81/#85: unit 10 park-pilot volume/frequency stages 1..9 are documented only as VCDS channel names (T6 MAS01426..01429); the DID/byte is unknown and nothing in the vendor corpus touches unit 10 except 25E9 (deactivation speed) and 0600 (lane-assist patch, csadapt-10243). Needs a read of 10 0600/adaptations + VCDS diff (front settings also need front sensors). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "rear-parking-assist-tone": "no-implementation (capture-required, med channel / unknown DID): REMAINING_FEATURES #78-81/#85: unit 10 park-pilot volume/frequency stages 1..9 are documented only as VCDS channel names (T6 MAS01426..01429); the DID/byte is unknown and nothing in the vendor corpus touches unit 10 except 25E9 (deactivation speed) and 0600 (lane-assist patch, csadapt-10243). Needs a read of 10 0600/adaptations + VCDS diff (front settings also need front sensors). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "front-park-assist-volume": "no-implementation (capture-required, med channel / unknown DID): REMAINING_FEATURES #78-81/#85: unit 10 park-pilot volume/frequency stages 1..9 are documented only as VCDS channel names (T6 MAS01426..01429); the DID/byte is unknown and nothing in the vendor corpus touches unit 10 except 25E9 (deactivation speed) and 0600 (lane-assist patch, csadapt-10243). Needs a read of 10 0600/adaptations + VCDS diff (front settings also need front sensors). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "rear-park-assist-volume": "no-implementation (capture-required, med channel / unknown DID): REMAINING_FEATURES #78-81/#85: unit 10 park-pilot volume/frequency stages 1..9 are documented only as VCDS channel names (T6 MAS01426..01429); the DID/byte is unknown and nothing in the vendor corpus touches unit 10 except 25E9 (deactivation speed) and 0600 (lane-assist patch, csadapt-10243). Needs a read of 10 0600/adaptations + VCDS diff (front settings also need front sensors). searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "optical-parking-system": "no-implementation (capture-required, low): REMAINING_FEATURES #84 - channels 5F parking_assist_visual / menu_display_PDC / menu_display_PDC_over_threshold_high plus an OPS flag on unit 10 are forum names only (no DID/bit); needs an 8-channel PDC. 5F camera recipes only set rear camera installed. searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md.",
+    "lane-assist-information-message": "no-implementation (not-possible on MQB-A0-IN, low): REMAINING_FEATURES #83 - Tiguan A5 camera + cluster message; no source gives a DID/bit. A5 recipes: activation (3 cameras), TJA, save state, adaptive, vibration, road sign; 17 warnings: speed, icy, leaving, seat belt. searched: feature-recipes.json (571), VAGCoder carscanner-candidates.json (711), all managed/*.decompiled.cs, decoded mqbadaptations.db (346 records); re-audited 2026-11-03 against docs/research/REMAINING_FEATURES.md."
+  }
+}

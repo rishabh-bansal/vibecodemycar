@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vibecode my car — read-only comparison</title>
+    <style>
+      body { max-width: 720px; margin: 40px auto; padding: 20px; font: 17px system-ui; }
+      button, select { margin: 12px 8px 12px 0; padding: 12px; font: inherit; }
+      pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eee; padding: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>Read-only comparison</h1>
+    <p>This records the app's existing Bluetooth path. It reads module identity and VIN.
+      It cannot code, unlock security, reset the ECU or clear faults. Logs are redacted before storage.</p>
+    <p>Keep the car parked, ignition on, engine off. Disconnect every other adapter client.
+      Keep this tab visible during the measurement.</p>
+    <label><input id="ready" type="checkbox" /> The car is ready and other adapter apps are disconnected.</label>
+    <div>
+      <select id="module" aria-label="Control unit">
+        <option value="bcm">Body control module</option>
+        <option value="cluster">Instrument cluster</option>
+      </select>
+      <button id="start" disabled>Record one read cycle</button>
+      <button id="stop" disabled>Stop and disconnect</button>
+    </div>
+    <pre id="status" aria-live="polite">No connection opened.</pre>
+    <script type="module" src="./capture-browser.ts"></script>
+  </body>
+</html>

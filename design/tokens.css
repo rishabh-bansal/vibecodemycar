@@ -1,0 +1,51 @@
+/* Vibecode my car · NeoPOP tokens. Import once at the app root. */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700;800&display=swap");
+
+:root {
+  --bg: #0d0d0d;
+  --surface: #161616;
+  --surface-2: #111111;
+  --line: #2e2e2e;
+  --line-faint: #222222;
+
+  --ink: #ffffff;
+  --ink-2: #a3a3a3;
+  --ink-3: #8a8a8a;
+  --ink-4: #6b6b6b;
+  --ink-off: #5e5e5e;
+  /* secondary text on a light (white) surface, e.g. the active coding step */
+  --ink-on-light: #4d4d4d;
+  /* raised dark tile behind icons and chips */
+  --tile: #1c1c1c;
+
+  --yellow: #ffe24d;
+  --yellow-edge: #8f7a12;
+  --green: #06c167;
+  --green-edge: #04733d;
+  --blue: #4d7cff;
+  --blue-edge: #2a4396;
+  --card-edge: #262626;
+
+  --radius: 0px;
+
+  --plunk-sm: 3px;
+  --plunk-md: 4px;
+  --plunk-lg: 5px;
+  --plunk-xl: 10px;
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-ui: "Manrope", system-ui, sans-serif;
+
+  --gutter-mobile: 20px;
+  --tap: 44px;
+  --cta-h: 60px;
+}
+
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-ui); }
+
+/* The NeoPOP raised edge. Set --edge to the fill's darker shade. */
+.plunk { box-shadow: var(--plunk-lg) var(--plunk-lg) 0 var(--edge, var(--ink-4)); transition: transform .08s, box-shadow .08s; }
+.plunk:active { transform: translate(var(--plunk-lg), var(--plunk-lg)); box-shadow: none; }
+
+.display { font-family: var(--font-display); font-weight: 400; line-height: 1; letter-spacing: -0.5px; }
+.micro { font-weight: 800; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-4); }

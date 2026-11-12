@@ -1,0 +1,51 @@
+name: Car finding
+description: Share what you learned on your car — what worked, what didn't, part numbers, quirks.
+title: "[finding] <brand> <model>: <what you found>"
+labels: [finding]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Findings from real cars are how the app gets better and safer.
+        **Never include your VIN, registration number or serial numbers.** Mask them (`MEX…1234`). Part numbers are fine.
+  - type: input
+    id: car
+    attributes:
+      label: Car
+      description: Brand, model, model year, trim
+      placeholder: Škoda Slavia 2024 Style
+    validations:
+      required: true
+  - type: input
+    id: drivetrain
+    attributes:
+      label: Engine, gearbox, instrument cluster
+      placeholder: 1.0 TSI AT, digital cluster
+  - type: input
+    id: adapter
+    attributes:
+      label: Adapter
+      placeholder: vLinker MC+ (BLE)
+  - type: textarea
+    id: finding
+    attributes:
+      label: What you tried and what happened
+      description: Which feature or control unit, and the result. Bytes before / written / read back and any error codes (NRC) if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: parts
+    attributes:
+      label: Control-unit part numbers
+      description: For example from the app's car scan, or another tool. Format "unit – part number".
+      placeholder: "09 body computer – 2Q0937089F\n17 cluster – 2GJ920700A"
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: How sure are you?
+      options:
+        - Done on my car and read back
+        - Seen once on my car
+        - Heard / read somewhere (please link it)
+    validations:
+      required: true

@@ -1,0 +1,47 @@
+{
+ "skoda-kushaq": {
+  "icon": "/cars/icons/skoda-kushaq.webp"
+ },
+ "skoda-slavia": {
+  "icon": "/cars/icons/skoda-slavia.webp"
+ },
+ "skoda-kylaq": {
+  "icon": "/cars/icons/skoda-kylaq.webp"
+ },
+ "skoda-kodiaq": {
+  "icon": "/cars/icons/skoda-kodiaq.webp"
+ },
+ "skoda-superb": {
+  "icon": "/cars/icons/skoda-superb.webp"
+ },
+ "skoda-octavia": {
+  "icon": "/cars/icons/skoda-octavia.webp"
+ },
+ "skoda-octavia-rs": {
+  "icon": "/cars/icons/skoda-octavia.webp"
+ },
+ "skoda-rapid": {
+  "icon": "/cars/icons/skoda-rapid.webp"
+ },
+ "volkswagen-taigun": {
+  "icon": "/cars/icons/volkswagen-taigun.webp"
+ },
+ "volkswagen-virtus": {
+  "icon": "/cars/icons/volkswagen-virtus.webp"
+ },
+ "volkswagen-tiguan": {
+  "icon": "/cars/icons/volkswagen-tiguan.webp"
+ },
+ "volkswagen-tayron": {
+  "icon": "/cars/icons/volkswagen-tayron.webp"
+ },
+ "volkswagen-polo": {
+  "icon": "/cars/icons/volkswagen-polo.webp"
+ },
+ "volkswagen-vento": {
+  "icon": "/cars/icons/volkswagen-vento.webp"
+ },
+ "volkswagen-golf-gti": {
+  "icon": "/cars/icons/volkswagen-golf-gti.webp"
+ }
+}

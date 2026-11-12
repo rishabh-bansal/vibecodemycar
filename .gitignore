@@ -1,0 +1,30 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local environment and Cloudflare state (never commit secrets)
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+
+# Logs — except review evidence, which docs/reviews/*/REVIEW.md cites
+*.log
+!docs/reviews/**/*.log
+
+# Cloud log exports (npm run logs:pull writes them to ~/.obdcraft/exports; never into the repo)
+cloud-log-export.json
+*.log-export.json
+
+# Private vehicle captures used by the capture regression tests (never committed)
+fixtures/private/
+
+# OS noise
+.DS_Store
+dist-private/
+
+# Live kit: compiled BLE bridge (npm run live:bridge builds it)
+tools/live/bin/

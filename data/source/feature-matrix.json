@@ -1,0 +1,3581 @@
+{
+ "schema": "obdcraft.feature-matrix/1",
+ "generatedAt": "2026-10-20",
+ "sources": {
+  "catalogue": "packages/coding/data/catalogue.json (codeMyVAG published feature lists)",
+  "candidates": "packages/coding/data/carscanner-candidates.json (extracted MQB recipes, unverified)",
+  "market": "packages/coding/data/india-market.json (curated Indian-market table)",
+  "live": "2026-10-23 Kushaq Monte Carlo supervised session"
+ },
+ "supportLevels": [
+  "live-verified",
+  "listed",
+  "candidate",
+  "variant-refused",
+  "unverified-blocked",
+  "unsupported",
+  "unknown"
+ ],
+ "vehicles": [
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "classic",
+   "label": "classic",
+   "powertrains": [
+    "1.0 TSI MT"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kylaq-classic"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "classic-plus",
+   "label": "classic-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "signature",
+   "label": "signature",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kylaq-signature"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "signature-plus",
+   "label": "signature-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kylaq-signature-plus"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "sportline",
+   "label": "sportline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "prestige",
+   "label": "prestige",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kylaq-prestige"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kylaq",
+   "variant": "prestige-plus",
+   "label": "prestige-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (6-sp)"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "classic",
+   "label": "classic",
+   "powertrains": [
+    "1.0 TSI MT"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-slavia-classic"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "classic-plus",
+   "label": "classic-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "signature",
+   "label": "signature",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-slavia-signature"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "sportline",
+   "label": "sportline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-slavia-sportline"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "prestige",
+   "label": "prestige",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)",
+    "1.5 TSI DSG"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-slavia-prestige"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "slavia",
+   "variant": "monte-carlo",
+   "label": "monte-carlo",
+   "powertrains": [
+    "1.0 TSI AT (8-sp)",
+    "1.5 TSI DSG"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-slavia-monte-carlo"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kushaq",
+   "variant": "classic-plus",
+   "label": "classic-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kushaq",
+   "variant": "signature",
+   "label": "signature",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kushaq-signature"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kushaq",
+   "variant": "sportline",
+   "label": "sportline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)",
+    "1.5 TSI DSG"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kushaq-sportline"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kushaq",
+   "variant": "prestige",
+   "label": "prestige",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)",
+    "1.5 TSI DSG"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kushaq-prestige"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kushaq",
+   "variant": "monte-carlo",
+   "label": "monte-carlo",
+   "powertrains": [
+    "1.0 TSI AT (8-sp)",
+    "1.5 TSI DSG"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "skoda",
+   "model": "kodiaq",
+   "variant": "lounge-5",
+   "label": "Lounge (5-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4x4"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kodiaq",
+   "variant": "sportline-7",
+   "label": "Sportline (7-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4x4"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kodiaq",
+   "variant": "selection-lk-7",
+   "label": "Selection L&K (7-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4x4"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "kodiaq",
+   "variant": "rs-7",
+   "label": "RS (7-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4x4"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "octavia-rs",
+   "variant": "rs",
+   "label": "rs",
+   "powertrains": [
+    "2.0 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "skoda",
+   "model": "superb",
+   "variant": "lk",
+   "label": "L&K",
+   "powertrains": [
+    "2.0 TDI DSG FWD"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-B",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "comfortline",
+   "label": "comfortline",
+   "powertrains": [
+    "1.0 TSI MT"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "highline",
+   "label": "highline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "highline-plus",
+   "label": "highline-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-virtus-highline-plus"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "topline",
+   "label": "topline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "gt-plus-chrome",
+   "label": "gt-plus-chrome",
+   "powertrains": [
+    "1.5 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "gt-line",
+   "label": "gt-line",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-virtus-gt-line"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "gt-plus-sport",
+   "label": "gt-plus-sport",
+   "powertrains": [
+    "1.5 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "virtus",
+   "variant": "gt-plus-sport-anniversary",
+   "label": "gt-plus-sport-anniversary",
+   "powertrains": [
+    "1.5 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "comfortline",
+   "label": "comfortline",
+   "powertrains": [
+    "1.0 TSI MT"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "highline",
+   "label": "highline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Analogue",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "highline-plus",
+   "label": "highline-plus",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-taigun-highline-plus"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "topline",
+   "label": "topline",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Digital",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "gt-line",
+   "label": "gt-line",
+   "powertrains": [
+    "1.0 TSI MT",
+    "1.0 TSI AT (8-sp)"
+   ],
+   "mid": "Mixed",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster"
+   ],
+   "evidence": "catalogue"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "gt-plus-chrome",
+   "label": "gt-plus-chrome",
+   "powertrains": [
+    "1.5 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "taigun",
+   "variant": "gt-plus-sport",
+   "label": "gt-plus-sport",
+   "powertrains": [
+    "1.5 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-A0-IN",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "tayron",
+   "variant": "life-5",
+   "label": "Life (5-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4MOTION"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "tayron",
+   "variant": "r-line-7",
+   "label": "R-Line (7-seat)",
+   "powertrains": [
+    "2.0 TSI DSG 4MOTION"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "tiguan",
+   "variant": "r-line",
+   "label": "r-line",
+   "powertrains": [
+    "2.0 TSI DSG 4MOTION"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  },
+  {
+   "brand": "volkswagen",
+   "model": "golf-gti",
+   "variant": "gti",
+   "label": "gti",
+   "powertrains": [
+    "2.0 TSI DSG"
+   ],
+   "mid": "unknown",
+   "platform": "MQB-37",
+   "codemyvagBuilds": [],
+   "evidence": "market-table"
+  }
+ ],
+ "features": {
+  "30-different-color-options-for-virtual-cockpit-and-ambient-lights": {
+   "id": "30-different-color-options-for-virtual-cockpit-and-ambient-lights",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-octavia-lk"
+   ],
+   "implementation": {
+    "candidateId": "group:ambient-light-color-selection30-colors-dashboard-and-multimedia-system",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "80kmph-and-120kmph-speed-chime-warning": {
+   "id": "80kmph-and-120kmph-speed-chime-warning",
+   "category": "warnings",
+   "group": "adaptations",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": "47115",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-octavia-lk",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "live-cluster-speed-warning-india",
+    "matchConfidence": "manual",
+    "unit": "17",
+    "requestId": "714",
+    "responseId": "77E",
+    "password": "47115",
+    "category": "warnings",
+    "group": "adaptations",
+    "variants": null
+   },
+   "liveProof": [
+    {
+     "featureId": "80kmph-and-120kmph-speed-chime-warning",
+     "vehicle": {
+      "brand": "skoda",
+      "model": "kushaq",
+      "variant": "monte-carlo",
+      "mid": "Digital",
+      "build": "pre-2024-04"
+     },
+     "module": {
+      "request": "714",
+      "response": "77E",
+      "part": "6JM920310",
+      "odx": "EV_DashBoardJCIMQBAB"
+     },
+     "recipe": {
+      "did": "0E46",
+      "byte": 0,
+      "from": "31",
+      "to": "00",
+      "password": "47115"
+     },
+     "readback": "00",
+     "note": "applied + read-back verified \u2014 toggle OFF proven; enable value observed as 0x31 on this variant (extract claimed 0x01), disable is 0x00; write returned 78 responsePending then committed (slow EEPROM)",
+     "evidence": [
+      "docs/reports/restore-714-0E46-r12-20261023-234439.json",
+      "docs/reports/live-write-log.txt",
+      "docs/reports/qualify-714-speedchime-20261023-232544.json"
+     ]
+    }
+   ],
+   "refusals": null
+  },
+  "ac-recirculation-memory": {
+   "id": "ac-recirculation-memory",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-octavia-lk"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "acoustic-confirmation-lock-unlock-sound": {
+   "id": "acoustic-confirmation-lock-unlock-sound",
+   "category": "feedback-signals",
+   "group": "comfort",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-09-sound-confirmation-of-lock-and-unlock",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "feedback-signals",
+    "group": "comfort",
+    "variants": [
+     {
+      "did": "0D0E",
+      "selector": null,
+      "password": null,
+      "field": null,
+      "choices": null,
+      "auxWrites": [],
+      "toggle": null
+     },
+     {
+      "did": "0D0E",
+      "selector": null,
+      "password": null,
+      "field": null,
+      "choices": null,
+      "auxWrites": [],
+      "toggle": null
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "anti-theft-alarm": {
+   "id": "anti-theft-alarm",
+   "category": "anti-theft-alarm",
+   "group": "anti-theft-alarm",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-alarm-activate-anti-theft-alarm",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "anti-theft-alarm",
+    "group": "anti-theft-alarm",
+    "variants": [
+     {
+      "did": "0D07",
+      "selector": "new-bcm",
+      "password": "31347",
+      "field": {
+       "byteOffset": 1,
+       "bitOffset": 1,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       },
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": true
+     },
+     {
+      "did": "0600",
+      "selector": "old-bcm",
+      "password": "31347",
+      "field": {
+       "byteOffset": 12,
+       "bitOffset": 0,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       },
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": true
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "auto-climate-control-menu-option-on-infotainment-screen": {
+   "id": "auto-climate-control-menu-option-on-infotainment-screen",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "auto-fold-orvms-on-long-press-of-lock-button": {
+   "id": "auto-fold-orvms-on-long-press-of-lock-button",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mirrors-funk-spiegelanklappen",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "auto-turn-on-brake-light-when-boot-is-opened": {
+   "id": "auto-turn-on-brake-light-when-boot-is-opened",
+   "category": "interior-lights",
+   "group": "lighting",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "interior-lights",
+    "group": "lighting",
+    "variants": [
+     {
+      "did": "50C4",
+      "selector": null,
+      "password": null,
+      "field": {
+       "byteOffset": 13,
+       "bitOffset": 5,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     },
+     {
+      "did": "0D03",
+      "selector": null,
+      "password": null,
+      "field": {
+       "byteOffset": 1,
+       "bitOffset": 1,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "beats-audio": {
+   "id": "beats-audio",
+   "category": null,
+   "group": null,
+   "unit": "5F",
+   "requestId": "773",
+   "responseId": "7DD",
+   "password": "20103",
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mib3-sound-signature",
+    "matchConfidence": "manual",
+    "unit": "5F",
+    "requestId": "773",
+    "responseId": "7DD",
+    "password": "20103",
+    "category": "multimedia",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "blink-orvm-indicators-out-of-sync-with-front-and-rear-indicators": {
+   "id": "blink-orvm-indicators-out-of-sync-with-front-and-rear-indicators",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "blink-tail-lamp-with-indicator": {
+   "id": "blink-tail-lamp-with-indicator",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "canton-sound-signature-for-infotainment": {
+   "id": "canton-sound-signature-for-infotainment",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-octavia-lk"
+   ],
+   "implementation": null,
+   "liveProof": null,
+   "refusals": null
+  },
+  "canton-sound-tuning-for-amplifier-subwoofer": {
+   "id": "canton-sound-tuning-for-amplifier-subwoofer",
+   "category": "multimedia-sound-quality",
+   "group": "infotainment",
+   "unit": "5F",
+   "requestId": "773",
+   "responseId": "7DD",
+   "password": "20103",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-octavia-lk"
+   ],
+   "implementation": null,
+   "liveProof": null,
+   "refusals": null
+  },
+  "change-color-theme-of-infotainment-system": {
+   "id": "change-color-theme-of-infotainment-system",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "change-color-theme-of-mid": {
+   "id": "change-color-theme-of-mid",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "change-startup-logo-of-infotainment-screen": {
+   "id": "change-startup-logo-of-infotainment-screen",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csadapt-10111",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "comfort-lane-change-indicator-5-flashes": {
+   "id": "comfort-lane-change-indicator-5-flashes",
+   "category": "exterior-lights",
+   "group": "lighting",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "live-bcm-polite-blinks",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "exterior-lights",
+    "group": "lighting",
+    "variants": null
+   },
+   "liveProof": [
+    {
+     "featureId": "comfort-lane-change-indicator-5-flashes",
+     "vehicle": {
+      "brand": "skoda",
+      "model": "kushaq",
+      "variant": "monte-carlo",
+      "mid": "Digital",
+      "build": "pre-2024-04"
+     },
+     "module": {
+      "request": "70E",
+      "response": "778",
+      "part": "2Q0937089D",
+      "odx": "EV_BCMA0"
+     },
+     "recipe": {
+      "did": "0A5E",
+      "byte": 0,
+      "from": "3A",
+      "to": "3E",
+      "password": "31347"
+     },
+     "readback": "3E00A00000",
+     "note": "applied; ECU normalized byte2 to A0 (shared feature space \u2014 field-surgical writes required)",
+     "evidence": [
+      "docs/reports/needle-sweep-20261023-2051/",
+      "docs/HANDOVER_LIVE_2026-10-23.md"
+     ]
+    }
+   ],
+   "refusals": null
+  },
+  "cornering-lights-via-front-fog-lights": {
+   "id": "cornering-lights-via-front-fog-lights",
+   "category": "other",
+   "group": "other",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:corner-function-activation",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "other",
+    "group": "other",
+    "variants": [
+     {
+      "did": "0D1D",
+      "selector": null,
+      "password": "31347",
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 0,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     },
+     {
+      "did": "0D1D",
+      "selector": null,
+      "password": "31347",
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 1,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "disable-automatic-door-unlock-on-key-removal": {
+   "id": "disable-automatic-door-unlock-on-key-removal",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-lock-auto-unlock",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "disable-ignition-running-beep-or-enable-for-all-doors": {
+   "id": "disable-ignition-running-beep-or-enable-for-all-doors",
+   "category": "doors",
+   "group": "doors",
+   "unit": "B7",
+   "requestId": "732",
+   "responseId": "79C",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "unit": "B7",
+    "requestId": "732",
+    "responseId": "79C",
+    "password": null,
+    "category": "doors",
+    "group": "doors",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "disable-please-switch-on-the-lights-popup": {
+   "id": "disable-please-switch-on-the-lights-popup",
+   "category": null,
+   "group": null,
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-disable-turn-on-light-warning-09",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "dashboard",
+    "group": "instruments",
+    "variants": [
+     "MQBAlternativeContainerForUnit09"
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-automatic-climate-control-fan-blower-speed-in-ac-auto-mode": {
+   "id": "display-automatic-climate-control-fan-blower-speed-in-ac-auto-mode",
+   "category": "climate",
+   "group": "climate",
+   "unit": "08",
+   "requestId": "746",
+   "responseId": "7B0",
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-octavia-lk",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-08-blower-display-in-auto",
+    "matchConfidence": "manual",
+    "unit": "08",
+    "requestId": "746",
+    "responseId": "7B0",
+    "password": null,
+    "category": "climate",
+    "group": "climate",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-eco-tips": {
+   "id": "display-eco-tips",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-5-f-eco-driving",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-instantaneous-fuel-efficiency-on-mid": {
+   "id": "display-instantaneous-fuel-efficiency-on-mid",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-of-rpm-bar-tachometer-in-virtual-cockpit": {
+   "id": "display-of-rpm-bar-tachometer-in-virtual-cockpit",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-offroad-menu-on-infotainment": {
+   "id": "display-offroad-menu-on-infotainment",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:show-offroad-screen-in-multimedia-system",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-reasons-for-unavailability-of-engine-idle-auto-start-stop-system": {
+   "id": "display-reasons-for-unavailability-of-engine-idle-auto-start-stop-system",
+   "category": "multimedia",
+   "group": "infotainment",
+   "unit": "5F",
+   "requestId": "773",
+   "responseId": "7DD",
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:display-start-stop-information-in-mmi",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-refuel-quantity-in-mid": {
+   "id": "display-refuel-quantity-in-mid",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-octavia-lk",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-sport-menu-on-infotainment": {
+   "id": "display-sport-menu-on-infotainment",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-vehicle-speed-battery-voltage-on-rcd-hidden-menu": {
+   "id": "display-vehicle-speed-battery-voltage-on-rcd-hidden-menu",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "display-wheel-angle-on-mid": {
+   "id": "display-wheel-angle-on-mid",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "drl-onoff-control-in-infotainment-settings": {
+   "id": "drl-onoff-control-in-infotainment-settings",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-tiguan-elegance"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "dynamic-steering-weight": {
+   "id": "dynamic-steering-weight",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csadapt-10016",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "dynamicsweeping-audi-style-turn-signal": {
+   "id": "dynamicsweeping-audi-style-turn-signal",
+   "category": "exterior-lights",
+   "group": "lighting",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "volkswagen-tiguan-elegance"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-dynamic-turn-lights-tiguan2-fl",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "exterior-lights",
+    "group": "lighting",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "dynaudio-sound-signature-for-amplifier": {
+   "id": "dynaudio-sound-signature-for-amplifier",
+   "category": null,
+   "group": null,
+   "unit": "5F",
+   "requestId": "773",
+   "responseId": "7DD",
+   "password": "20103",
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mib3-sound-signature",
+    "matchConfidence": "manual",
+    "unit": "5F",
+    "requestId": "773",
+    "responseId": "7DD",
+    "password": "20103",
+    "category": "multimedia",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "easy-convenient-entry-and-exit-for-driver-and-passenger-seats": {
+   "id": "easy-convenient-entry-and-exit-for-driver-and-passenger-seats",
+   "category": "seats",
+   "group": "comfort",
+   "unit": "36",
+   "requestId": "74C",
+   "responseId": "7B6",
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-octavia-lk"
+   ],
+   "implementation": {
+    "candidateId": "group:comfort-entry-passenger-seat",
+    "matchConfidence": "manual",
+    "unit": "36",
+    "requestId": "74C",
+    "responseId": "7B6",
+    "password": null,
+    "category": "seats",
+    "group": "comfort",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "easy-convenient-entry-and-exit-for-driver-seat": {
+   "id": "easy-convenient-entry-and-exit-for-driver-seat",
+   "category": "seats",
+   "group": "comfort",
+   "unit": "36",
+   "requestId": "74C",
+   "responseId": "7B6",
+   "password": null,
+   "listedOn": [
+    "volkswagen-tiguan-elegance"
+   ],
+   "implementation": {
+    "candidateId": "group:comfort-entry-driver-seat",
+    "matchConfidence": "manual",
+    "unit": "36",
+    "requestId": "74C",
+    "responseId": "7B6",
+    "password": null,
+    "category": "seats",
+    "group": "comfort",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "emergency-stop-signal-flashing-panic-braking-lights": {
+   "id": "emergency-stop-signal-flashing-panic-braking-lights",
+   "category": "exterior-lights",
+   "group": "lighting",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-emergency-braking-lights-with-turn-signals",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "exterior-lights",
+    "group": "lighting",
+    "variants": [
+     {
+      "did": "0A5E",
+      "selector": "new-bcm",
+      "password": "31347",
+      "field": {
+       "byteOffset": 2,
+       "bitOffset": 6,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       },
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": true
+     },
+     {
+      "did": "0D21",
+      "selector": "old-bcm",
+      "password": "31347",
+      "field": {
+       "byteOffset": 1,
+       "bitOffset": 6,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       },
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": true
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "engine-oil-temperature-in-mid": {
+   "id": "engine-oil-temperature-in-mid",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-17-oil-temperature-display",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "engine-start-stop-button-pulsation": {
+   "id": "engine-start-stop-button-pulsation",
+   "category": "interior-lights",
+   "group": "lighting",
+   "unit": "B7",
+   "requestId": "732",
+   "responseId": "79C",
+   "password": "20103",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-octavia-lk",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-start-button-heart-bit",
+    "matchConfidence": "manual",
+    "unit": "B7",
+    "requestId": "732",
+    "responseId": "79C",
+    "password": "20103",
+    "category": "interior-lights",
+    "group": "lighting",
+    "variants": [
+     {
+      "did": "0574",
+      "selector": null,
+      "password": null,
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 4,
+       "bitLength": 2,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 3,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     },
+     {
+      "did": "1304",
+      "selector": null,
+      "password": null,
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 4,
+       "bitLength": 2,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 3,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "enhanced-brake-assist-response-early-activation": {
+   "id": "enhanced-brake-assist-response-early-activation",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {
+    "candidateId": "csadapt-10169",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "enhanced-throttle-response": {
+   "id": "enhanced-throttle-response",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "front-fog-lights-on-flash-along-with-headlights": {
+   "id": "front-fog-lights-on-flash-along-with-headlights",
+   "category": "other",
+   "group": "other",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:front-fog-lights-activate-with-high-beam",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "other",
+    "group": "other",
+    "variants": [
+     {
+      "did": "0D1D",
+      "selector": null,
+      "password": "31347",
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 0,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     },
+     {
+      "did": "0D1D",
+      "selector": null,
+      "password": "31347",
+      "field": {
+       "byteOffset": 0,
+       "bitOffset": 1,
+       "bitLength": 1,
+       "byteOrder": "big"
+      },
+      "choices": [
+       {
+        "id": "disabled",
+        "label": "Disabled",
+        "value": 0,
+        "optValue": "00"
+       },
+       {
+        "id": "enabled",
+        "label": "Enabled",
+        "value": 1,
+        "optValue": "01"
+       }
+      ],
+      "auxWrites": [],
+      "toggle": null
+     }
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "hill-hold-control": {
+   "id": "hill-hold-control",
+   "category": "brakes",
+   "group": "driving",
+   "unit": "03",
+   "requestId": "713",
+   "responseId": "77D",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-03-hill-hold-control-activation",
+    "matchConfidence": "manual",
+    "unit": "03",
+    "requestId": "713",
+    "responseId": "77D",
+    "password": null,
+    "category": "brakes",
+    "group": "driving",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "improve-torque-vectoring-with-xds-expanded-electronic-differential-lock": {
+   "id": "improve-torque-vectoring-with-xds-expanded-electronic-differential-lock",
+   "category": "brakes",
+   "group": "driving",
+   "unit": "03",
+   "requestId": "713",
+   "responseId": "77D",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature",
+    "skoda-kylaq-signature-plus",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-03-xds-activation",
+    "matchConfidence": "manual",
+    "unit": "03",
+    "requestId": "713",
+    "responseId": "77D",
+    "password": null,
+    "category": "brakes",
+    "group": "driving",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "improved-ac-performance-for-better-cooling": {
+   "id": "improved-ac-performance-for-better-cooling",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "indirect-tpms-tire-pressure-monitoring-system": {
+   "id": "indirect-tpms-tire-pressure-monitoring-system",
+   "category": "tpms",
+   "group": "tpms",
+   "unit": "03",
+   "requestId": "713",
+   "responseId": "77D",
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-sportline"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-mqb-tpms-indirect-patch-for-park-assist",
+    "matchConfidence": "manual",
+    "unit": "03",
+    "requestId": "713",
+    "responseId": "77D",
+    "password": null,
+    "category": "tpms",
+    "group": "tpms",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "instrument-cluster-lit-up-while-lights-off-during-day": {
+   "id": "instrument-cluster-lit-up-while-lights-off-during-day",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "instrument-cluster-needle-sweep": {
+   "id": "instrument-cluster-needle-sweep",
+   "category": "instrument-cluster",
+   "group": "display",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-active-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-classic",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-post-april-2024",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kylaq-classic",
+    "skoda-kylaq-signature",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-active-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-classic",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-comfortline-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac"
+   ],
+   "implementation": {
+    "candidateId": "live-instrument-cluster-needle-sweep",
+    "matchConfidence": "manual",
+    "unit": "17",
+    "requestId": "714",
+    "responseId": "77E",
+    "password": null,
+    "category": "instrument-cluster",
+    "group": "display",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": [
+    {
+     "featureId": "instrument-cluster-needle-sweep",
+     "vehicle": {
+      "brand": "skoda",
+      "model": "kushaq",
+      "variant": "monte-carlo",
+      "mid": "Digital"
+     },
+     "module": {
+      "part": "6JM920310",
+      "odx": "EV_DashBoardJCIMQBAB"
+     },
+     "reason": "not verified on the digital Virtual Cockpit (no physical needles); the main write was never sent, so this is not an ECU refusal",
+     "evidence": "docs/reports/needle-sweep-20261023-2051/catalogue-compatibility-audit.json"
+    }
+   ]
+  },
+  "interior-light-fadein-fade-out-function-theatre-dimming-effect": {
+   "id": "interior-light-fadein-fade-out-function-theatre-dimming-effect",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "opening-and-closing-driver-side-window-during-unlocking-and-locking-car": {
+   "id": "opening-and-closing-driver-side-window-during-unlocking-and-locking-car",
+   "category": "doors",
+   "group": "adaptations",
+   "unit": "42",
+   "requestId": "74A",
+   "responseId": "7B4",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csadapt-10073",
+    "matchConfidence": "manual",
+    "unit": "42",
+    "requestId": "74A",
+    "responseId": "7B4",
+    "password": null,
+    "category": "doors",
+    "group": "adaptations",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "scandinavian-rear-drl": {
+   "id": "scandinavian-rear-drl",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:rear-side-lights-turn-on-when-daytime-running-lights-are-active-scandiavian-drls-name-skoda-kodiaq-etc",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "selective-door-unlocking": {
+   "id": "selective-door-unlocking",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-rapid-monte-carlo",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-vento-highline"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-lock-unlock-doors-variants",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "tear-drop-wiping": {
+   "id": "tear-drop-wiping",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-rapid-monte-carlo",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-polo-gt-tsi",
+    "volkswagen-polo-highline",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-vento-highline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "group:teardrop-mode-additional-wipers-pass-on-the-windshield",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "top-speed-display-on-speedometer-as-280kmph": {
+   "id": "top-speed-display-on-speedometer-as-280kmph",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {},
+   "liveProof": null,
+   "refusals": null
+  },
+  "turn-onoff-central-locking-using-remote-key-when-engine-ignition-on": {
+   "id": "turn-onoff-central-locking-using-remote-key-when-engine-ignition-on",
+   "category": "feedback-signals",
+   "group": "comfort",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "listedOn": [
+    "skoda-kodiaq-lk",
+    "skoda-kodiaq-sportline",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-octavia-lk",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-tiguan-elegance",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-enable-key-fob-while-engine-running",
+    "matchConfidence": "manual",
+    "unit": "09",
+    "requestId": "70E",
+    "responseId": "778",
+    "password": "31347",
+    "category": "doors",
+    "group": "doors",
+    "variants": [
+     "MQBAlternativeContainerForUnit09",
+     "MQBAlternativeContainerForUnit09"
+    ]
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "turning-off-drl-using-hedlamp-control-switch-or-handbrake": {
+   "id": "turning-off-drl-using-hedlamp-control-switch-or-handbrake",
+   "category": null,
+   "group": null,
+   "unit": null,
+   "requestId": null,
+   "responseId": null,
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-active-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-8-inch-infotainment",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-onyx-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-8-inch-infotainment-and-digital-mid",
+    "skoda-slavia-active-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-8-inch-infotainment",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-8-inch-infotainment",
+    "volkswagen-taigun-comfortline-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-before-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-turn-off-drlwhen-parking-brake-on",
+    "matchConfidence": "manual"
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "video-in-motion-through-pen-drive": {
+   "id": "video-in-motion-through-pen-drive",
+   "category": null,
+   "group": null,
+   "unit": "5F",
+   "requestId": "773",
+   "responseId": "7DD",
+   "password": "20103",
+   "listedOn": [
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-before-april-2024",
+    "skoda-kushaq-ambition-with-10-inch-infotainment-and-manufactured-post-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-analogue-instrument-cluster",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-before-april-2024",
+    "skoda-kushaq-style-with-10-inch-infotainment-and-digital-mid-manufactured-post-april-2024",
+    "skoda-kylaq-prestige",
+    "skoda-kylaq-signature-plus",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-ambition-with-10-inch-infotainment-manufactured-post-april-2024",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-before-april-2024",
+    "skoda-slavia-style-with-10-inch-infotainment-manufactured-post-april-2024",
+    "volkswagen-taigun-gt-line-with-digital-mid",
+    "volkswagen-taigun-gt-line-with-analogue-instruments-cluster",
+    "volkswagen-taigun-gt-manufactured-before-april-2024",
+    "volkswagen-taigun-gt-manufactured-post-april-2024",
+    "volkswagen-taigun-highline-manufactured-before-april-2024",
+    "volkswagen-taigun-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-taigun-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-taigun-highline-plus",
+    "volkswagen-taigun-topline-manufactured-before-april-2024",
+    "volkswagen-taigun-topline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-gt-manufactured-before-april-2024",
+    "volkswagen-virtus-gt-manufactured-post-april-2024",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csmqb-vim-mib3-speed-threshold",
+    "matchConfidence": "manual",
+    "unit": "5F",
+    "requestId": "773",
+    "responseId": "7DD",
+    "password": "20103",
+    "category": "multimedia",
+    "group": "adaptations",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  },
+  "seat-belt-warning-disable": {
+   "id": "seat-belt-warning-disable",
+   "category": "warnings",
+   "group": "adaptations",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": null,
+   "listedOn": [
+    "skoda-kushaq-monte-carlo-manufactured-before-april-2024",
+    "skoda-kushaq-monte-carlo-manufactured-post-april-2024",
+    "skoda-kushaq-prestige",
+    "skoda-kushaq-signature",
+    "skoda-kushaq-sportline",
+    "skoda-slavia-classic",
+    "skoda-slavia-monte-carlo",
+    "skoda-slavia-prestige",
+    "skoda-slavia-signature",
+    "skoda-slavia-sportline",
+    "volkswagen-virtus-comfortline-manufactured-before-april-2024",
+    "volkswagen-virtus-comfortline-manufactured-post-april-2024",
+    "volkswagen-virtus-gt-line",
+    "volkswagen-virtus-highline-manufactured-before-april-2024",
+    "volkswagen-virtus-highline-manufactured-post-april-2024-with-automatic-ac",
+    "volkswagen-virtus-highline-manufactured-post-march-2024-with-manual-ac",
+    "volkswagen-virtus-highline-plus",
+    "volkswagen-virtus-topline-manufactured-before-april-2024",
+    "volkswagen-virtus-topline-manufactured-post-april-2024"
+   ],
+   "implementation": {
+    "candidateId": "csadapt-10035",
+    "matchConfidence": "manual",
+    "unit": "17",
+    "requestId": "714",
+    "responseId": "77E",
+    "password": null,
+    "category": "warnings",
+    "group": "adaptations",
+    "variants": null
+   },
+   "liveProof": null,
+   "refusals": null
+  }
+ }
+}

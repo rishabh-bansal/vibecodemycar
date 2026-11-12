@@ -1,0 +1,4712 @@
+{
+ "recipes": {
+  "group:rear-side-lights-turn-on-when-daytime-running-lights-are-active-scandiavian-drls-name-skoda-kodiaq-etc": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:corner-function-activation": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:front-fog-lights-activate-with-high-beam": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:front-fog-lights-blink-with-high-beam-blink": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:front-fog-lights-activate-with-high-beam-and-blink-with-high-beam-blink": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:front-turn-lights-always-active-at-half-power-us-style": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "group:rear-side-lights-wink-with-rear-turn-lights": {
+   "kind": "group",
+   "raw": false,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "csmqb-license-plate-lamps-type": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0569",
+   "choices": [
+    {
+     "id": "5w",
+     "label": "5W bulb",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 8,
+       "value": 18
+      },
+      {
+       "byte": 6,
+       "bit": 0,
+       "len": 7,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "led",
+     "label": "LED",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 8,
+       "value": 43
+      },
+      {
+       "byte": 6,
+       "bit": 0,
+       "len": 7,
+       "value": 127
+      }
+     ]
+    },
+    {
+     "id": "led-low",
+     "label": "LED (low power)",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 8,
+       "value": 36
+      },
+      {
+       "byte": 6,
+       "bit": 0,
+       "len": 7,
+       "value": 127
+      }
+     ]
+    }
+   ]
+  },
+  "csmqb-coming-home-activation": {
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": true,
+     "password": "31347",
+     "did": "0A57",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 4,
+         "bit": 4,
+         "len": 2,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "enabled",
+       "label": "Manual",
+       "ops": [
+        {
+         "byte": 4,
+         "bit": 4,
+         "len": 2,
+         "value": 1
+        },
+        {
+         "byte": 7,
+         "bit": 1,
+         "len": 3,
+         "value": 2
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 116
+        },
+        {
+         "byte": 5,
+         "bit": 0,
+         "len": 8,
+         "value": 60
+        }
+       ]
+      },
+      {
+       "id": "value-10",
+       "label": "Automatic",
+       "ops": [
+        {
+         "byte": 4,
+         "bit": 4,
+         "len": 2,
+         "value": 2
+        },
+        {
+         "byte": 7,
+         "bit": 1,
+         "len": 3,
+         "value": 2
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 116
+        },
+        {
+         "byte": 5,
+         "bit": 0,
+         "len": 8,
+         "value": 60
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": false,
+     "did": "0D04",
+     "password": "31347",
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 0,
+      "bitLength": 2,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0,
+       "optValue": "00"
+      },
+      {
+       "id": "enabled",
+       "label": "Manual",
+       "value": 1,
+       "optValue": "01"
+      },
+      {
+       "id": "value-10",
+       "label": "Automatic",
+       "value": 2,
+       "optValue": "10"
+      }
+     ],
+     "auxWrites": [],
+     "choiceAux": {},
+     "toggle": false,
+     "stateBits": []
+    }
+   ]
+  }
+ },
+ "steps": {
+  "csmqb-mqb-09-rear-lights-when-day-lights-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0567",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 20
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 70
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     4
+    ]
+   ]
+  },
+  "csmqb-mqb-09-rear-lights-when-day-lights-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0568",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 20
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 70
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     4
+    ]
+   ]
+  },
+  "csmqb-mqb-09-corner-activation-not-led-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055C",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 5,
+       "bit": 0,
+       "len": 7,
+       "value": 22
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 5,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     4
+    ]
+   ]
+  },
+  "csmqb-mqb-09-corner-activation-not-led-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055D",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 5,
+       "bit": 0,
+       "len": 7,
+       "value": 23
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 5,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     4
+    ]
+   ]
+  },
+  "csmqb-mqb-09-corner-activation-not-led-part3-p3": {
+   "kind": "alt",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": true,
+     "password": "31347",
+     "did": "0D1D",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 8,
+         "value": 31
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 3,
+         "value": 2
+        },
+        {
+         "byte": 2,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 0,
+         "len": 8,
+         "value": 80
+        },
+        {
+         "byte": 5,
+         "bit": 0,
+         "len": 8,
+         "value": 128
+        },
+        {
+         "byte": 6,
+         "bit": 0,
+         "len": 8,
+         "value": 80
+        },
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 8,
+         "value": 120
+        },
+        {
+         "byte": 8,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 200
+        },
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 8,
+         "value": 190
+        },
+        {
+         "byte": 11,
+         "bit": 0,
+         "len": 8,
+         "value": 160
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": false,
+     "password": "31347",
+     "did": "0D1D",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 3,
+         "len": 3,
+         "value": 2
+        },
+        {
+         "byte": 3,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        },
+        {
+         "byte": 4,
+         "bit": 0,
+         "len": 8,
+         "value": 80
+        },
+        {
+         "byte": 6,
+         "bit": 0,
+         "len": 8,
+         "value": 127
+        },
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 8,
+         "value": 80
+        },
+        {
+         "byte": 8,
+         "bit": 0,
+         "len": 8,
+         "value": 120
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        },
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 8,
+         "value": 200
+        },
+        {
+         "byte": 11,
+         "bit": 0,
+         "len": 8,
+         "value": 190
+        },
+        {
+         "byte": 12,
+         "bit": 0,
+         "len": 8,
+         "value": 160
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "csmqb-fog-lights-activate-with-high-beam-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055C",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 13
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     13,
+     0
+    ],
+    [
+     13,
+     2
+    ],
+    [
+     13,
+     3
+    ]
+   ]
+  },
+  "csmqb-fog-lights-activate-with-high-beam-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055D",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 14
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     13,
+     1
+    ],
+    [
+     13,
+     2
+    ],
+    [
+     13,
+     3
+    ]
+   ]
+  },
+  "csmqb-fog-lights-blink-with-high-beam-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055C",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 15
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     14,
+     0
+    ],
+    [
+     14,
+     1
+    ],
+    [
+     14,
+     2
+    ],
+    [
+     14,
+     3
+    ]
+   ]
+  },
+  "csmqb-fog-lights-blink-with-high-beam-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055D",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 15
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     14,
+     0
+    ],
+    [
+     14,
+     1
+    ],
+    [
+     14,
+     2
+    ],
+    [
+     14,
+     3
+    ]
+   ]
+  },
+  "csmqb-fog-lights-activate-and-blink-with-high-beam-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055C",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 13
+      },
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 15
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ]
+  },
+  "csmqb-fog-lights-activate-and-blink-with-high-beam-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "055D",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 14
+      },
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 15
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 14,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    }
+   ]
+  },
+  "csmqb-turn-lights-usstyle-halogen-only-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0550",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 8,
+       "bit": 0,
+       "len": 7,
+       "value": 8
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 30
+      },
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 3
+      },
+      {
+       "byte": 12,
+       "bit": 7,
+       "len": 1,
+       "value": 1
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 8,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     8,
+     3
+    ]
+   ]
+  },
+  "csmqb-turn-lights-usstyle-halogen-only-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0551",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 8,
+       "bit": 0,
+       "len": 7,
+       "value": 8
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 7,
+       "value": 30
+      },
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 5
+      },
+      {
+       "byte": 12,
+       "bit": 7,
+       "len": 1,
+       "value": 1
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 8,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     8,
+     3
+    ]
+   ]
+  },
+  "csmqb-blink-rear-turn-lights-with-rear-lights-part1-p1": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0567",
+   "field": null,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 15,
+       "bit": 7,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 8,
+       "value": 2
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 15,
+       "bit": 7,
+       "len": 1,
+       "value": 0
+      },
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     15,
+     7
+    ]
+   ]
+  },
+  "csmqb-blink-rear-turn-lights-with-rear-lights-part2-p2": {
+   "kind": "ops",
+   "raw": false,
+   "did": "0568",
+   "field": null,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled",
+     "ops": [
+      {
+       "byte": 15,
+       "bit": 7,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 8,
+       "value": 4
+      }
+     ]
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled",
+     "ops": [
+      {
+       "byte": 15,
+       "bit": 7,
+       "len": 1,
+       "value": 0
+      },
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     15,
+     7
+    ]
+   ]
+  }
+ },
+ "newRecipes": {
+  "el-emergency-braking-lights": {
+   "id": "el-emergency-braking-lights",
+   "name": "Emergency Braking Lights",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "disabled",
+     "label": "Off"
+    },
+    {
+     "id": "brakes",
+     "label": "Brakes"
+    },
+    {
+     "id": "turn-signals",
+     "label": "Turn signals"
+    },
+    {
+     "id": "both",
+     "label": "Brakes and turn signals"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-ebl-brake-lights",
+     "name": "Emergency braking: blink brake lights",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A59",
+       "kind": "field",
+       "field": {
+        "byteOffset": 0,
+        "bitOffset": 2,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 1
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 0
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D0C",
+       "kind": "field",
+       "field": {
+        "byteOffset": 0,
+        "bitOffset": 0,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 1
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 0
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "el-ebl-brake-lights-phase2",
+     "name": "Emergency braking: blink brake lights phase 2",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A5E",
+       "kind": "field",
+       "field": {
+        "byteOffset": 2,
+        "bitOffset": 1,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 1
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 0
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D21",
+       "kind": "field",
+       "field": {
+        "byteOffset": 1,
+        "bitOffset": 2,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 1
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 0
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "el-ebl-hazard",
+     "name": "Emergency braking: hazard lights",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A5E",
+       "kind": "field",
+       "field": {
+        "byteOffset": 2,
+        "bitOffset": 6,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 0
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 1
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D21",
+       "kind": "field",
+       "field": {
+        "byteOffset": 1,
+        "bitOffset": 6,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        },
+        {
+         "id": "brakes",
+         "label": "brakes",
+         "value": 0
+        },
+        {
+         "id": "turn-signals",
+         "label": "turn-signals",
+         "value": 1
+        },
+        {
+         "id": "both",
+         "label": "both",
+         "value": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "el-high-intensity-brake-light": {
+   "id": "el-high-intensity-brake-light",
+   "name": "High Intensity Brake Light",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-hibl-brake-lights",
+     "name": "Emergency braking: blink brake lights",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A59",
+       "kind": "field",
+       "field": {
+        "byteOffset": 0,
+        "bitOffset": 2,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D0C",
+       "kind": "field",
+       "field": {
+        "byteOffset": 0,
+        "bitOffset": 0,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "el-hibl-brake-lights-phase2",
+     "name": "Emergency braking: blink brake lights phase 2",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A5E",
+       "kind": "field",
+       "field": {
+        "byteOffset": 2,
+        "bitOffset": 1,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D21",
+       "kind": "field",
+       "field": {
+        "byteOffset": 1,
+        "bitOffset": 2,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "el-hibl-hazard",
+     "name": "Emergency braking: hazard lights",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "variants": [
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": true,
+       "password": "31347",
+       "did": "0A5E",
+       "kind": "field",
+       "field": {
+        "byteOffset": 2,
+        "bitOffset": 6,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      },
+      {
+       "selector": "MQBAlternativeContainerForUnit09",
+       "requiresNewBcm": false,
+       "password": "31347",
+       "did": "0D21",
+       "kind": "field",
+       "field": {
+        "byteOffset": 1,
+        "bitOffset": 6,
+        "bitLength": 1,
+        "byteOrder": "big"
+       },
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "enabled",
+         "value": 1
+        },
+        {
+         "id": "disabled",
+         "label": "disabled",
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "el-drl-with-fog-lights": {
+   "id": "el-drl-with-fog-lights",
+   "name": "DRL with Fog Lights",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-drl-fog-left",
+     "name": "Fog light left as daytime running light",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "055C",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 20
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 7,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           20
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           20
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           20
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       7,
+       2
+      ],
+      [
+       7,
+       4
+      ]
+     ]
+    },
+    {
+     "id": "el-drl-fog-right",
+     "name": "Fog light right as daytime running light",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "055D",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 20
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 7,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           20
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           20
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           20
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       7,
+       2
+      ],
+      [
+       7,
+       4
+      ]
+     ]
+    }
+   ]
+  },
+  "el-third-brake-light-trunk-open": {
+   "id": "el-third-brake-light-trunk-open",
+   "name": "Third Brake Light when Tailgate Open",
+   "kind": "ops",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0566",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 33
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 4,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         24
+        ]
+       },
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         33
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         33
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         33
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     7,
+     0
+    ],
+    [
+     7,
+     5
+    ]
+   ]
+  },
+  "el-third-brake-light-drl": {
+   "id": "el-third-brake-light-drl",
+   "name": "Third Brake Light with DRL",
+   "kind": "ops",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0566",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 20
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 10
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 4,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         24
+        ]
+       },
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         20
+        ]
+       },
+       {
+        "byte": 11,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       },
+       {
+        "byte": 11,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     10,
+     2
+    ],
+    [
+     10,
+     4
+    ]
+   ]
+  },
+  "el-third-brake-light-ch-lh": {
+   "id": "el-third-brake-light-ch-lh",
+   "name": "Third Brake Light with Coming/Leaving Home",
+   "kind": "ops",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0566",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 30
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 4,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         24
+        ]
+       },
+       {
+        "byte": 13,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         30
+        ]
+       },
+       {
+        "byte": 14,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 15,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 13,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         30
+        ]
+       },
+       {
+        "byte": 14,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 13,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         30
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 13,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 13,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     13,
+     1
+    ],
+    [
+     13,
+     2
+    ],
+    [
+     13,
+     3
+    ],
+    [
+     13,
+     4
+    ]
+   ]
+  },
+  "el-brake-lights-trunk-open": {
+   "id": "el-brake-lights-trunk-open",
+   "name": "Brake Lights when Tailgate Open",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-brake-trunk-left",
+     "name": "Brake light left: tailgate open",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0564",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 33
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           24
+          ]
+         },
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           33
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       7,
+       0
+      ],
+      [
+       7,
+       5
+      ]
+     ]
+    },
+    {
+     "id": "el-brake-trunk-right",
+     "name": "Brake light right: tailgate open",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0565",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 33
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           24
+          ]
+         },
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           33
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         },
+         {
+          "byte": 8,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 7,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       7,
+       0
+      ],
+      [
+       7,
+       5
+      ]
+     ]
+    }
+   ]
+  },
+  "el-taillights-trunk-open": {
+   "id": "el-taillights-trunk-open",
+   "name": "Tail Lights when Tailgate Open",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-tail-trunk-left",
+     "name": "Tail light left: tailgate open",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0567",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 33
+        },
+        {
+         "byte": 12,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           33
+          ]
+         },
+         {
+          "byte": 11,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 12,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         },
+         {
+          "byte": 11,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       10,
+       0
+      ],
+      [
+       10,
+       5
+      ]
+     ]
+    },
+    {
+     "id": "el-tail-trunk-right",
+     "name": "Tail light right: tailgate open",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0568",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 33
+        },
+        {
+         "byte": 12,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           33
+          ]
+         },
+         {
+          "byte": 11,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 12,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         },
+         {
+          "byte": 11,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           33
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 10,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 10,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       10,
+       0
+      ],
+      [
+       10,
+       5
+      ]
+     ]
+    }
+   ]
+  },
+  "el-license-plate-trunk-open": {
+   "id": "el-license-plate-trunk-open",
+   "name": "License Plate Lights when Tailgate Open",
+   "kind": "ops",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0569",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On when open",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 33
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         33
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "off-when-open",
+     "label": "Off when open",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 33
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 8,
+       "value": 128
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         33
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 9,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         33
+        ]
+       },
+       {
+        "byte": 8,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         33
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 7,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 7,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     7,
+     0
+    ],
+    [
+     7,
+     5
+    ]
+   ]
+  },
+  "el-license-plate-drl": {
+   "id": "el-license-plate-drl",
+   "name": "License Plate Lights with DRL",
+   "kind": "ops",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0569",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 20
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0,
+         20
+        ]
+       },
+       {
+        "byte": 11,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      },
+      {
+       "byte": 12,
+       "bit": 0,
+       "len": 8,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       },
+       {
+        "byte": 11,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         20
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 10,
+       "bit": 0,
+       "len": 7,
+       "value": 0
+      }
+     ],
+     "when": {
+      "bytes": [
+       {
+        "byte": 10,
+        "bit": 0,
+        "len": 7,
+        "in": [
+         0
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "stateBits": [
+    [
+     10,
+     2
+    ],
+    [
+     10,
+     4
+    ]
+   ]
+  },
+  "el-turn-signals-ch-lh": {
+   "id": "el-turn-signals-ch-lh",
+   "name": "Turn Signals with Coming/Leaving Home",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-turn-chlh-left",
+     "name": "Front turn left: coming/leaving home",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0550",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 30
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           2
+          ]
+         },
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           30
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           30
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           30
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       3
+      ],
+      [
+       13,
+       4
+      ]
+     ]
+    },
+    {
+     "id": "el-turn-chlh-right",
+     "name": "Front turn right: coming/leaving home",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0551",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 30
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 4,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           4
+          ]
+         },
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0,
+           30
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           30
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           30
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       3
+      ],
+      [
+       13,
+       4
+      ]
+     ]
+    }
+   ]
+  },
+  "el-fogs-off-with-high-beam": {
+   "id": "el-fogs-off-with-high-beam",
+   "name": "Fog Lights Off with High Beam",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-fogs-off-hb-left",
+     "name": "Fog light left: off while high beam is on",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "055C",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 13
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 128
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 13
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 128
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           13
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 15,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           128
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           13
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 15,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           128
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       13,
+       0
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       3
+      ],
+      [
+       15,
+       7
+      ]
+     ]
+    },
+    {
+     "id": "el-fogs-off-hb-right",
+     "name": "Fog light right: off while high beam is on",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "055D",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 14
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 128
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 14
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 128
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           14
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 15,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           128
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        },
+        {
+         "byte": 15,
+         "bit": 0,
+         "len": 8,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           14
+          ]
+         },
+         {
+          "byte": 14,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         },
+         {
+          "byte": 15,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           128
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 13,
+         "bit": 0,
+         "len": 7,
+         "value": 0
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 13,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           0
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       13,
+       1
+      ],
+      [
+       13,
+       2
+      ],
+      [
+       13,
+       3
+      ],
+      [
+       15,
+       7
+      ]
+     ]
+    }
+   ]
+  },
+  "el-drl-with-parking-lights": {
+   "id": "el-drl-with-parking-lights",
+   "name": "DRL with Parking Lights",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "On"
+    },
+    {
+     "id": "disabled",
+     "label": "Off"
+    }
+   ],
+   "steps": [
+    {
+     "id": "el-drl-park-left",
+     "name": "Front side light left: full brightness with position lights",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0552",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 9,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           28,
+           100
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 28
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 9,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           100,
+           28
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       9,
+       5
+      ],
+      [
+       9,
+       6
+      ]
+     ]
+    },
+    {
+     "id": "el-drl-park-right",
+     "name": "Front side light right: full brightness with position lights",
+     "kind": "ops",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0553",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "On",
+       "ops": [
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 100
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 9,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           28,
+           100
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "id": "disabled",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 9,
+         "bit": 0,
+         "len": 8,
+         "value": 28
+        }
+       ],
+       "when": {
+        "bytes": [
+         {
+          "byte": 7,
+          "bit": 0,
+          "len": 7,
+          "in": [
+           8
+          ]
+         },
+         {
+          "byte": 9,
+          "bit": 0,
+          "len": 8,
+          "in": [
+           100,
+           28
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "stateBits": [
+      [
+       9,
+       5
+      ],
+      [
+       9,
+       6
+      ]
+     ]
+    }
+   ]
+  },
+  "el-comfort-turn-signals": {
+   "id": "el-comfort-turn-signals",
+   "name": "Comfort Turn Signals (blink count)",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": true,
+     "password": "31347",
+     "did": "0A5E",
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 1,
+      "bitLength": 2,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "value-2",
+       "label": "2",
+       "value": 0
+      },
+      {
+       "id": "value-3",
+       "label": "3",
+       "value": 1
+      },
+      {
+       "id": "value-4",
+       "label": "4",
+       "value": 2
+      },
+      {
+       "id": "value-5",
+       "label": "5",
+       "value": 3
+      }
+     ],
+     "auxWrites": [
+      {
+       "byteOffset": 0,
+       "bitOffset": 4,
+       "bitLength": 1,
+       "value": 1
+      }
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainerForUnit09",
+     "requiresNewBcm": false,
+     "password": "31347",
+     "did": "0D00",
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 1,
+      "bitLength": 2,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "value-2",
+       "label": "2",
+       "value": 0
+      },
+      {
+       "id": "value-3",
+       "label": "3",
+       "value": 1
+      },
+      {
+       "id": "value-4",
+       "label": "4",
+       "value": 2
+      },
+      {
+       "id": "value-5",
+       "label": "5",
+       "value": 3
+      }
+     ],
+     "auxWrites": [
+      {
+       "byteOffset": 0,
+       "bitOffset": 7,
+       "bitLength": 1,
+       "value": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "notes": {
+  "group:rear-side-lights-turn-on-when-daytime-running-lights-are-active-scandiavian-drls-name-skoda-kodiaq-etc": "ExteriorLights.cs MQB_09_RearLightsWhenDayLights (lines 11-223). Enable: first lamp slot C..H whose function is 00 or 0x14 gets FunctionX=0x14 (DRL) and the pair Dimmwert=70 (direction bit kept). Encoded: ONLY the vendor's slot-C branch, guarded with when.bytes: enable requires FunctionC (byte7 bits0-6) in {00,0x14} -> FunctionC=0x14, DimmwertCD (byte9 bits0-6)=70; disable when FunctionC==0x14: FunctionC=0 and DimmwertCD=0 only if FunctionD (byte8 bits0-6)==00, else DimmwertCD kept; disable when FunctionC==00 is a no-op. Any other FunctionC (slot C used for another lamp function) refuses instead of overwriting it (vendor would move on to D..H). Owner Kushaq 2Q0937089D live 0567=2D0A002908097F00.. (byte7=00). 0568 not read live yet.",
+  "group:corner-function-activation": "ExteriorLights.cs MQB_09_CornerActivation_NOT_LED. Step1 055C FunctionB (byte5 bits0-6)=0x16 / 00; step2 055D FunctionB=0x17 / 00. Step3 0D1D (Unit09 alt): vendor writes only on Enable (Disable returns data unchanged), so it has one choice and is restored from its backup on disable. New BCM final bytes: [0]=31 (SwitchBit 0.0 then array[0]=31), byte1 bits0-2=010, [2]=0,[3]=80,[5]=128,[6]=80,[7]=120,[8]=100,[9]=200,[10]=190,[11]=160. Old BCM: bit0.1=1, byte2 bits3-5=010, [3]=0,[4]=80,[6]=127,[7]=80,[8]=120,[9]=100,[10]=200,[11]=190,[12]=160. Owner Kushaq live 055C=0A380022 1216 64.. (FunctionB already 0x16) and 055D=..1317.. so the fog channels are 055C/055D on the A0 BCM.",
+  "group:front-fog-lights-activate-with-high-beam": "ExteriorLights.cs FogLights_ActivateWithHighBeam (1785-1832): 055C FunctionG(byte13 bits0-6)=0x0D (high beam left), 055D FunctionG=0x0E (high beam right); both DimmwertGH=100 + Maximize => byte15=0x64. Disable: FunctionG=00, byte15=0x64. Owner Kushaq live 055C/055D have G,H,byte15 = 00 (slots free).",
+  "group:front-fog-lights-blink-with-high-beam-blink": "ExteriorLights.cs FogLights_BlinkWithHighBeam (1834-1879): 055C and 055D FunctionH(byte14 bits0-6)=0x0F (high-beam flash), byte15=0x64; disable FunctionH=00, byte15=0x64.",
+  "group:front-fog-lights-activate-with-high-beam-and-blink-with-high-beam-blink": "ExteriorLights.cs FogLights_ActivateAndBlinkWithHighBeam (1881-1930): G=0D/0E and H=0F, byte15=0x64; disable G=H=00, byte15=0x64.",
+  "group:front-turn-lights-always-active-at-half-power-us-style": "ExteriorLights.cs TurnLights_USStyleHalogenOnly. Enable: FunctionD(byte8)=0x08, DimmwertCD(byte9 bits0-6)=30, FunctionE(byte10)=0x03 left / 0x05 right, DimmingDirectionEF=Minimize (byte12 bit7=1, DimmwertEF kept). Disable: D=00, E=00, DimmwertEF=0 + Maximize (byte12=0x00); DimmwertCD left as is (vendor). Brightness is fixed at 30 by the vendor. Owner Kushaq live 0550=0C340014 020064 000000.. (front-left turn, FunctionA=02), 0551=0C3E0015 040064.. : slots D,E free.",
+  "group:rear-side-lights-wink-with-rear-turn-lights": "ExteriorLights.cs BlinkRearTurnLightsWithRearLights: 0567 enable = SwitchBit(15,7,true) + array[13]=2; 0568 = bit15.7 + array[13]=4; disable clears bit15.7 and array[13]=0. State: (data[15]&0x80) && data[13]==2/4. Corpus field steps omitted the byte13 write (fixed here). Owner Kushaq live 0567 byte13=00, byte15=00.",
+  "csmqb-license-plate-lamps-type": "ExteriorLights.cs LicensePlate_LampsType: LampType byte0 = 0x12 (5W) / 0x2B (LED) / 0x24 (LED low power); DimmwertAB (byte6 bits0-6) = 100 / 127 / 127, LightControlAB bit7 kept. 0569 not yet read on an A0 BCM.",
+  "csmqb-coming-home-activation": "ExteriorLights.cs ComingHomeActivation. New BCM 0A57: off = bits4.5,4.4 = 0,0; manual = 4.5=0,4.4=1 + bits7.1/7.2/7.3 = 0/1/0 + array[9]=116 + array[5]=60 (CH duration 60 s); auto = 4.5=1,4.4=0 + same extras. Encoded as byte4 bits4-5 value 0/1/2, byte7 bits1-3 value 2 (binary 010). Old BCM 0D04 field byte0 bits0-1 kept from corpus.",
+  "el-emergency-braking-lights": "ExteriorLights.cs EmergencyBrakingLightsWithBrakeLights (0A59 b0.2 / old 0D0C b0.0), ...BrakeLightsPhase2 (0A5E b2.1 / 0D21 b1.2), ...WithTurnSignals (0A5E b2.6 / 0D21 b1.6), all BuildAltCodingSwitchForUnit09 (MQBAlternativeCoding.cs:739). Corpus pairs carried selector new-bcm/old-bcm with requiresNewBcm:false (extractor bug); fixed to Unit09 flags. Owner Kushaq live 0A5E=3C00A00000 (byte2 bits1,6 = 0).",
+  "el-high-intensity-brake-light": "Same three vendor switches as el-emergency-braking-lights, all on or all off (brake-light flashing + phase 2 + hazards at standstill).",
+  "slug:interior-light-fading": "no-implementation: medium for the channel (BCM adaptation \"Innenlicht - KL58 Einschalten mit Rampe\", vag-coding A3 8V) but the DID/byte is unknown and no vendor routine or corpus recipe writes it (SmoothTurnOnButtonsLight is switch backlight). Capture-diff required. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:front-pace-car-indicators-urban-joke": "no-implementation: low confidence: meaning unclear (mirror vs headlight turn lamps alternate); mirror turn lamps are probably driven by door modules 42/52, not a BCM lamp record. No vendor routine. Capture needed. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:third-brake-light-with-hazard-lights": "no-implementation: low confidence: no hazard-only lamp function (0x06/0x07 also fire with a single indicator). Capture needed. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:license-plate-lights-with-hazard-lighs": "no-implementation: low confidence: no hazard-only lamp function exists (0x06/0x07 = turn L/R both phases also fire with a single indicator), so the card behaviour cannot be reproduced exactly. Capture needed. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:mirror-turn-signals-with-ch-lh": "no-implementation: low confidence: mirror turn lamps are probably on door modules 42/52; no BCM record confirmed (0580..0583 not read). MirrorLightsWithAreaView / MQB_MirrorLightsWhenFolded drive puddle lights, not mirror turn lamps. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:turn-signals-with-brake-lights": "no-implementation: medium research but the card is ambiguous (rear turn lamp doubles as brake light vs brake lamp counter-blinks 0564 E = 0x02 / 0565 E = 0x04); 0564/0565 not read. Capture the reference app first. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:parking-lights-on-both-sides": "no-implementation: medium for the behaviour, but the mechanism is unknown: a global Parklicht adaptation or code 0x3A (Beidseitiges Dauerparklicht) on 0552/0553/0567/0568; guides paywalled; no vendor routine. Capture-diff required. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:turn-lights-when-trunk-open": "no-implementation: medium for the function (0x21) but the record is ambiguous: MQB table 0562/0563 vs PQ26 table 0583/0581, and the Kushaq 055B/055F (hazard-switch/alarm LEDs) match the PQ26 layout. Read 0562/0563 and 0580..0583 on the car first. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:taillights-with-open-door": "no-implementation: low confidence: 0567/0568 slot = 0x38/0x39 (door-exit light) would light on any door, not the front/rear/all options the card offers. Capture needed. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:turn-signals-with-fog-lights": "no-implementation: low confidence: 055C E = 0x02 / 055D E = 0x04 from an unresolved audizine thread only. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:turn-signals-with-open-door": "no-implementation: low confidence: rear turn record ambiguous (0562/0563 vs 0583/0581) and 0x38/0x39 cannot express front/rear-door options. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:rear-fog-light-warning": "no-implementation: low confidence: an unknown adaptation on 17 or 09; MQB_WarnAboutRearFogLightsSpeedLimit (0A59 byte1) is a speed threshold, not the ignition-off warning. Capture-diff required. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:lights-show-mode": "no-implementation: not coding: a one-shot actuation (output test / animation); no 0x2F/0x31 lamp routine in the vendor corpus. Needs a Y-splitter sniff and a routine recipe kind. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:fog-lights-with-open-door": "no-implementation: low confidence: no source for the feature; would be 055C/055D slot C = 0x38/0x39 (door-exit light L/R, code in mqb_light_functions) but the card wants front/rear/all-door options, which 0x32..0x39 only partly express (0x32/0x33 rear, 0x36/0x37 front, 0x38/0x39 any). Capture-diff with VCDS/OBDeleven needed. docs/research/REMAINING_FEATURES.md A.1.",
+  "slug:reading-lights-with-turn-signal": "no-implementation: low confidence: needs an interior lamp record holding 0x29/0x2B (056E is footwell on MQB, Innenlicht on the PQ26 table); not read. No vendor routine. docs/research/REMAINING_FEATURES.md A.1.",
+  "el-drl-with-fog-lights": "Lamp records 055C/055D (front fog L/R, slot 12/13). Function C (byte 7 bits 0-6) = 0x14 Tagfahrlicht, Dimmwert CD (byte 9 bits 0-6) = 0x64 (100); bit 7 of both bytes preserved. Same encoding and slot-C guard as the vendor's MQB_09_RearLightsWhenDayLights (ExteriorLights.cs 11-223) applied to the fog channels; slot-B=Tagfahrlicht guides for Golf 7/Touran (vag-coding.net) use the same function code. Kushaq 2Q0937089D live: 055C 0A380022121664000000.., 055D 0A420023131764000000.. (C and D free). A slot C already holding another function refuses instead of overwriting. docs/research/REMAINING_FEATURES.md 'drl-with-fog-lights'.",
+  "el-third-brake-light-trunk-open": "0566 (slot 22 BR MA57, both vendor tables). Enable: A (byte4) = 0x18, C (byte7) in {00,21}, D (byte8) = 00 -> C = 0x21, byte9 = 0x64. Sources: vag-coding Q2 GA (MQB-A0, spot-checked: Lichtfunktion C 22 = Heckdeckel offen, Dimmwert CD 22 = 100) and Q3 F3. 0566 not read live on the Kushaq yet. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-third-brake-light-drl": "0566 slot E: E (byte10) = 0x14, byte12 = 0x0A (10%, maximise, so braking still reaches full). Guard A = 0x18, E in {00,14}, F = 00. Source: vag-coding TT 8S third brake light as DRL (function C there; E used here so it coexists with the tailgate-open slot C). Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-third-brake-light-ch-lh": "0566 slot G: G (byte13) = 0x1E, byte15 = 0x64. Guard A = 0x18, G in {00,1E}, H = 00. Code 0x1E live on the Kushaq 0556 low beam; no guide for this lamp (medium). Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-brake-lights-trunk-open": "0564/0565 (slots 20/21 BR, both vendor tables) slot C = 0x21, byte9 = 0x64; guard A = 0x18, C in {00,21}, D = 00. Same method as the vag-coding third-brake/plate guides; Team-BHP Virtus snippet only (medium). 0564/0565 not read live yet. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-taillights-trunk-open": "0567/0568 (slots 23/24 SL) slot E: byte10 = 0x21, byte12 = 0x64; guard A = 0x08 (Kushaq live 0567 A = 08), E in {00,21}, F = 00. Slot C is Scandinavian DRL, slot G the wink. Medium (OBDeleven Superb FL app 'Rear lights when trunk is open'; method as the Heckdeckel-offen guides). Kushaq 0567 bytes 10-12 = 00, byte6 bit7 = 0. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-license-plate-trunk-open": "0569 (slot 25 KZL HA59). On when open: C = 0x21, byte9 = 0x64 (vag-coding Golf 7 spot-checked, Q3 F3, Q2 GA). Off when open: C = 0x21, byte9 = 0x80 (dim 0, minimise: the same blanking the vendor wink uses in slot G). Default: C = 00, byte9 = 00. Guard C in {00,21}, D = 00. 0569 not read live yet. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-license-plate-drl": "0569 slot E: byte10 = 0x14, byte12 = 0x64; guard E in {00,14}, F = 00 (E so it coexists with the tailgate-open slot C). Medium: by analogy with the vag-coding TT 8S lamp-as-DRL guide. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-turn-signals-ch-lh": "0550/0551 slot G: byte13 = 0x1E, byte15 = 0x64; guard A = 0x02/0x04 (Kushaq live), G in {00,1E}, H = 00. Slot G not C because US-style uses D/E and sets dim CD = 30. Medium (construct; code confirmed). Fixed 100% (the card mentions 20-100%). Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-fogs-off-with-high-beam": "055C/055D slot G = 0x0D / 0x0E (high beam L/R, as vendor FogLights_ActivateWithHighBeam) with byte15 = 0x80 (dim GH 0, minimise): GH has top priority, so the fog lamp goes dark while high beam is on. Enable needs G = 00 and H = 00 (or already this state); refuses when G holds high beam at 0x64 (Fog Lights with High Beam) or H is set (flash-to-pass shares dim GH). Off: G = 00, byte15 = 00 (Kushaq stock). Medium (t6forum behaviour). Note: the vendor flash-to-pass / with-high-beam steps are unguarded; enabling one of them after this one rewrites byte15 = 0x64. Lamp record layout and slot map: docs/research/REMAINING_FEATURES.md A.0 and vendor MQB_LightConfiguration (byte 7/10/13 = function C/E/G bits0-6, bit7 kept; byte 9/12/15 = dim pair bits0-6 + bit7 direction, 1 = minimise). Function codes from vendor resource mqb_light_functions (0x14 Tagfahrlicht, 0x18 Bremslicht, 0x1E Coming/Leaving Home, 0x21 Heckklappe offen). Slot-free guard and maximise direction follow the vendor MQB_09_RearLightsWhenDayLights / FogLights_ActivateWithHighBeam. The dim byte is written whole (direction maximise) because the enable guard requires the partner slot to be empty; disable restores it to 00.",
+  "el-drl-with-parking-lights": "Kushaq live 0552 = 0448004A 14 00 64 08 09 1C 06 00 9C.. / 0553 = 044C004C 14 00 64 08 0A 1C 07 00 9C..: A = DRL at 100, C = 08 position light and D = 09/0A parking light at dim CD 0x1C (28%). Enable: byte9 0x1C -> 0x64 (guard C = 08, byte9 in {1C,64}); Off: back to 0x1C. Medium: mechanism from the dim-priority rule and the live bytes, no guide. Also raises the one-side parking light (D) to 100%. docs/research/REMAINING_FEATURES.md drl-on-with-parking-lights.",
+  "el-comfort-turn-signals": "ExteriorLights.cs TurnLightsPoliteBlinks (573-687): new BCM 0A5E byte0 bits1-2 (2/3/4/5 = 00/01/10/11) + bit0.4 = 1; old BCM 0D00 same bits + bit0.7 = 1. Same as live-bcm-polite-blinks (A0, live-verified) plus the vendor old-BCM variant, for the MQB family.",
+  "slug:cornering-light-dimming-rate": "unmapped 2026-11-03: was proxied to csmqb-corner-regulation (0D1D regulation regime ECE R48 / R119 / SAE J582), which selects a legal regime, not a fade speed, so it did not do what the card says. No vendor routine exposes a corner-light ramp; 0D1D bytes 3/6..11 (written by MQB_09_CornerActivation_NOT_LED as 80/80/120/100/200/190/160) are unlabelled. capture-diff required."
+ }
+}

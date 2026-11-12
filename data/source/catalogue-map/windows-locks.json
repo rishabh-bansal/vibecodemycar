@@ -1,0 +1,117 @@
+{
+ "lock-unlock-acoustic-confirmation": {
+  "recipe": "wl-lock-unlock-acoustic-confirmation",
+  "settings": {
+   "Lock and unlock": "lock-and-unlock",
+   "Lock only": "lock-only",
+   "Unlock only": "unlock-only",
+   "Off": "off"
+  },
+  "note": "BCM 0D0E bit set from FeedbackSignals.cs MQB_09_SoundConfirmationOfLockAndUnlock + per-bit builders. Infotainment acoustic confirmation setting must also be on."
+ },
+ "comfort-windows": {
+  "recipe": "wl-comfort-windows",
+  "settings": {
+   "Enable": "enabled",
+   "Disable": "disabled"
+  },
+  "note": "Doors.cs RaiseAndLowerWindowsWithKeyFob: BCM 0A69 (new) / 0D0D (old) key-fob hold open+close bits."
+ },
+ "central-lock-with-ignition": {
+  "recipe": "csmqb-enable-key-fob-while-engine-running",
+  "settings": {
+   "ON": "enabled",
+   "OFF": "disabled"
+  }
+ },
+ "open-door-alarm": {
+  "recipe": "csadapt-10204",
+  "settings": {
+   "Warning ON": "res-enable",
+   "Warning OFF": "res-disable"
+  },
+  "note": "Cluster \"Leaving Warning\" adaptation; On/Off only. Driver-door-only vs all-doors has no implementation in the vendor corpus."
+ },
+ "windows-closing-after-locking": {
+  "recipe": "wl-comfort-windows",
+  "settings": {
+   "ON": "enabled",
+   "OFF": "disabled"
+  },
+  "note": "Approximation: no vendor or corpus channel closes the windows automatically on locking. This maps to the vendor key-fob comfort windows (Doors.cs RaiseAndLowerWindowsWithKeyFob), where the windows close while the Lock button is held (and open while Unlock is held); it writes exactly what comfort-windows writes. Copy must describe hold-to-close, not auto-close."
+ },
+ "auto-lock-unlock": {
+  "recipe": "wl-auto-lock-unlock",
+  "settings": {
+   "Auto lock and unlock": "both",
+   "Auto lock only": "lock-only",
+   "Auto unlock only": "unlock-only",
+   "Off": "off"
+  }
+ },
+ "anti-theft-alarm-system": {
+  "recipe": "wl-anti-theft-alarm",
+  "settings": {
+   "Enable": "enabled",
+   "Disable": "disabled"
+  },
+  "note": "Activates the BCM alarm with the signal horn as sound device (no siren)."
+ },
+ "auto-lock-upon-exit": {
+  "recipe": "csmqb-mqb-05-automatically-lock-car-doors",
+  "settings": {
+   "ON": "enabled",
+   "OFF": "disabled"
+  },
+  "note": "KESSY (B7) cars only. Vendor writes the first of 0570 / 0600 that reads."
+ },
+ "auto-unlock-when-parked": {
+  "recipe": "csmqb-lock-auto-unlock-when-selector-in-parking-nar",
+  "settings": {
+   "Enable": "enabled",
+   "Disable": "disabled"
+  }
+ },
+ "electronic-differential-lock-interaction": {
+  "recipe": "csadapt-10000",
+  "settings": {
+   "Not Activated": "res-codingdb-opt-notactive",
+   "Standard": "res-codingdb-opt-default",
+   "Weak": "res-codingdb-opt-weak",
+   "Medium": "res-codingdb-opt-medium",
+   "Strong": "res-codingdb-opt-hard"
+  },
+  "note": "ABS adaptation 0E1C. Requires XDS coded active in ABS long coding (csmqb-mqb-03-xds-activation)."
+ },
+ "power-windows-with-ignition-off": {
+  "recipe": "csmqb-mqb-driver-electric-window-time-after-ignition-turned-off",
+  "settings": {
+   "ON": "on",
+   "OFF": "off"
+  },
+  "note": "Doors.cs MQB_DriverElectricWindowTimeAfterIgnitionTurnedOff: BCM 0A69 byte1 (new) / 0D0D byte4 (old), 5 s per step, 0..1275 s; custom value allowed. The vendor names this the DRIVER door window shut-off delay; whether the other windows follow is not stated."
+ },
+ "auto-unlock-with-ignition": {
+  "recipe": "csmqb-lock-auto-unlock",
+  "settings": {
+   "Enable": "enabled",
+   "Disable": "disabled"
+  }
+ },
+ "auto-folding-mirrors": {
+  "recipe": "wl-auto-folding-mirrors",
+  "settings": {
+   "Off": "off",
+   "Auto / Manual (fold on lock)": "on"
+  },
+  "note": "Single-click vs long-press fold trigger has no implementation; On enables remote folding and its infotainment menu."
+ },
+ "lock-unlock-sound-settings": {
+  "recipe": "wl-lock-unlock-sound-type",
+  "settings": {
+   "Via horn normal": "horn",
+   "Via sounder": "sounder"
+  },
+  "note": "BCM 0D0E horn bit (new 1.2 / old 1.0): Via horn = 1, Via sounder = 0. 'Via horn short' is not offered: the vendor's duration builder writes the lock-beep bit (new 0.6 / old 0.1), so it cannot change the beep length (it would only switch the lock beep on). Lock/unlock acoustic confirmation must also be on, and Via sounder needs an alarm sounder fitted."
+ }
+}

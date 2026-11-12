@@ -1,0 +1,165 @@
+{
+ "gauge-test-needle-sweep": {
+  "recipe": "live-instrument-cluster-needle-sweep",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Unit 17 0600 byte1 bit0 (Dashboard.cs MQB_17_PointerTest). Takes effect after an ignition cycle."
+ },
+ "seat-belt-warning": {
+  "recipe": "dash-seat-belt-warning",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "lap-timer": {
+  "recipe": "csmqb-mqb-17-lap-timer-display",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Unit 17 0600 byte1 bit3 (Dashboard.cs MQB_17_LapTimerDisplay). Password unit default."
+ },
+ "speed-limiter": {
+  "recipe": "dash-speed-limiter-activation",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Multi-unit: cluster 17 (0AEA, 0AE7, 0E4F) + ACC 13 (0600). Cars without unit 13 refuse before anything is written."
+ },
+ "steering-response": {
+  "recipe": "csadapt-10048",
+  "settings": {
+   "Driving Profile Selection": "res-codingdb-opt-dependingoncurrentdrivemode",
+   "Comfort": "res-codingdb-opt-comfort",
+   "Automatic": "res-codingdb-opt-automatic",
+   "Dynamic": "res-codingdb-opt-dynamic",
+   "Default": "res-codingdb-opt-default"
+  },
+  "note": "Unit 44 (712) 1920, password 19249."
+ },
+ "speed-warning": {
+  "recipe": "dash-speed-warning"
+ },
+ "speed-warning-for-india": {
+  "recipe": "dash-speed-warning-india",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "refuel-quantity-in-dashboard": {
+  "recipe": "csmqb-mqb-17-free-space-in-fuel-tank-display",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Cluster part only (0600 byte10 bit4); no multimedia-side recipe exists."
+ },
+ "fan-level-display-when-auto": {
+  "recipe": "csmqb-mqb-08-blower-display-in-auto",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "consumption-display-correction": {
+  "recipe": "csadapt-10041",
+  "note": "Free value 85..115 % (setting id value:<n>)."
+ },
+ "seat-belt-warning-type": {
+  "recipe": "csadapt-10136",
+  "settings": {
+   "Off": "disabled",
+   "EU": "ncap",
+   "USA": "north-america",
+   "EU (NCAP 2)": "ncap2",
+   "EU (NCAP 2 enhanced)": "ncap2-enhanced"
+  }
+ },
+ "oil-temperature-display": {
+  "recipe": "csmqb-mqb-17-oil-temperature-display",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "acceleration-display": {
+  "recipe": "csmqb-mqb-17-acceleration-display",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "offroad-information-screen": {
+  "recipe": "group:show-offroad-screen-in-multimedia-system",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "3-part 5F write (0B3C/0B1B, 0B3D/0B1D, 0600/0558 by MIB generation)."
+ },
+ "time-display-format": {
+  "recipe": "csadapt-10123",
+  "settings": {
+   "24-hour": "24",
+   "12-hour (AM/PM)": "res-codingdb-opt-12ampm"
+  }
+ },
+ "volume-display-units": {
+  "recipe": "csadapt-10128",
+  "settings": {
+   "Liters": "liter",
+   "Gallons (UK)": "gallons-uk",
+   "Gallons (US)": "gallons-us"
+  }
+ },
+ "consumption-display-units": {
+  "recipe": "csadapt-10132",
+  "settings": {
+   "mpg (UK)": "mpg-uk",
+   "mpg (US)": "mpg-us",
+   "l/100km": "l-100km",
+   "km/l": "km-l"
+  }
+ },
+ "distance-display-units": {
+  "recipe": "csadapt-10125",
+  "settings": {
+   "Kilometers": "res-codingdb-opt-kilometers",
+   "Miles": "res-codingdb-opt-miles"
+  }
+ },
+ "speed-display-units": {
+  "recipe": "csadapt-10126",
+  "settings": {
+   "km/h": "res-codingdb-opt-kmh",
+   "mph": "res-codingdb-opt-mph"
+  }
+ },
+ "temperature-display-units": {
+  "recipe": "csadapt-10124",
+  "settings": {
+   "Celsius": "res-codingdb-opt-c",
+   "Fahrenheit": "res-codingdb-opt-f"
+  }
+ },
+ "date-display-format": {
+  "recipe": "csadapt-10131",
+  "settings": {
+   "DD.MM.YY": "dd-mm-yy",
+   "MM.DD.YY": "mm-dd-yy",
+   "YY.MM.DD": "yy-mm-dd"
+  }
+ },
+ "efficiency-assist-display": {
+  "recipe": "csmqb-mqb-5-f-eco-driving",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ }
+}

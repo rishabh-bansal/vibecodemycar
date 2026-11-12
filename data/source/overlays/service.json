@@ -1,0 +1,815 @@
+{
+  "recipes": {
+    "group:reset-oil-service-reminder": {
+      "kind": "group",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset"
+        }
+      ]
+    },
+    "group:reset-inspection-service-reminder": {
+      "kind": "group",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset"
+        }
+      ]
+    },
+    "csadapt-10194": {
+      "name": "Battery Type"
+    },
+    "csadapt-10133": {
+      "scalar": {
+        "byteOffset": 0,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": 0,
+        "min": 1,
+        "max": 255,
+        "unit": "Ah"
+      },
+      "choices": [
+        {
+          "id": "ah-44",
+          "label": "44 Ah",
+          "value": 44
+        },
+        {
+          "id": "ah-51",
+          "label": "51 Ah",
+          "value": 51
+        },
+        {
+          "id": "ah-59",
+          "label": "59 Ah",
+          "value": 59
+        },
+        {
+          "id": "ah-60",
+          "label": "60 Ah",
+          "value": 60
+        },
+        {
+          "id": "ah-61",
+          "label": "61 Ah",
+          "value": 61
+        },
+        {
+          "id": "ah-68",
+          "label": "68 Ah",
+          "value": 68
+        },
+        {
+          "id": "ah-69",
+          "label": "69 Ah",
+          "value": 69
+        },
+        {
+          "id": "ah-70",
+          "label": "70 Ah",
+          "value": 70
+        },
+        {
+          "id": "ah-72",
+          "label": "72 Ah",
+          "value": 72
+        }
+      ]
+    },
+    "csadapt-10113": {
+      "name": "Oil Quality"
+    }
+  },
+  "steps": {
+    "csmqb-reset-oil-service-part1-p1": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0,
+              "fill": true
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-reset-oil-service-part2-p2": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0,
+              "fill": true
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-reset-oil-service-part3-p3": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-reset-inspection-service-part1-p1": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            },
+            {
+              "byte": 1,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-reset-inspection-service-part2-p2": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "start",
+          "label": "Reset",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            },
+            {
+              "byte": 1,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "newRecipes": {
+    "svc:inspection-service-distance": {
+      "id": "svc:inspection-service-distance",
+      "name": "Inspection Service Distance",
+      "kind": "group",
+      "unit": "17",
+      "requestId": "714",
+      "responseId": "77E",
+      "password": null,
+      "did": "22A4",
+      "choices": [
+        {
+          "id": "km-15000",
+          "label": "15,000 km"
+        },
+        {
+          "id": "km-20000",
+          "label": "20,000 km"
+        },
+        {
+          "id": "km-30000",
+          "label": "30,000 km"
+        },
+        {
+          "id": "km-40000",
+          "label": "40,000 km"
+        },
+        {
+          "id": "km-60000",
+          "label": "60,000 km"
+        }
+      ],
+      "steps": [
+        {
+          "id": "svc:inspection-service-distance/max",
+          "name": "Max Distance Until Next Mileage Related Inspection Km",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22A4",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 100,
+            "offset": 0,
+            "min": 0,
+            "max": 6553500,
+            "unit": "km"
+          },
+          "choices": [
+            {
+              "id": "km-15000",
+              "label": "15,000 km",
+              "value": 15000
+            },
+            {
+              "id": "km-20000",
+              "label": "20,000 km",
+              "value": 20000
+            },
+            {
+              "id": "km-30000",
+              "label": "30,000 km",
+              "value": 30000
+            },
+            {
+              "id": "km-40000",
+              "label": "40,000 km",
+              "value": 40000
+            },
+            {
+              "id": "km-60000",
+              "label": "60,000 km",
+              "value": 60000
+            }
+          ]
+        },
+        {
+          "id": "svc:inspection-service-distance/reset-value",
+          "name": "Reset Value For Next Mileage Dependent Inspection Km",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22D5",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 100,
+            "offset": 0,
+            "min": 0,
+            "max": 6553500,
+            "unit": "km"
+          },
+          "choices": [
+            {
+              "id": "km-15000",
+              "label": "15,000 km",
+              "value": 15000
+            },
+            {
+              "id": "km-20000",
+              "label": "20,000 km",
+              "value": 20000
+            },
+            {
+              "id": "km-30000",
+              "label": "30,000 km",
+              "value": 30000
+            },
+            {
+              "id": "km-40000",
+              "label": "40,000 km",
+              "value": 40000
+            },
+            {
+              "id": "km-60000",
+              "label": "60,000 km",
+              "value": 60000
+            }
+          ]
+        }
+      ]
+    },
+    "svc:inspection-service-interval": {
+      "id": "svc:inspection-service-interval",
+      "name": "Inspection Service Interval",
+      "kind": "group",
+      "unit": "17",
+      "requestId": "714",
+      "responseId": "77E",
+      "password": null,
+      "did": "22A5",
+      "choices": [
+        {
+          "id": "days-365",
+          "label": "1 year (365 days)"
+        },
+        {
+          "id": "days-730",
+          "label": "2 years (730 days)"
+        },
+        {
+          "id": "days-1095",
+          "label": "3 years (1095 days)"
+        },
+        {
+          "id": "days-1460",
+          "label": "4 years (1460 days)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "svc:inspection-service-interval/max",
+          "name": "Max Time Until Next Time Dependent Inspection Days",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22A5",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 1,
+            "offset": 0,
+            "min": 0,
+            "max": 65535,
+            "unit": "days"
+          },
+          "choices": [
+            {
+              "id": "days-365",
+              "label": "1 year (365 days)",
+              "value": 365
+            },
+            {
+              "id": "days-730",
+              "label": "2 years (730 days)",
+              "value": 730
+            },
+            {
+              "id": "days-1095",
+              "label": "3 years (1095 days)",
+              "value": 1095
+            },
+            {
+              "id": "days-1460",
+              "label": "4 years (1460 days)",
+              "value": 1460
+            }
+          ]
+        },
+        {
+          "id": "svc:inspection-service-interval/reset-value",
+          "name": "Reset Value For Next Time Dependent Inspection Days",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22D6",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 1,
+            "offset": 0,
+            "min": 0,
+            "max": 65535,
+            "unit": "days"
+          },
+          "choices": [
+            {
+              "id": "days-365",
+              "label": "1 year (365 days)",
+              "value": 365
+            },
+            {
+              "id": "days-730",
+              "label": "2 years (730 days)",
+              "value": 730
+            },
+            {
+              "id": "days-1095",
+              "label": "3 years (1095 days)",
+              "value": 1095
+            },
+            {
+              "id": "days-1460",
+              "label": "4 years (1460 days)",
+              "value": 1460
+            }
+          ]
+        }
+      ]
+    },
+    "svc:oil-change-service-distance": {
+      "id": "svc:oil-change-service-distance",
+      "name": "Oil Change Service Distance",
+      "kind": "group",
+      "unit": "17",
+      "requestId": "714",
+      "responseId": "77E",
+      "password": null,
+      "did": "2246",
+      "choices": [
+        {
+          "id": "km-5000",
+          "label": "5,000 km"
+        },
+        {
+          "id": "km-7500",
+          "label": "7,500 km"
+        },
+        {
+          "id": "km-10000",
+          "label": "10,000 km"
+        },
+        {
+          "id": "km-15000",
+          "label": "15,000 km"
+        },
+        {
+          "id": "km-20000",
+          "label": "20,000 km"
+        },
+        {
+          "id": "km-25000",
+          "label": "25,000 km"
+        },
+        {
+          "id": "km-30000",
+          "label": "30,000 km"
+        }
+      ],
+      "steps": [
+        {
+          "id": "svc:oil-change-service-distance/max",
+          "name": "Maximum Distance Between Service Km",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "2246",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 100,
+            "offset": 0,
+            "min": 0,
+            "max": 6553500,
+            "unit": "km"
+          },
+          "choices": [
+            {
+              "id": "km-5000",
+              "label": "5,000 km",
+              "value": 5000
+            },
+            {
+              "id": "km-7500",
+              "label": "7,500 km",
+              "value": 7500
+            },
+            {
+              "id": "km-10000",
+              "label": "10,000 km",
+              "value": 10000
+            },
+            {
+              "id": "km-15000",
+              "label": "15,000 km",
+              "value": 15000
+            },
+            {
+              "id": "km-20000",
+              "label": "20,000 km",
+              "value": 20000
+            },
+            {
+              "id": "km-25000",
+              "label": "25,000 km",
+              "value": 25000
+            },
+            {
+              "id": "km-30000",
+              "label": "30,000 km",
+              "value": 30000
+            }
+          ]
+        },
+        {
+          "id": "svc:oil-change-service-distance/min",
+          "name": "Minimum Distance Between Service Km",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "2245",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 100,
+            "offset": 0,
+            "min": 0,
+            "max": 6553500,
+            "unit": "km"
+          },
+          "choices": [
+            {
+              "id": "km-5000",
+              "label": "5,000 km",
+              "value": 5000
+            },
+            {
+              "id": "km-7500",
+              "label": "7,500 km",
+              "value": 7500
+            },
+            {
+              "id": "km-10000",
+              "label": "10,000 km",
+              "value": 10000
+            },
+            {
+              "id": "km-15000",
+              "label": "15,000 km",
+              "value": 15000
+            },
+            {
+              "id": "km-20000",
+              "label": "20,000 km",
+              "value": 20000
+            },
+            {
+              "id": "km-25000",
+              "label": "25,000 km",
+              "value": 25000
+            },
+            {
+              "id": "km-30000",
+              "label": "30,000 km",
+              "value": 30000
+            }
+          ]
+        },
+        {
+          "id": "svc:oil-change-service-distance/max-to-service",
+          "name": "Maximum Distance To Service",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22A0",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 100,
+            "offset": 0,
+            "min": 0,
+            "max": 6553500,
+            "unit": "km"
+          },
+          "choices": [
+            {
+              "id": "km-5000",
+              "label": "5,000 km",
+              "value": 5000
+            },
+            {
+              "id": "km-7500",
+              "label": "7,500 km",
+              "value": 7500
+            },
+            {
+              "id": "km-10000",
+              "label": "10,000 km",
+              "value": 10000
+            },
+            {
+              "id": "km-15000",
+              "label": "15,000 km",
+              "value": 15000
+            },
+            {
+              "id": "km-20000",
+              "label": "20,000 km",
+              "value": 20000
+            },
+            {
+              "id": "km-25000",
+              "label": "25,000 km",
+              "value": 25000
+            },
+            {
+              "id": "km-30000",
+              "label": "30,000 km",
+              "value": 30000
+            }
+          ]
+        }
+      ]
+    },
+    "svc:oil-change-service-interval": {
+      "id": "svc:oil-change-service-interval",
+      "name": "Oil Change Service Interval",
+      "kind": "group",
+      "unit": "17",
+      "requestId": "714",
+      "responseId": "77E",
+      "password": null,
+      "did": "2247",
+      "choices": [
+        {
+          "id": "days-180",
+          "label": "6 months (180 days)"
+        },
+        {
+          "id": "days-365",
+          "label": "1 year (365 days)"
+        },
+        {
+          "id": "days-730",
+          "label": "2 years (730 days)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "svc:oil-change-service-interval/max",
+          "name": "Maximum Time Between Service Days",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "2247",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 1,
+            "offset": 0,
+            "min": 0,
+            "max": 65535,
+            "unit": "days"
+          },
+          "choices": [
+            {
+              "id": "days-180",
+              "label": "6 months (180 days)",
+              "value": 180
+            },
+            {
+              "id": "days-365",
+              "label": "1 year (365 days)",
+              "value": 365
+            },
+            {
+              "id": "days-730",
+              "label": "2 years (730 days)",
+              "value": 730
+            }
+          ]
+        },
+        {
+          "id": "svc:oil-change-service-interval/min",
+          "name": "Minimum Time Between Service Days",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "2293",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 1,
+            "offset": 0,
+            "min": 0,
+            "max": 65535,
+            "unit": "days"
+          },
+          "choices": [
+            {
+              "id": "days-180",
+              "label": "6 months (180 days)",
+              "value": 180
+            },
+            {
+              "id": "days-365",
+              "label": "1 year (365 days)",
+              "value": 365
+            },
+            {
+              "id": "days-730",
+              "label": "2 years (730 days)",
+              "value": 730
+            }
+          ]
+        },
+        {
+          "id": "svc:oil-change-service-interval/max-to-service",
+          "name": "Maximum Value Of Time To Service",
+          "kind": "scalar",
+          "unit": "17",
+          "requestId": "714",
+          "responseId": "77E",
+          "password": null,
+          "did": "22A1",
+          "scalar": {
+            "byteOffset": 0,
+            "dataLength": 2,
+            "multiplier": 1,
+            "offset": 0,
+            "min": 0,
+            "max": 65535,
+            "unit": "days"
+          },
+          "choices": [
+            {
+              "id": "days-180",
+              "label": "6 months (180 days)",
+              "value": 180
+            },
+            {
+              "id": "days-365",
+              "label": "1 year (365 days)",
+              "value": 365
+            },
+            {
+              "id": "days-730",
+              "label": "2 years (730 days)",
+              "value": 730
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "notes": {
+    "group:reset-oil-service-reminder": "provenance: CarScannerMaui.Coding.DB.MQB.Service.decompiled.cs Service.ResetOilService(). Unit 17 (714/77E). Item1 DID 2243: on EnableOption every byte of the record is set to 0 (for i<array.Length array[i]=0); encoded as a fill op {byte:0,len:8,value:0,fill:true} that zeroes every byte of the record as read (3 bytes per csadapt-10046, but whatever length the cluster returns). Item2 DID 2244: every byte = 0; same fill op (2 bytes per csadapt-10047). Item3 DID 2232: array[0]=0 (csadapt-10045 state 'Reset'=0). Single option 'Start' -> group choice 'start'. Password: vendor says not required (hint MQB 20103); left null so pipeline backfills unit-17 default 47115 (needed live on the 6JM920310 cluster).",
+    "group:reset-inspection-service-reminder": "provenance: CarScannerMaui.Coding.DB.MQB.Service.decompiled.cs Service.ResetInspectionService(). Unit 17. DID 22A6: array[0]=0, array[1]=0 (distance since last inspection, x100 km). DID 22A7: array[0]=0, array[1]=0 (days since last inspection). Single option 'Start' -> group choice 'start'. Password null -> unit default.",
+    "svc:inspection-service-distance": "provenance: carscanner-candidates.json mqbadaptations.db adaptations csadapt-10014 (17/22A4 Max Distance Until Next Mileage Related Inspection, 2 bytes x100 km) and csadapt-10070 (17/22D5 Reset Value For Next Mileage Dependent Inspection, 2 bytes x100 km). Both written with the same value so the current countdown and the value reloaded on reset agree. Choice value is the physical km (raw = km/100).",
+    "svc:inspection-service-interval": "provenance: csadapt-10067 (17/22A5 Max Time Until Next Time Dependent Inspection, 2 bytes days) + csadapt-10071 (17/22D6 Reset Value For Next Time Dependent Inspection, days). Same value to both.",
+    "svc:oil-change-service-distance": "provenance: csadapt-10063 (17/2246 Maximum Distance Between Service, x100 km), csadapt-10064 (17/2245 Minimum Distance Between Service, x100 km), csadapt-10134 (17/22A0 Maximum Distance To Service, x100 km). VW cluster computes the due point between min and max, so a fixed interval needs min = max; 22A0 is the upper clamp and must be >= the interval, so all three get the same value. 2026-11-03 audit: added km-25000 (raw 250) because the Kylaq and Virtus cards list 7,500/10,000/15,000/20,000/25,000/30,000 km; the other choices are unchanged.",
+    "svc:oil-change-service-interval": "provenance: csadapt-10065 (17/2247 Maximum Time Between Service, days), csadapt-10066 (17/2293 Minimum Time Between Service, days), csadapt-10112 (17/22A1 Maximum Value Of Time To Service, days). min = max = clamp, as for distance.",
+    "csadapt-10194": "provenance: mqbadaptations.db Adaptation@710:2A31 byte1 (battery technology enum Wet=0, FleeceAgm=1, Efb=7 ...). Name was a Russian placeholder; renamed. Shares DID 2A31 with csadapt-10133 (byte0 capacity); each write is read-modify-write of the record so they do not clobber each other.",
+    "csadapt-10133": "provenance: mqbadaptations.db Adaptation@710:2A31 (vt1/dl1/sbi0) Battery Capacity Ah, byte0, 1 byte x1. Presets = catalogue options 44..72 Ah; free value also valid (1..255).",
+    "csadapt-10113": "provenance: mqbadaptations.db Adaptation@714:2248 Oil Quality byte0 (NA=0, Poor=1, Good=2). Catalogue Regular (fixed interval) = Poor, LongLife (flexible) = Good.",
+    "csadapt-10006": "WARNING kept per verified mapping: Adaptation@712:1922 on unit 44 (EPS, pw 19249) IncrementalControlledOverTime=0 / DirectControlledOverThresholdValue=1. Matches Carista Kushaq \"Throttle response behavior\" wording, but sibling 1920 is the drive-mode steering characteristic, so the effect may be steering-side. No unit-01 pedal map recipe exists in the corpus or C#. 2026-11-03 audit: the 44 option names match the community 'Driving profile switchover' channel (Incremental controlled over time / Direct controlled over threshold value, login 19249; vag-coding Kamiq NW, REMAINING_FEATURES increased-engine-responsiveness), which is the tweak sold as throttle response. Bytes are vendor-exact (1922 byte0, 0/1); the engine-side effect is unverified.",
+    "multimedia-restart": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"CarScannerMaui.Coding.DB.MQB.MQBMultimediaRestart.decompiled.cs ctor + OptionExecute\",\"unit\":\"5F\",\"requestId\":\"773\",\"responseId\":\"7DD\",\"send\":[\"1102\"],\"success\":\"response contains 51 or 7F1178\",\"note\":\"UDS ECUReset keyOffOnReset; no data written, no backup needed\"} REMAINING_FEATURES #66: high confidence, blocked only by the missing reset kind.",
+    "throttle-body-alignment": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"ThrottleAdaptationRoutine.decompiled.cs ctor\",\"unit\":\"01\",\"requestId\":\"7E0\",\"responseId\":\"7E8\",\"password\":null,\"start\":\"3101032E040000\",\"stop\":\"3102032E\",\"poll\":\"220102 (status) while running\"} REMAINING_FEATURES #70: high confidence, blocked only by the missing routine kind.",
+    "tire-pressure-monitoring-system-reset": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"TPMSResetRoutine.decompiled.cs ctor\",\"unit\":\"03\",\"requestId\":\"713\",\"responseId\":\"77D\",\"password\":\"20103 (hint 40168, 20103)\",\"options\":{\"Reset var.1\":\"31010413\",\"Reset var.2\":\"31010413040000\"},\"poll\":\"220102\"} REMAINING_FEATURES #71: high confidence, blocked only by the missing routine kind. TPMS.decompiled.cs holds only the 19/04A3 + 17/0600 + 03/0600 activation coding, not a reset write.",
+    "fuel-system-priming": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"FuelPumpTest.decompiled.cs ctor (codingDB_TransferFuelPumpTest)\",\"unit\":\"01\",\"requestId\":\"7E0\",\"responseId\":\"7E8\",\"password\":\"27971\",\"start\":\"3101030D040000\",\"stop\":\"3102030D\",\"poll\":[\"220102\",\"220104\"]} REMAINING_FEATURES #63: high confidence, blocked by the missing routine kind and the 0x27 engine login (27971).",
+    "a-c-flap-calibration": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"Climate.cs FlapAdaptations() MQBSimpleOperationWith0102StatusCheck\",\"unit\":\"08\",\"requestId\":\"746\",\"responseId\":\"7B0\",\"password\":null,\"start\":\"3101034D040000\",\"cancel\":\"3102034D\",\"poll\":\"220102\"} REMAINING_FEATURES #50: high confidence, blocked only by the missing routine kind.",
+    "brake-bleeding": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"VagBrakeBleeding.decompiled.cs BuildBrakeBleed_MQB()\",\"unit\":\"03\",\"requestId\":\"713\",\"responseId\":\"77D\",\"passwordVisible\":true,\"steps\":{\"First flushing cycle\":\"3101039E01\",\"Bleed rear\":\"3101039E02\",\"Bleed front\":\"3101039E03\",\"Second flushing cycle\":\"3101039E04\"},\"cancel\":\"3102039E\"} REMAINING_FEATURES #52: med confidence (A0 ESC routine id unconfirmed), workshop only; blocked by the missing routine kind.",
+    "brake-pad-replacement": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"ParkingBrakeRoutineMQB.decompiled.cs ctor\",\"unit\":\"03\",\"requestId\":\"713\",\"responseId\":\"77D\",\"options\":{\"Open for pad replacement\":\"310103A1 (finish 310203A1)\",\"Close after pad replacement\":\"310103A0 (finish 310203A0)\",\"Test parking brake\":\"31010410\",\"Clear DTCs\":\"14FFFFFF\"},\"poll\":\"220102\"} REMAINING_FEATURES #54: not possible on MQB-A0-IN (manual handbrake, no EPB); MQB models blocked by the missing routine kind.",
+    "heater-unlock": "routine-implementation (not expressible: contract has no routine/ecu-reset kind, so not mapped): {\"src\":\"WebastoProcedures.decompiled.cs\",\"unit\":\"18\",\"requestId\":\"76A\",\"responseId\":\"7D4\",\"password\":null,\"options\":{\"Disengage aux heater (recommended)\":\"3101047F040000 / cancel 3102047F\",\"Unlock aux heater\":\"31010569040000 / cancel 31020569\"}} REMAINING_FEATURES #65: no Webasto on A0-IN; MQB models blocked by the missing routine kind.",
+    "service-soon-warning": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (Vorwarn, prewarn, advance warning, service soon, 22A2/22A3/2249/224C) and carscanner-candidates.json; unit-17 service DIDs present are 2232, 2243-2248, 2293, 22A0/22A1, 22A4-22A7, 22D5/22D6 only, none is a pre-warning lead time. REMAINING_FEATURES #68: low confidence; candidate 17 DIDs 22A2/22A3/2249/224C are unverified and need a capture-diff on the owner's 6JM920310 cluster.",
+    "engine-fan-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (fan, Luefter, radiator, cooling fan). Only 2F IOControl in corpus is 2F0405 (unit 05 Easy-Open VIP supply); unit-01 routines are 032E throttle, 030D fuel pump, 0305/053D DPF, 0311 engine automatic tests, 03FD EA288 bleeding - none drives the radiator fan. REMAINING_FEATURES #60: low confidence; 01 output-test id unknown, needs a sniff (ATCRA 7E0).",
+    "engine-fan-1-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (fan, Luefter, radiator, cooling fan). Only 2F IOControl in corpus is 2F0405 (unit 05 Easy-Open VIP supply); unit-01 routines are 032E throttle, 030D fuel pump, 0305/053D DPF, 0311 engine automatic tests, 03FD EA288 bleeding - none drives the radiator fan. REMAINING_FEATURES #61: low confidence; Tiguan-only (V7), output-test id unknown.",
+    "engine-fan-2-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (fan, Luefter, radiator, cooling fan). Only 2F IOControl in corpus is 2F0405 (unit 05 Easy-Open VIP supply); unit-01 routines are 032E throttle, 030D fuel pump, 0305/053D DPF, 0311 engine automatic tests, 03FD EA288 bleeding - none drives the radiator fan. REMAINING_FEATURES #62: low confidence; Tiguan-only (V177), output-test id unknown.",
+    "reversing-light-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (reversing, brake light, turn, Blinker, Leuchte test, output test). No unit-09 2F/31 lamp actuation exists. REMAINING_FEATURES #72: low confidence; 09 IOControl (2F) DID unknown, needs a sniff.",
+    "brake-lights-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (reversing, brake light, turn, Blinker, Leuchte test, output test). No unit-09 2F/31 lamp actuation exists. REMAINING_FEATURES #53: low confidence; 09 IOControl (2F) DID unknown, needs a sniff.",
+    "turn-lights-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (reversing, brake light, turn, Blinker, Leuchte test, output test). No unit-09 2F/31 lamp actuation exists. REMAINING_FEATURES #73: low confidence; 09 IOControl (2F) DID unknown, needs a sniff.",
+    "headlight-washers-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (washer, SRA, Scheinwerferreinigung). Washer.cs only codes 0A73 intervals. REMAINING_FEATURES #64: headlight washers are not fitted on Kushaq/Slavia/Virtus/Kylaq.",
+    "front-left-door-lock-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (lock, Verriegelung, ZV, door actuator). Doors.cs uses 2F040503FFFFFFFF only as a post-write release of the unit-05 Easy-Open control, not a lock actuator test. REMAINING_FEATURES #56: low confidence; actuator id unknown (09 on A0-IN, 42 on MQB), needs a sniff.",
+    "front-right-door-lock-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (lock, Verriegelung, ZV, door actuator). Doors.cs uses 2F040503FFFFFFFF only as a post-write release of the unit-05 Easy-Open control, not a lock actuator test. REMAINING_FEATURES #57: low confidence; actuator id unknown (09 on A0-IN, 52 on MQB), needs a sniff.",
+    "rear-left-door-lock-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (lock, Verriegelung, ZV, door actuator). Doors.cs uses 2F040503FFFFFFFF only as a post-write release of the unit-05 Easy-Open control, not a lock actuator test. REMAINING_FEATURES #58: low confidence; actuator id unknown (09 on A0-IN, 42/62 on MQB), needs a sniff.",
+    "rear-right-door-lock-test": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (lock, Verriegelung, ZV, door actuator). Doors.cs uses 2F040503FFFFFFFF only as a post-write release of the unit-05 Easy-Open control, not a lock actuator test. REMAINING_FEATURES #59: low confidence; actuator id unknown (09 on A0-IN, 52/72 on MQB), needs a sniff.",
+    "door-lock-test-all": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (lock, Verriegelung, ZV, door actuator). Doors.cs uses 2F040503FFFFFFFF only as a post-write release of the unit-05 Easy-Open control, not a lock actuator test. REMAINING_FEATURES #55: low confidence; actuator ids unknown, needs a sniff.",
+    "air-conditioner-compressor-activation": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (compressor, Kompressor, B109E, first run). Only unit-08 routine is 034D flap adaptation. REMAINING_FEATURES #51: med confidence on the procedure (08 IDE01503=120 s, IDE03176=60 s, then compressor run-in basic setting) but both DIDs and the routine id are unknown.",
+    "window-calibration": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (window, Fensterheber, normalisation, Grundeinstellung). Window recipes are coding only. REMAINING_FEATURES #74: no MQB routine; manual procedure (hold switch up 2-5 s after full close), not a coding write.",
+    "seat-belt-tensioner-reset": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (belt, Gurt, tensioner, B1304/B1305, unit 15). None. REMAINING_FEATURES #67: not possible (safety): the pretensioner must be replaced and crash data cleared at a dealer.",
+    "steering-angle-sensor-calibration": "no-implementation: searched all 101 managed/*.decompiled.cs + Climate/Dashboard/Doors/ExteriorLights/FeedbackSignals.cs for 2Fxxxx IOControl, 3101xxxx routines, 11xx resets, and keywords (steering angle, G85, Lenkwinkel, SAS, unit 44 / 03 routine). Brakes.cs only has 040A brake pressure sensor basic setting. REMAINING_FEATURES #69: med confidence on the procedure (44 basic setting MAS00815, login 19249) but the routine id is unknown and it is a routine, not a write."
+  }
+}

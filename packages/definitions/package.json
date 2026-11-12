@@ -1,0 +1,12 @@
+{
+  "name": "@obdcraft/definitions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "obd.json single source of truth, formula compiler and decoders",
+  "exports": {
+    ".": "./src/index.ts",
+    "./data/*": "./data/*"
+  },
+  "sideEffects": false
+}

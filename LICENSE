@@ -1,0 +1,66 @@
+Vibecode my car — Source-Available License
+Version 1.0
+
+Copyright (c) 2026 Rishabh Bansal. All rights reserved.
+
+This is not an open-source license. The software in this repository — its source code, coding recipes, car
+data, documentation, images and other content (together, "the Software") — is owned by Rishabh Bansal ("the
+Owner"). You may use it only as this license allows.
+
+1. WHAT YOU MAY DO
+
+   a. Read. You may view and read the Software.
+
+   b. Use it on your own car. You may run the Software, unmodified or with your own changes, for your own
+      personal, non-commercial use, including on vehicles you own or are allowed to work on.
+
+   c. Contribute. You may fork this repository on GitHub and change your fork, solely to prepare contributions
+      (pull requests, issues, findings) to this repository. A fork kept for that purpose is not
+      redistribution under section 2.
+
+2. WHAT YOU MAY NOT DO
+
+   Unless the Owner gives you written permission, you may not:
+
+   a. use any part of the Software — including its coding engine, Bluetooth and diagnostic code, recipes,
+      catalogue or car data — in any other software, product, service or website;
+
+   b. copy, publish, host, sell, sublicense or otherwise distribute the Software or anything derived from it,
+      except forks under section 1c;
+
+   c. use the Software commercially, including offering coding or diagnostic services with it to others for a
+      fee;
+
+   d. use the Software, in whole or in part, to train, fine-tune, evaluate or prompt any machine-learning or
+      artificial-intelligence system, or use such a system to reproduce, translate or rewrite the Software into
+      another project;
+
+   e. remove or change this license or any copyright notice.
+
+3. CONTRIBUTIONS
+
+   Contributions are accepted under the terms in CONTRIBUTING.md ("Contribution terms"). By submitting a
+   contribution you agree to them. In short: you keep the copyright in what you wrote, and you give the Owner
+   a perpetual, worldwide, royalty-free, irrevocable license to use, change, distribute and relicense it as
+   part of the Software or otherwise.
+
+4. NAMES AND MARKS
+
+   This license does not grant any right to use the name "Vibecode my car", its logo or any other mark of the
+   Owner. "Škoda" and "Volkswagen" are trademarks of their respective owners; the Software is not affiliated
+   with or endorsed by them.
+
+5. NO WARRANTY; YOUR RISK
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A
+   PARTICULAR PURPOSE AND NON-INFRINGEMENT. CHANGING A VEHICLE'S CONFIGURATION CAN AFFECT HOW IT BEHAVES, ITS
+   WARRANTY AND ITS LEGALITY ON PUBLIC ROADS. YOU USE THE SOFTWARE AT YOUR OWN RISK. TO THE EXTENT THE LAW
+   ALLOWS, THE OWNER AND CONTRIBUTORS ARE NOT LIABLE FOR ANY CLAIM, DAMAGE OR OTHER LIABILITY ARISING FROM THE
+   SOFTWARE OR ITS USE, INCLUDING DAMAGE TO ANY VEHICLE.
+
+6. TERMINATION
+
+   If you break this license, your permissions under it end immediately. Sections 2, 4 and 5 continue to
+   apply.
+
+For permission beyond this license, open an issue on the repository or contact the Owner.

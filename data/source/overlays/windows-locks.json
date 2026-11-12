@@ -1,0 +1,1850 @@
+{
+ "recipes": {
+  "csmqb-mqb-09-sound-confirmation-of-lock-and-unlock": {
+   "kind": "alt",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       0,
+       7
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "group:open-and-close-windows-holding-key-fob-buttons": {
+   "kind": "group",
+   "did": null,
+   "variants": null,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  },
+  "csmqb-mqb-driver-electric-window-time-after-ignition-turned-off": {
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0A69",
+     "password": "31347",
+     "kind": "scalar",
+     "scalar": {
+      "byteOffset": 1,
+      "dataLength": 1,
+      "multiplier": 5,
+      "offset": 0,
+      "min": 0,
+      "max": 1275,
+      "unit": "s"
+     },
+     "choices": [
+      {
+       "id": "off",
+       "label": "Off",
+       "value": 0
+      },
+      {
+       "id": "on",
+       "label": "On (10 min)",
+       "value": 600
+      }
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0D",
+     "password": "31347",
+     "kind": "scalar",
+     "scalar": {
+      "byteOffset": 4,
+      "dataLength": 1,
+      "multiplier": 5,
+      "offset": 0,
+      "min": 0,
+      "max": 1275,
+      "unit": "s"
+     },
+     "choices": [
+      {
+       "id": "off",
+       "label": "Off",
+       "value": 0
+      },
+      {
+       "id": "on",
+       "label": "On (10 min)",
+       "value": 600
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "steps": {
+  "csmqb-raise-and-lower-windows-with-key-fob-part1-p1": {
+   "kind": "alt",
+   "did": "0A69",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0A69",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0D",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newRecipes": {
+  "wl-lock-unlock-acoustic-confirmation": {
+   "id": "wl-lock-unlock-acoustic-confirmation",
+   "name": "Lock/Unlock Acoustic Confirmation",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0D0E",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "lock-and-unlock",
+       "label": "Lock and unlock",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "lock-only",
+       "label": "Lock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "unlock-only",
+       "label": "Unlock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "lock-and-unlock",
+       "label": "Lock and unlock",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "lock-only",
+       "label": "Lock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "unlock-only",
+       "label": "Unlock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       0,
+       7
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "wl-lock-unlock-sound-type": {
+   "id": "wl-lock-unlock-sound-type",
+   "name": "Lock/Unlock Sound Settings",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0D0E",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "sounder",
+       "label": "Via sounder",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "horn",
+       "label": "Via horn normal",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "horn-short",
+       "label": "Via horn short",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "sounder",
+       "label": "Via sounder",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "horn",
+       "label": "Via horn normal",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "horn-short",
+       "label": "Via horn short",
+       "ops": [
+        {
+         "byte": 1,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    }
+   ]
+  },
+  "wl-comfort-windows": {
+   "id": "wl-comfort-windows",
+   "name": "Comfort Windows (key fob)",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0A69",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0A69",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 2,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 2,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0D",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ]
+     ]
+    }
+   ]
+  },
+  "wl-auto-lock-unlock": {
+   "id": "wl-auto-lock-unlock",
+   "name": "Auto Lock/Unlock",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0A6A",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0A6A",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "both",
+       "label": "Auto lock and auto unlock",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "lock-only",
+       "label": "Auto lock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "unlock-only",
+       "label": "Auto unlock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D08",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "both",
+       "label": "Auto lock and auto unlock",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "lock-only",
+       "label": "Auto lock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "unlock-only",
+       "label": "Auto unlock only",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ]
+     ]
+    }
+   ]
+  },
+  "wl-anti-theft-alarm": {
+   "id": "wl-anti-theft-alarm",
+   "name": "Anti-Theft Alarm System",
+   "kind": "group",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": null,
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ],
+   "steps": [
+    {
+     "id": "wl-anti-theft-alarm-activate-and-sound",
+     "name": "Anti-theft alarm activation + sound device",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0D07",
+     "variants": [
+      {
+       "selector": "new-bcm",
+       "requiresNewBcm": true,
+       "did": "0D07",
+       "password": "31347",
+       "kind": "ops",
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "Enabled (signal horn)",
+         "ops": [
+          {
+           "byte": 1,
+           "bit": 1,
+           "len": 1,
+           "value": 1
+          },
+          {
+           "byte": 1,
+           "bit": 5,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 1,
+           "bit": 4,
+           "len": 1,
+           "value": 1
+          }
+         ],
+         "when": {
+          "bytes": [
+           {
+            "byte": 1,
+            "bit": 5,
+            "len": 1,
+            "in": [
+             0
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "id": "disabled",
+         "label": "Disabled",
+         "ops": [
+          {
+           "byte": 1,
+           "bit": 1,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 1,
+           "bit": 5,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 1,
+           "bit": 4,
+           "len": 1,
+           "value": 0
+          }
+         ]
+        }
+       ],
+       "stateBits": [
+        [
+         1,
+         1
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         1,
+         5
+        ]
+       ]
+      },
+      {
+       "selector": "old-bcm",
+       "requiresNewBcm": false,
+       "did": "0600",
+       "password": "31347",
+       "kind": "ops",
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "Enabled (signal horn)",
+         "ops": [
+          {
+           "byte": 12,
+           "bit": 0,
+           "len": 1,
+           "value": 1
+          },
+          {
+           "byte": 12,
+           "bit": 4,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 12,
+           "bit": 3,
+           "len": 1,
+           "value": 1
+          }
+         ],
+         "when": {
+          "bytes": [
+           {
+            "byte": 12,
+            "bit": 4,
+            "len": 1,
+            "in": [
+             0
+            ]
+           }
+          ]
+         }
+        },
+        {
+         "id": "disabled",
+         "label": "Disabled",
+         "ops": [
+          {
+           "byte": 12,
+           "bit": 0,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 12,
+           "bit": 4,
+           "len": 1,
+           "value": 0
+          },
+          {
+           "byte": 12,
+           "bit": 3,
+           "len": 1,
+           "value": 0
+          }
+         ]
+        }
+       ],
+       "stateBits": [
+        [
+         12,
+         0
+        ],
+        [
+         12,
+         3
+        ],
+        [
+         12,
+         4
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "wl-anti-theft-alarm-use-signal-horn",
+     "name": "Anti-theft alarm use signal horn",
+     "kind": "alt",
+     "unit": "09",
+     "requestId": "70E",
+     "responseId": "778",
+     "password": "31347",
+     "did": "0D07",
+     "variants": [
+      {
+       "selector": "new-bcm",
+       "requiresNewBcm": true,
+       "did": "0D07",
+       "password": "31347",
+       "kind": "ops",
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "Enabled",
+         "ops": [
+          {
+           "byte": 0,
+           "bit": 7,
+           "len": 1,
+           "value": 1
+          }
+         ]
+        },
+        {
+         "id": "disabled",
+         "label": "Disabled",
+         "ops": [
+          {
+           "byte": 0,
+           "bit": 7,
+           "len": 1,
+           "value": 0
+          }
+         ]
+        }
+       ],
+       "stateBits": [
+        [
+         0,
+         7
+        ]
+       ]
+      },
+      {
+       "selector": "old-bcm",
+       "requiresNewBcm": false,
+       "did": "0D07",
+       "password": "31347",
+       "kind": "ops",
+       "choices": [
+        {
+         "id": "enabled",
+         "label": "Enabled",
+         "ops": [
+          {
+           "byte": 0,
+           "bit": 7,
+           "len": 1,
+           "value": 1
+          }
+         ]
+        },
+        {
+         "id": "disabled",
+         "label": "Disabled",
+         "ops": [
+          {
+           "byte": 0,
+           "bit": 7,
+           "len": 1,
+           "value": 0
+          }
+         ]
+        }
+       ],
+       "stateBits": [
+        [
+         0,
+         7
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "wl-auto-folding-mirrors": {
+   "id": "wl-auto-folding-mirrors",
+   "name": "Auto Folding Mirrors",
+   "kind": "alt",
+   "unit": "09",
+   "requestId": "70E",
+   "responseId": "778",
+   "password": "31347",
+   "did": "0A6E",
+   "variants": [
+    {
+     "selector": "new-bcm",
+     "requiresNewBcm": true,
+     "did": "0A6E",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "on",
+       "label": "Fold on lock",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    {
+     "selector": "old-bcm",
+     "requiresNewBcm": false,
+     "did": "0D0D",
+     "password": "31347",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "on",
+       "label": "Fold on lock",
+       "ops": [
+        {
+         "byte": 3,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "off",
+       "label": "Off",
+       "ops": [
+        {
+         "byte": 3,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       3,
+       0
+      ],
+      [
+       3,
+       3
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "notes": {
+  "wl-lock-unlock-acoustic-confirmation": "FeedbackSignals.cs MQB_09_SoundConfirmationOfLockAndUnlock (lines 71-118): Enable sets new-gen 0D0E bits 0.4,0.6,0.3,1.0,1.2 / old-gen 0.0,0.1,0.6,0.7,1.0; Disable clears the same bits. 'lock-and-unlock' and 'off' are exactly those delegates. The single-side choices split lock/unlock using the per-bit builders in the same file: AcousticFeedbackLockAcousticFeedback (new 0.6 / old 0.1), AcousticFeedbackWhenUnlocking (new 0.4 / old 0.0), AcousticFeedbackGlobal (new 0.3 / old 0.7), AcousticFeedbackMenu (new 1.0 / old 0.6), AcousticFeedbackSignalHorn (new 1.2 / old 1.0); global/menu/horn are kept as the vendor Enable sets them. Variants: MQBAlternativeContainerForUnit09 RequiresNewBCM true/false, both DID 0D0E.",
+  "csmqb-mqb-09-sound-confirmation-of-lock-and-unlock": "FeedbackSignals.cs MQB_09_SoundConfirmationOfLockAndUnlock (lines 71-118): raw block replaced by the delegate bit ops verbatim (SwitchBitInByte(array, byte, bit, v)). New-gen (RequiresNewBCM:true) 0D0E 0.4,0.6,0.3,1.0,1.2; old-gen 0D0E 0.0,0.1,0.6,0.7,1.0; Enable=1, else=0.",
+  "wl-lock-unlock-sound-type": "FeedbackSignals.cs AcousticFeedbackSignalHorn: BuildAltCodingSwitchForUnit09(\"0D0E\",1,2,\"0D0E\",1,0) -> horn bit new 1.2 / old 1.0 (1 = signal horn, 0 = sounder). AcousticFeedbackDurationOfAcousticFeedbackFromSimpleHorn: BuildAltCodingSwitchForUnit09(\"0D0E\",0,6,\"0D0E\",0,1) with options Short=Enable(1), Normal=Disable(0). CAUTION: the vendor duration bit is the SAME bit as AcousticFeedbackLockAcousticFeedback (new 0.6 / old 0.1), i.e. the vendor duration item toggles the lock beep. Therefore \"Via horn normal\" only sets the horn bit and does NOT clear 0.6/0.1 (clearing would silence the lock beep); \"Via horn short\" sets the vendor duration bit as the vendor does. Restore covers both bits via the owned mask. 2026-11-03 audit: 'horn-short' is no longer offered by the catalogue map (lock-unlock-sound-settings). Because the vendor duration builder addresses the same bit as AcousticFeedbackLockAcousticFeedback, 'short' cannot be set independently: on a car that already beeps on lock it writes exactly what 'horn' writes, and otherwise it only turns the lock beep on. The choice stays in the recipe so existing backups keep their digest.",
+  "csmqb-raise-and-lower-windows-with-key-fob-part1-p1": "Doors.cs RaiseAndLowerWindowsWithKeyFob (lines 617-698). Part 1 MQBAlternativeContainerForUnit09: new-gen 0A69 Enable: 0.3=1, 2.0=1, 0.6=1, 2.2=1, 2.5=1, 2.4=0; else: 0.6=0, 2.2=0, 2.5=0, 2.4=0 (vendor leaves 0.3 and 2.0 set on disable). Old-gen 0D0D Enable: 0.1=1, 0.2=1, 0.6=1, 0.5=1, 3.5=1, 3.4=0; else: 0.6=0, 0.5=0, 3.5=0, 3.4=0. The vendor builds a second alternative (0A9A 0.3/0.2, 0D0D 2.5/2.4) but never adds it to the MQBMultipleCoding (dead code), so it is not included.",
+  "group:open-and-close-windows-holding-key-fob-buttons": "Top level made kind group (its only step is the BCM key-fob alt, fixed via steps). Doors.cs RaiseAndLowerWindowsWithKeyFob (lines 617-698). Part 1 MQBAlternativeContainerForUnit09: new-gen 0A69 Enable: 0.3=1, 2.0=1, 0.6=1, 2.2=1, 2.5=1, 2.4=0; else: 0.6=0, 2.2=0, 2.5=0, 2.4=0 (vendor leaves 0.3 and 2.0 set on disable). Old-gen 0D0D Enable: 0.1=1, 0.2=1, 0.6=1, 0.5=1, 3.5=1, 3.4=0; else: 0.6=0, 0.5=0, 3.5=0, 3.4=0. The vendor builds a second alternative (0A9A 0.3/0.2, 0D0D 2.5/2.4) but never adds it to the MQBMultipleCoding (dead code), so it is not included.",
+  "wl-comfort-windows": "Doors.cs RaiseAndLowerWindowsWithKeyFob (lines 617-698). Part 1 MQBAlternativeContainerForUnit09: new-gen 0A69 Enable: 0.3=1, 2.0=1, 0.6=1, 2.2=1, 2.5=1, 2.4=0; else: 0.6=0, 2.2=0, 2.5=0, 2.4=0 (vendor leaves 0.3 and 2.0 set on disable). Old-gen 0D0D Enable: 0.1=1, 0.2=1, 0.6=1, 0.5=1, 3.5=1, 3.4=0; else: 0.6=0, 0.5=0, 3.5=0, 3.4=0. The vendor builds a second alternative (0A9A 0.3/0.2, 0D0D 2.5/2.4) but never adds it to the MQBMultipleCoding (dead code), so it is not included. Door modules 42/52 (csadapt-10073/10074 \"Comfort Closing And Opening\") are not part of the vendor implementation and MQB-A0-IN cars have BCM-driven windows, so they are not added as steps.",
+  "wl-auto-lock-unlock": "Doors.cs Lock_AutolockAtSpeed (lines 401-435): new-gen 0A6A 0.0 / old-gen 0D08 0.2. Lock_AutoUnlock (lines 365-399): new-gen 0A6A 0.1 / old-gen 0D08 0.3. Both Enable=1/else=0 on the same DID per generation, so one read-modify-write sets both.",
+  "wl-anti-theft-alarm": "AntiTheft.decompiled.cs. Step 1 (one DID per generation): Alarm_ActivateAntiTheftAlarm BuildAltCodingSwitchForUnit09(\"0D07\",1,1,\"0600\",12,0) + Alarm_SoundOut delegates (new-gen 0D07: Disable 1.5=0,1.4=0; SignalHorn \"01\" 1.5=0,1.4=1 / old-gen 0600: Disable 12.4=0,12.3=0; SignalHorn 12.4=0,12.3=1). Enabled = activate + sound device Signal Horn; Disabled = activate 0 + sound device Disable. Step 2: Alarm_UseSignalhorn BuildAltCodingSwitchForUnit09(\"0D07\",0,7,\"0D07\",0,7) (same address both generations, so it is its own step because old-gen step 1 writes 0600). Siren option (1.5=1,1.4=0 / 12.4=1,12.3=0) not offered since these cars have no siren. 2026-11-03 audit: the step-1 'enabled' choice is guarded with when.bytes (new-gen 0D07 bit 1.5 = 0, old-gen 0600 bit 12.4 = 0), so a car whose BCM already has the alarm sound device set to Siren (a factory alarm with siren) refuses instead of being silently switched to the horn. Vendor caveat: Alarm_UseSignalhorn and Alarm_AlarmSignal (FrequencyModulated=0 / Discontinuous=1) both address 0D07 bit 0.7; step 2 sets it to 1 either way, which matches both readings for a horn alarm.",
+  "wl-auto-folding-mirrors": "Mirrors.decompiled.cs Mirrors_FunkSpiegelanklappen BuildAltCodingSwitchForUnit09(\"0A6E\",0,3,\"0D0D\",3,0) (\"Spiegelverstellung-Funk Spiegelanklappen\") and Mirrors_FoldingOptionsInMMI (\"0A6E\",0,6,\"0D0D\",3,3). On = both 1; Off = funk 0 (menu bit left as is, restored from backup on undo). The catalogue Auto (single click) vs Manual (long press) split has no implementation in the vendor corpus (searched Mirrors.cs, carscanner-candidates for anklapp/click/fold/mirror); both map to On.",
+  "csmqb-mqb-driver-electric-window-time-after-ignition-turned-off": "Doors.cs MQB_DriverElectricWindowTimeAfterIgnitionTurnedOff (lines 242-250): MQBAlternativeContainerForUnit09(true,\"0A69\",\"31347\",1,1,5.0,0.0) / (false,\"0D0D\",\"31347\",4,1,5.0,0.0) = byteOffset, dataLength, multiplier 5 s, offset 0; ValueType InputValueType. Added presets (physical seconds): Off=0, On=600 s (raw 120); free value via value:<seconds> 0..1275.",
+  "csmqb-enable-key-fob-while-engine-running": "Doors.cs EnableKeyFobWhileEngineRunning (lines 9-43): new-gen 0A65 0.3 / old-gen 0D08 0.0, Enable=1. Existing field alt is correct; mapped as-is.",
+  "csmqb-lock-auto-unlock-when-selector-in-parking-nar": "Doors.cs Lock_AutoUnlockWhenSelectorInParking_NAR (lines 437-471): new-gen 0A6A 0.2 / old-gen 0D08 3.3. Existing field alt is correct.",
+  "csmqb-lock-auto-unlock": "Doors.cs Lock_AutoUnlock (lines 365-399): new-gen 0A6A 0.1 / old-gen 0D08 0.3. Existing field alt is correct.",
+  "csmqb-mqb-05-automatically-lock-car-doors": "Doors.cs MQB_05_AutomaticallyLockCarDoors (lines 296-327): two plain MQBAlternativeContainer (B7 732/79C, pw 20103): 0570 0.5 then 0600 2.4. MQBAlternativeCoding.Execute (MQBAlternativeCoding.cs:871-927) writes ONLY the first container whose CheckIsSupported passes, so these are ordered alternatives (first DID that reads), not two parts. Mapped as-is.",
+  "csadapt-10204": "Cluster (17) adaptation \"Leaving Warning\" 0600 byte12 bit4 from carscanner-embedded mqbadaptations.db. Closest implemented channel for the door-open/key warning tone; only On/Off. The catalogue driver-door vs all-doors split has no implementation anywhere (searched C# corpus for Gong/Summer/offen/DoorOpen/key left/Tuer and carscanner-candidates for warn/door/chime/ding).",
+  "csadapt-10000": "ABS (03) adaptation 0E1C byte0 (XDS strength) from carscanner-embedded mqbadaptations.db: 1 Default, 2 NotActive, 3 Weak, 4 Medium, 5 Hard. Prerequisite coding MQB_03_XDS_Activation (Brakes.decompiled.cs:64, 0600 byte23 bits1-2; 01 = engine <=110 kW) is a separate recipe and is not written by this feature.",
+  "one-touch-power-windows-settings": "capture-required (docs/research/REMAINING_FEATURES.md #49, capture-diff, med): Carista lists 'Stop one-touch window movement after a door is opened' but no source gives the DID/bit; candidates are one bit in BCM 0A65/0A68/0A69/0A6A/0A6E (or door modules 42/52 0600), to be found by a VCDS/Carista toggle + read diff (capture plan Phase 3.2). Vendor search: VAGCoder managed/*.cs (window, Fenster, one touch, Tipp, Einklemm, door open, Tuer, offen, komfort) and carscanner-candidates.json (711 entries incl. all csadapt labels) have no such channel. Not mapped.",
+  "comfort-windows-menu": "capture-required (docs/research/REMAINING_FEATURES.md #48, capture-diff, med): Carista 'Allow configuring open/close windows with remote via infotainment: Disabled / View-only / Adjustable' is probably a 2-bit field in 0A69 (new BCM) / 0D0D (old BCM) like the vendor's Lock_Unlockmenu (0A6A bits 0.6/0.5), but no source names the bits; RaiseAndLowerWindowsWithKeyFob sets 0A69 bits 0.3/0.6/2.0/2.2/2.5 without saying which (if any) is the menu. Needs a Disabled -> View-only -> Adjustable capture diff of 0A69/0A76/0D0D (capture plan Phase 3.1). Vendor search: managed/*.cs (menu, Menuesteuerung, window, Fenster, comfort, Komfort) and carscanner-candidates.json: only lock/unlock/mirror/acoustic/DRL/TPMS/wiper MMI menus exist. Not mapped."
+ }
+}

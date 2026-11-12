@@ -1,0 +1,18 @@
+{
+  // OBDCraft private log Worker. Deploy: `npm run logs:deploy` (from the repo root).
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "obdcraft-logs",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  // Daily retention run (see migrations/0001_init.sql).
+  "triggers": { "crons": ["17 3 * * *"] },
+  // Exact origins; *.vibecodemycar.pages.dev and *.obdcraft.pages.dev previews and localhost / 127.0.0.1 on any port are always allowed (worker.ts).
+  "vars": {
+    "ALLOWED_ORIGINS": "http://localhost:4173,http://localhost:5173,https://obdcraft.pages.dev,https://vibecodemycar.pages.dev"
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "obdcraft-logs", "database_id": "cf5f0a0f-a6dd-438b-825d-75cb93d57a24", "migrations_dir": "migrations" }
+  ]
+  // Secret (not in this file): ENROLLMENT_CODE — set with `wrangler secret put ENROLLMENT_CODE`.
+}

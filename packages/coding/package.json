@@ -1,0 +1,14 @@
+{
+  "name": "@obdcraft/coding",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./blocks": "./src/blocks.ts"
+  },
+  "dependencies": {
+    "@obdcraft/obd-core": "0.1.0"
+  },
+  "sideEffects": false
+}

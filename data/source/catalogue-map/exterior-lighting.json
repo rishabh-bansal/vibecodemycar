@@ -1,0 +1,292 @@
+{
+ "scandinavian-drls": {
+  "recipe": "group:rear-side-lights-turn-on-when-daytime-running-lights-are-active-scandiavian-drls-name-skoda-kodiaq-etc",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Rear lamp channels 0567/0568 get a DRL (0x14) function in slot C at dimming 70. Assumes slot C is free (true on the Kushaq 2Q0937089D BCM)."
+ },
+ "drl-on-with-auto": {
+  "recipe": "csmqb-turn-off-drlwhen-light-switch-off",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "DRL off when the light switch is at 0, so DRL runs only in AUTO. New BCM 0A58 byte4 bit2, old 0D02 byte1 bit2."
+ },
+ "us-style-turn-lights": {
+  "recipe": "group:front-turn-lights-always-active-at-half-power-us-style",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Front turn lamps 0550/0551 also run as position lamps at the vendor fixed 30% level (halogen turn bulbs)."
+ },
+ "comfort-turn-signals": {
+  "byPlatform": {
+   "MQB-A0-IN": "live-bcm-polite-blinks",
+   "MQB": "el-comfort-turn-signals"
+  },
+  "settings": {
+   "2 blinks": "value-2",
+   "3 blinks": "value-3",
+   "4 blinks": "value-4",
+   "5 blinks": "value-5"
+  },
+  "note": "Live-verified on 2Q0937089D: 0A5E byte0 bits1-2 plus byte0 bit4=1 (vendor TurnLightsPoliteBlinks). MQB family uses el-comfort-turn-signals, the same routine with the vendor Unit09 BCM-generation switch (old BCM 0D00 byte0 bits1-2 + bit7=1). The vendor has no Off option."
+ },
+ "headlight-notification": {
+  "recipe": "csmqb-disable-turn-on-light-warning-09",
+  "settings": {
+   "Notification off": "enabled",
+   "Notification on": "disabled"
+  },
+  "note": "Dashboard.cs DisableTurnOnLightWarning_09: Enable (= hide the warning) clears 0A57 byte1 bits3-4; Disable sets them (value 3)."
+ },
+ "coming-home-lights-operation": {
+  "recipe": "csmqb-coming-home-activation",
+  "settings": {
+   "Off": "disabled",
+   "Manual": "enabled",
+   "Automatic": "value-10"
+  },
+  "note": "New BCM 0A57 ops derived from ComingHomeActivation (also sets CH duration 60 s)."
+ },
+ "drl-off-with-handbrake": {
+  "recipe": "csmqb-turn-off-drlwhen-parking-brake-on",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "drl-settings-in-multimedia": {
+  "recipe": "csmqb-drlsteup-in-mmi",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "fog-lights-with-high-beam": {
+  "recipe": "group:front-fog-lights-activate-with-high-beam",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Fog lamp channels 055C/055D get the high-beam function in slot G, so the fogs light together with high beam."
+ },
+ "drl-activation-deactivation": {
+  "recipe": "csmqb-driving-lights-by-day",
+  "settings": {
+   "Off": "disabled",
+   "DRL lamps": "enabled",
+   "Via position/low-beam lights": "value-10",
+   "Disabled-person light": "value-11"
+  },
+  "note": "0A58 byte4 bits0-1 (old 0D02 byte1 bits0-1), ExteriorLights.cs DrivingLightsByDay."
+ },
+ "front-fog-lights-when-reversing": {
+  "recipe": "csmqb-turn-on-fog-lights-when-reversing",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "cornering-lights": {
+  "recipe": "group:corner-function-activation",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "3 parts: 055C/055D FunctionB = corner left/right, plus 0D1D corner parameters (restored from backup on Off)."
+ },
+ "coming-home-lights-activation-type": {
+  "recipe": "csmqb-coming-home-activation-events",
+  "settings": {
+   "Ignition off": "disabled",
+   "Driver door opened": "enabled"
+  }
+ },
+ "fog-lights-with-flash-to-pass": {
+  "recipe": "group:front-fog-lights-blink-with-high-beam-blink",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "position-lights-with-turn-signals": {
+  "recipe": "group:rear-side-lights-wink-with-rear-turn-lights",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0567/0568 slot G = turn left/right (02/04) with dimming-direction GH = minimize. Single vendor configuration."
+ },
+ "high-intensity-brake-light": {
+  "recipe": "el-high-intensity-brake-light",
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  }
+ },
+ "emergency-braking-lights": {
+  "recipe": "el-emergency-braking-lights",
+  "settings": {
+   "Off": "disabled",
+   "Brakes": "brakes",
+   "Turn signals": "turn-signals",
+   "Brakes and Turn signals": "both"
+  }
+ },
+ "ch-lh-lights-variant": {
+  "recipe": "csmqb-coming-home-lamps",
+  "settings": {
+   "Low beam": "disabled",
+   "Fog lights": "enabled"
+  }
+ },
+ "auto-headlights-settings": {
+  "recipe": "csmqb-light-sensor-sensivity",
+  "settings": {
+   "Early": "disabled",
+   "Normal": "enabled",
+   "Late": "value-10"
+  },
+  "note": "Light sensor sensitivity: Sensitive = turns on earlier."
+ },
+ "headlight-washer": {
+  "recipe": "csmqb-mqb-headlight-washer-interval",
+  "note": "Washes counter (0A73 byte1 / old 0D05 byte0). No vendor installed/off bit exists, so OFF is not available."
+ },
+ "headlight-washer-activation-count": {
+  "recipe": "csmqb-mqb-headlight-washer-interval",
+  "note": "Free value 1-20 (0A73 byte1)."
+ },
+ "headlight-washer-activation-delay": {
+  "recipe": "csmqb-mqb-delay-before-headlight-washer",
+  "note": "Free value in ms, step 10 ms (0A73 byte2 x10). 0.5-2.5 s = 500-2500."
+ },
+ "headlight-washer-activation-time": {
+  "recipe": "csmqb-mqb-headlight-washer-duty-duration",
+  "note": "Free value in ms, step 10 ms (0A73 byte3 x10)."
+ },
+ "led-license-plate-lamps": {
+  "recipe": "csmqb-license-plate-lamps-type",
+  "settings": {
+   "5W bulb": "5w",
+   "LED": "led",
+   "LED (low power)": "led-low"
+  }
+ },
+ "drl-with-fog-lights": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-drl-with-fog-lights"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "Front fog lamps get the daytime running light function in slot C at 100%. Needs slot C free (true on the Kushaq 2Q0937089D BCM); otherwise the plan refuses."
+ },
+ "third-brake-light-when-trunk-open": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-third-brake-light-trunk-open"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0566 (3rd brake light) slot C = 0x21 tailgate open at 100%. Needs A = 0x18 (brake light) and slots C/D free; otherwise the plan refuses."
+ },
+ "third-brake-light-with-drl": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-third-brake-light-drl"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0566 slot E = 0x14 DRL at 10%, maximise (braking still goes to full). Needs A = 0x18 and slots E/F free."
+ },
+ "third-brake-light-with-coming-leaving-home-lights": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-third-brake-light-ch-lh"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0566 slot G = 0x1E coming/leaving home at 100%. Needs A = 0x18 and slots G/H free."
+ },
+ "brake-lights-when-trunk-open": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-brake-lights-trunk-open"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0564/0565 (brake lights) slot C = 0x21 tailgate open at 100%. Needs A = 0x18 and slots C/D free on each lamp."
+ },
+ "taillights-when-trunk-open": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-taillights-trunk-open"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0567/0568 (tail lights) slot E = 0x21 tailgate open at 100% (C is Scandinavian DRL, G the wink). Needs A = 0x08 and slots E/F free."
+ },
+ "license-plate-lights-with-trunk-open": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-license-plate-trunk-open"
+  },
+  "settings": {
+   "ON when open": "enabled",
+   "OFF when open": "off-when-open",
+   "Default": "disabled"
+  },
+  "note": "0569 (number-plate light) slot C = 0x21 tailgate open: 100% maximise (on) or 0% minimise (off). Default clears slot C. Needs slots C/D free."
+ },
+ "license-plate-lights-with-drl": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-license-plate-drl"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0569 slot E = 0x14 DRL at 100%. Needs slots E/F free."
+ },
+ "turn-signals-with-ch-lh": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-turn-signals-ch-lh"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0550/0551 (front turn lamps) slot G = 0x1E coming/leaving home at 100% (D/E belong to US-style). Fixed brightness. Needs A = 0x02/0x04 and slots G/H free."
+ },
+ "fogs-off-with-high-beams": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-fogs-off-with-high-beam"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "055C/055D slot G = high beam L/R (0x0D/0x0E) with dim GH 0 + minimise (byte15 0x80), so the fogs go dark while high beam is on. Refuses while Fog Lights with High Beam or with Flash-to-Pass is on (same slot G/H)."
+ },
+ "drl-on-with-parking-lights": {
+  "byPlatform": {
+   "MQB-A0-IN": "el-drl-with-parking-lights"
+  },
+  "settings": {
+   "On": "enabled",
+   "Off": "disabled"
+  },
+  "note": "0552/0553 (front side/DRL lamps) dim CD 0x1C -> 0x64, so the position light (C = 0x08) runs at DRL brightness. Needs C = 0x08 and dim CD 0x1C (Kushaq stock); otherwise refuses."
+ }
+}

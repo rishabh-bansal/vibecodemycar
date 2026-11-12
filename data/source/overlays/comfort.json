@@ -1,0 +1,1256 @@
+{
+  "recipes": {
+    "group:comfort-entry-driver-seat": {
+      "kind": "group",
+      "raw": false,
+      "did": null,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled"
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled"
+        }
+      ]
+    },
+    "group:comfort-entry-passenger-seat": {
+      "kind": "group",
+      "raw": false,
+      "did": null,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled"
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled"
+        }
+      ]
+    },
+    "group:teardrop-mode-additional-wipers-pass-on-the-windshield": {
+      "kind": "group",
+      "variants": null,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled"
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled"
+        }
+      ]
+    },
+    "csmqb-mqb-5-f-developer-mode-activation": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled",
+          "ops": [
+            {
+              "byte": 0,
+              "bit": 0,
+              "len": 8,
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "sequence": {
+        "pre": [
+          "104F"
+        ],
+        "post": []
+      }
+    },
+    "csadapt-10188": {
+      "scalar": {
+        "byteOffset": 5,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": 0,
+        "unit": "s"
+      }
+    },
+    "csadapt-10037": {
+      "scalar": {
+        "byteOffset": 1,
+        "dataLength": 1,
+        "multiplier": 40,
+        "offset": 0,
+        "unit": "s"
+      }
+    },
+    "csadapt-10039": {
+      "scalar": {
+        "byteOffset": 2,
+        "dataLength": 1,
+        "multiplier": 40,
+        "offset": 0,
+        "unit": "s"
+      }
+    },
+    "csadapt-10186": {
+      "scalar": {
+        "byteOffset": 13,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": -10,
+        "unit": "°C"
+      }
+    },
+    "csadapt-10287": {
+      "scalar": {
+        "byteOffset": 55,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": 0,
+        "unit": "%",
+        "min": 0,
+        "max": 100
+      }
+    },
+    "csadapt-10013": {
+      "scalar": {
+        "byteOffset": 0,
+        "dataLength": 1,
+        "multiplier": 1,
+        "offset": -10,
+        "unit": "dB",
+        "min": -10,
+        "max": 10
+      }
+    },
+    "csadapt-10335": {
+      "kind": "alt",
+      "field": null,
+      "choices": null,
+      "did": null,
+      "variants": [
+        {
+          "selector": "mib3",
+          "did": "0B1B",
+          "password": "31347",
+          "kind": "field",
+          "field": {
+            "byteOffset": 23,
+            "bitOffset": 5,
+            "bitLength": 1,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "res-disable",
+              "label": "DISABLE",
+              "value": 0
+            },
+            {
+              "id": "res-enable",
+              "label": "ENABLE",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "steps": {
+    "csmqb-mqb-36-comfort-entry-driver-side-part1-p1": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled",
+          "ops": [
+            {
+              "byte": 3,
+              "bit": 1,
+              "len": 1,
+              "value": 1
+            },
+            {
+              "byte": 9,
+              "bit": 6,
+              "len": 1,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled",
+          "ops": [
+            {
+              "byte": 3,
+              "bit": 1,
+              "len": 1,
+              "value": 0
+            },
+            {
+              "byte": 9,
+              "bit": 6,
+              "len": 1,
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-mqb-36-comfort-entry-driver-side-part2-p2": {
+      "variants": [
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B3C",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B1B",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 1
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 1
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-mqb-36-comfort-entry-driver-side-part3-p3": {
+      "variants": [
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B3D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 16,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B1D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 99
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 16,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 16,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 16,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-mqb-06-comfort-entry-passenger-side-part1-p1": {
+      "kind": "ops",
+      "raw": false,
+      "choices": [
+        {
+          "id": "enabled",
+          "label": "Enabled",
+          "ops": [
+            {
+              "byte": 3,
+              "bit": 1,
+              "len": 1,
+              "value": 1
+            },
+            {
+              "byte": 6,
+              "bit": 4,
+              "len": 1,
+              "value": 1
+            },
+            {
+              "byte": 9,
+              "bit": 6,
+              "len": 1,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "id": "disabled",
+          "label": "Disabled",
+          "ops": [
+            {
+              "byte": 3,
+              "bit": 1,
+              "len": 1,
+              "value": 0
+            },
+            {
+              "byte": 6,
+              "bit": 4,
+              "len": 1,
+              "value": 0
+            },
+            {
+              "byte": 9,
+              "bit": 6,
+              "len": 1,
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-mqb-06-comfort-entry-passenger-side-part2-p2": {
+      "variants": [
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B3C",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B1B",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 1
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 7,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 5,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 1
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 14,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 14,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "csmqb-mqb-06-comfort-entry-passenger-side-part3-p3": {
+      "variants": [
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B3D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 32,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "selector": "MQBAlternativeContainer",
+          "requiresNewBcm": false,
+          "did": "0B1D",
+          "password": null,
+          "kind": "ops",
+          "choices": [
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 99
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 8,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": true
+              }
+            },
+            {
+              "id": "enabled",
+              "label": "Enabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 1
+                },
+                {
+                  "byte": 32,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "ops": [
+                {
+                  "byte": 32,
+                  "bit": 0,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 1,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 2,
+                  "len": 1,
+                  "value": 0
+                },
+                {
+                  "byte": 32,
+                  "bit": 3,
+                  "len": 1,
+                  "value": 0
+                }
+              ],
+              "when": {
+                "mib3": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "newRecipes": {
+    "comfort:multimedia-startup-logo": {
+      "id": "comfort:multimedia-startup-logo",
+      "name": "Startup Screen For Multimedia System",
+      "kind": "alt",
+      "unit": "5F",
+      "requestId": "773",
+      "responseId": "7DD",
+      "password": null,
+      "did": null,
+      "variants": [
+        {
+          "selector": "mib25",
+          "did": "0600",
+          "password": null,
+          "kind": "field",
+          "field": {
+            "byteOffset": 18,
+            "bitOffset": 0,
+            "bitLength": 8,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "logo-0",
+              "label": "Default",
+              "value": 0
+            },
+            {
+              "id": "logo-1",
+              "label": "01) Skoda vRS with top stripes [PR-A8F]/ VW Twin Drive / Seat FR",
+              "value": 1
+            },
+            {
+              "id": "logo-2",
+              "label": "02) Skoda SCOUT / VW GTD / Seat Highline",
+              "value": 2
+            },
+            {
+              "id": "logo-3",
+              "label": "03) Skoda Laurin & Klement / VW GTI / Seat Ecomotive",
+              "value": 3
+            },
+            {
+              "id": "logo-4",
+              "label": "04) Skoda Greenline / VW BlueMotion / Seat",
+              "value": 4
+            },
+            {
+              "id": "logo-5",
+              "label": "05) Skoda / VW e-Golf / Seat X-perience",
+              "value": 5
+            },
+            {
+              "id": "logo-6",
+              "label": "06) Skoda --- / VW RLine / Seat FRline",
+              "value": 6
+            },
+            {
+              "id": "logo-7",
+              "label": "07) Skoda Monte Carlo / VW R / Seat",
+              "value": 7
+            },
+            {
+              "id": "logo-8",
+              "label": "08) Skoda Facelift / VW AllTrack / Seat Beatsaudio",
+              "value": 8
+            },
+            {
+              "id": "logo-9",
+              "label": "09) vRS without top stripes [PR-A8F] / VW GTE / Seat ---",
+              "value": 9
+            },
+            {
+              "id": "logo-10",
+              "label": "10) Skoda SCOUT Facelift / VW Elegance / Seat Cupra",
+              "value": 10
+            },
+            {
+              "id": "logo-11",
+              "label": "11) Skoda Laurin & Klement Facelift / VW MAN / Seat ---",
+              "value": 11
+            },
+            {
+              "id": "logo-12",
+              "label": "12) Monte Carlo Facelift / VW --- / Seat ---",
+              "value": 12
+            },
+            {
+              "id": "logo-13",
+              "label": "13) Skoda Sportline / VW Empty / Seat ---",
+              "value": 13
+            },
+            {
+              "id": "logo-14",
+              "label": "14) Skoda vRS Facelift / VW --- / Seat ---",
+              "value": 14
+            },
+            {
+              "id": "logo-15",
+              "label": "15) ---",
+              "value": 15
+            },
+            {
+              "id": "logo-16",
+              "label": "16) Skoda --- / VW Beatsaudio / Seat ---",
+              "value": 16
+            },
+            {
+              "id": "logo-17",
+              "label": "17) Skoda --- / VW Family / Seat ---",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "selector": "mib3",
+          "did": "0556",
+          "password": null,
+          "kind": "field",
+          "field": {
+            "byteOffset": 1,
+            "bitOffset": 0,
+            "bitLength": 8,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "logo-0",
+              "label": "Default",
+              "value": 0
+            },
+            {
+              "id": "logo-1",
+              "label": "01) Skoda vRS with top stripes [PR-A8F]/ VW Twin Drive / Seat FR",
+              "value": 1
+            },
+            {
+              "id": "logo-2",
+              "label": "02) Skoda SCOUT / VW GTD / Seat Highline",
+              "value": 2
+            },
+            {
+              "id": "logo-3",
+              "label": "03) Skoda Laurin & Klement / VW GTI / Seat Ecomotive",
+              "value": 3
+            },
+            {
+              "id": "logo-4",
+              "label": "04) Skoda Scout Line / VW BlueMotion / Seat",
+              "value": 4
+            },
+            {
+              "id": "logo-5",
+              "label": "05) Skoda Monte Carlo / VW e-Golf / Seat X-perience",
+              "value": 5
+            },
+            {
+              "id": "logo-6",
+              "label": "06) Skoda --- / VW RLine / Seat FRline",
+              "value": 6
+            },
+            {
+              "id": "logo-7",
+              "label": "07) Skoda Monte Carlo / VW R / Seat",
+              "value": 7
+            },
+            {
+              "id": "logo-8",
+              "label": "08) Skoda Facelift / VW AllTrack / Seat Beatsaudio",
+              "value": 8
+            },
+            {
+              "id": "logo-9",
+              "label": "09) vRS without top stripes [PR-A8F] / VW GTE / Seat ---",
+              "value": 9
+            },
+            {
+              "id": "logo-10",
+              "label": "10) Skoda SCOUT Facelift / VW Elegance / Seat Cupra",
+              "value": 10
+            },
+            {
+              "id": "logo-11",
+              "label": "11) Skoda Laurin & Klement Facelift / VW MAN / Seat ---",
+              "value": 11
+            },
+            {
+              "id": "logo-12",
+              "label": "12) Monte Carlo Facelift / VW --- / Seat ---",
+              "value": 12
+            },
+            {
+              "id": "logo-13",
+              "label": "13) Skoda Sportline / VW Empty / Seat ---",
+              "value": 13
+            },
+            {
+              "id": "logo-14",
+              "label": "14) Skoda vRS Facelift / VW --- / Seat ---",
+              "value": 14
+            },
+            {
+              "id": "logo-15",
+              "label": "15) ---",
+              "value": 15
+            },
+            {
+              "id": "logo-16",
+              "label": "16) Skoda --- / VW Beatsaudio / Seat ---",
+              "value": 16
+            },
+            {
+              "id": "logo-17",
+              "label": "17) Skoda --- / VW Family / Seat ---",
+              "value": 17
+            }
+          ]
+        }
+      ]
+    },
+    "comfort:heated-seats-memory": {
+      "id": "comfort:heated-seats-memory",
+      "name": "Heated Seats Memory",
+      "kind": "group",
+      "unit": "08",
+      "requestId": "746",
+      "responseId": "7B0",
+      "password": null,
+      "did": null,
+      "steps": [
+        {
+          "id": "comfort:heated-seats-memory#264D",
+          "kind": "field",
+          "unit": "08",
+          "requestId": "746",
+          "responseId": "7B0",
+          "password": null,
+          "did": "264D",
+          "field": {
+            "byteOffset": 0,
+            "bitOffset": 0,
+            "bitLength": 8,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "res-codingdb-opt-notactive",
+              "label": "NotActive",
+              "value": 0
+            },
+            {
+              "id": "res-codingdb-opt-active",
+              "label": "Active",
+              "value": 1
+            },
+            {
+              "id": "res-codingdb-opt-activefor10minutes",
+              "label": "ActiveFor10Minutes",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "id": "comfort:heated-seats-memory#27D9",
+          "kind": "field",
+          "unit": "08",
+          "requestId": "746",
+          "responseId": "7B0",
+          "password": null,
+          "did": "27D9",
+          "field": {
+            "byteOffset": 0,
+            "bitOffset": 0,
+            "bitLength": 8,
+            "byteOrder": "big"
+          },
+          "choices": [
+            {
+              "id": "res-codingdb-opt-notactive",
+              "label": "NotActive",
+              "value": 0
+            },
+            {
+              "id": "res-codingdb-opt-active",
+              "label": "Active",
+              "value": 1
+            },
+            {
+              "id": "res-codingdb-opt-activefor10minutes",
+              "label": "ActiveFor10Minutes",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "res-codingdb-opt-notactive",
+          "label": "NotActive"
+        },
+        {
+          "id": "res-codingdb-opt-active",
+          "label": "Active"
+        },
+        {
+          "id": "res-codingdb-opt-activefor10minutes",
+          "label": "ActiveFor10Minutes"
+        }
+      ]
+    }
+  },
+  "notes": {
+    "group:comfort-entry-driver-seat": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Seats.decompiled.cs Seats.MQB_36_ComfortEntryDriverSide (lines 10-130): MQBMultipleCoding of 3 parts. Part1 MQBEasyCodingItem 36 (74C/7B6) DID 0600: Enable sets SwitchBitInByte(3,1)+(9,6), Disable clears both. Part2 MQBAlternativeCoding 5F (773/7DD) first-match containers 0B3C [bits 14.0,14.2] then 0B1B [IsMIB3 ? bits 14.7,14.5 : bits 14.0,14.2]. Part3 containers 0B3D [16.0=value, 16.1..16.3 cleared] then 0B1D [IsMIB3 ? array[16]=99/0 : same as 0B3D]. Replaces the extractor field on 0B3C (bitLength 3 = 5) which would also have forced bit 14.1; vendor only touches bits 0 and 2. Vendor passwords empty -> unit default.",
+    "group:comfort-entry-passenger-seat": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Seats.decompiled.cs Seats.MQB_06_ComfortEntryPassengerSide (lines 132-268): 4 parts. Part1 MQBEasyCodingItem 06 (74D/7B7) DID 0600: bits 3.1, 6.4, 9.6 set/cleared. Part2 = same 0B3C/0B1B pair as driver (byte 14). Part3 0B3D [32.0=value, 32.1..32.3 cleared] / 0B1D [IsMIB3 ? array[32]=99/0 : as 0B3D]. Part4 (already a correct field in the corpus) = 36 0600 bit 6.4.",
+    "group:teardrop-mode-additional-wipers-pass-on-the-windshield": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Washer.decompiled.cs Washer.DropsTear_FrontWiper (lines 36-82): MQBMultipleCoding = alt(0A72 bit1.2 new BCM / 0D05 bit7.2 old BCM) + 09 DID 6001 bit2.5. Steps were already correct in the corpus; only the top-level (a copy of part1) is turned into kind group so part 2 is never skipped.",
+    "csmqb-mqb-5-f-developer-mode-activation": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Multimedia.decompiled.cs Multimedia.MQB_5F_DeveloperModeActivation (lines 349-369): 5F DID 243F, Enable array[0]=1 else array[0]=0. Vendor sets PreWriteCommands = \"104F\" (switch 5F to diagnostic session 0x4F before the write) - carried as sequence.pre; the writer must send it before 2E243F or the write may get NRC 7F/31.",
+    "comfort:multimedia-startup-logo": "carscanner-candidates.json csadapt-10077 (Adaptation@773:0600, byte18 whole byte, MIB2 long coding) and csadapt-10231 (Adaptation@773:0556 byte1, MIB3 adaptation channel) - same option list. Combined as alt mib25/mib3 (isMib3 from F19E/ASAM) so a MIB3 unit never gets byte18 of its differently-laid-out 0600. Choice ids normalised to logo-<value> so both variants share ids; labels kept per variant (04/05 differ). Head unit reboots after the write.",
+    "comfort:heated-seats-memory": "carscanner-candidates.json csadapt-10008 (Adaptation@746:264D) + csadapt-10010 (Adaptation@746:27D9), both 08 whole-byte NotActive=0/Active=1/ActiveFor10Minutes=2. One per seat side (driver/passenger split inferred - the Russian labels say only \"Off\"); written together so both seats behave the same. csadapt-10012 (27D8) is NOT included (different semantics).",
+    "csadapt-10037": "mqbadaptations.db valueType vt1/dl1/sbi1, multiplier 40 kept as the vendor states it (factory 5.5 min = 330 s reads back as raw 8 -> 320 s if the factor is right). Unit s.",
+    "csadapt-10039": "mqbadaptations.db valueType vt1/dl1/sbi2, multiplier 40 as vendor. Unit s.",
+    "leaving-home-time": "capture-required (REMAINING_FEATURES #27, capture-diff, med): channel is 09 'Menueeinstellung Leaving-home Zeit per BAP' (vag-coding T-Roc A1 / Q3 8U), 0..90 s; its byte is only guessed to sit near the proven coming-home byte (0A57 byte5). Needs: set 37 s with VCDS, diff 0A57/0A58/0A5E. Not mapped. Earlier search: searched C# corpus (ExteriorLights ComingHomeLamps/ComingHomeActivation/ComingHomeActivationEvents, all 0A57/0D04 users) and candidates for leav|home|Abschied: only coming-home duration (csadapt-10188 0A57 byte5) exists; no leaving-home duration byte",
+    "speed-dependent-wipers": "capture-required, probably absent (REMAINING_FEATURES #37, low): no MQB channel in any source. Not mapped. Earlier search: searched Washer.decompiled.cs (all 18 builders) and candidates for wiper|wisch|speed|geschw: no speed-dependent wiper bit",
+    "signal-horn-always-operable": "capture-required (REMAINING_FEATURES #28, capture-diff, med): channel 09 'Zusatzfunktionen - Signalhorn ohne KL 15' (vag-coding Kamiq NW, spot-checked; Q2 GA) is real but its DID/bit is unknown. Needs a VCDS toggle + read diff on BCM adaptation ranges 0A40..0A9F/0D00..0D2F. Not mapped. Earlier search: searched horn|hupe|signal: only Alarm_UseSignalhorn, AcousticFeedbackSignalHorn, AcousticFeedbackDuration... (lock feedback), no terminal-15 horn availability",
+    "phone-in-dashboard": "capture-required (REMAINING_FEATURES #32, capture-diff, low): a 17 0600 bit possibly plus a 5F function-list entry; no byte source. Not mapped. Earlier search: searched phone|telef|tele: only MQB_5F_SecondPhoneSupport, csadapt-10232 antenna, csadapt-10114 SMS menu; no cluster phone menu",
+    "increased-engine-responsiveness": "capture-required (REMAINING_FEATURES #29, capture-diff, med): channel 44 (712/77C, login 19249) 'Driving profile switchover' = 'Direct controlled over threshold value' (vag-coding Kamiq NW spot-checked, Fabia 4 PJ); DID probably 44 19xx but not the existing 1920 field (csadapt-10048). Effect on engine response is unverified community claim. Not mapped. Earlier search: searched unit 01 / engine / throttle / brand: only IdleRPMAdaptationDiesel, DPF, ThrottleAdaptationRoutine (basic setting), no engine brand coding",
+    "dashboard-startup-logo": "capture-required (REMAINING_FEATURES #30, capture-diff, med): cluster 17 'Displaydarstellung' / Carista 'Start screen logo Type 1-8'; only lead is csadapt-10078 (17 0600 'Variant 1', no field position). Needs a Carista change + 0600 diff on a digital cluster. Not mapped. Earlier search: searched logo|startup|Begruessung in C# and candidates: only 5F startup screen (10077/10231), 5F badge 10111, VW RLogo 0E4E (10135); csadapt-10078 is an unlabelled raw 0600 block. No cluster logo byte",
+    "brake-pad-warning": "not-possible (REMAINING_FEATURES #36, med): needs a pad-wear sensor, not fitted on MQB-A0-IN; the known coding bits are for older platforms (Q3 8U / A4 B8). Not mapped. Earlier search: searched brake|pad|belag|wear: only ESC/HHC/XDS/brake-booster/bleeding; no pad-wear sensor coding",
+    "engine-speed-rpm-in-dashboard": "capture-required (REMAINING_FEATURES #33, capture-diff, low): only lead is csadapt-10030 (17 0D60 byte0, values 0..15, unlabelled), which conflicts with speedometer-scale-range; do not write until values are labelled. Not mapped. Earlier search: searched rpm|tacho|drehzahl: Dashboard.cs has FreeSpaceInFuelTank/LapTimer/OilTemp/Acceleration/OutsideTemp/SoC/120kmh only; csadapt-10030 0D60 speedometer style is unlabelled 0-15",
+    "sunroof-with-door-open": "capture-required (REMAINING_FEATURES #39, capture-diff, low): guessed to be a BCM 0A69 bit near the window bits or shared with one-touch-power-windows-settings (Yeti 5L only, older platform). Not mapped. Earlier search: searched Roof.decompiled.cs (AutomaticallyOpenAndCloseSunroofHoldingKeyFobKeys, EnableRoofInteriorLights) and sunroof|roof|schiebedach: no door-open stop behaviour",
+    "sunroof-action-via-remote": "capture-required (REMAINING_FEATURES #38, capture-diff, med): channel is in the sunroof module CA (login 20103) 'Ziellage bei Komfortoeffnen' (vag-coding Tiguan 2), DID/byte unknown; applies only where a CA unit is installed. The BCM key-fob sunroof delegate (Roof.cs, 0A76 bits 0.1+0.2 / 0D0D 1.4+1.5) sets both bits together and selects no tilt/slide position. Not mapped. Earlier search: searched Roof.decompiled.cs: the key-fob sunroof delegate sets 2 bits together (open+close), no tilt/slide selection",
+    "dashboard-view-change-animation": "not-possible on MQB-A0-IN and no source for MQB (REMAINING_FEATURES #34, low): no view carousel on the A0 cluster; no channel found for the Superb. Not mapped. Earlier search: searched anim|animation|transition in C# and candidates: nothing",
+    "engine-preheat": "not-possible (REMAINING_FEATURES #41, high): needs a unit 18 fuel-fired parking heater with N279/N147 valve. Not mapped. Earlier search: searched preheat|vorwaerm|heater|N279|unit 18 / Webasto: only parking heater procedures and alarm parking-heater flag",
+    "transmission-temperature": "not-possible (REMAINING_FEATURES #35, low): no gearbox-temperature display channel in any source (only engine oil MQB_17_OilTemperatureDisplay). Not mapped. Earlier search: searched transmission|getriebe|gear|temperature display: only MQB_17_OilTemperatureDisplay (engine oil) and Haldex anti-hum/impact",
+    "automatic-pdc-activation": "not-possible on rear-only PDC cars (REMAINING_FEATURES #40, low): needs front sensors; byte source (unit 10 byte3 bit4, vagcode.info) is for another platform. Not mapped. Earlier search: searched pdc|park|einpark|unit 10/76: only csadapt-10044 park-assist deactivation speed, park-assist patches for lane assist / TPMS",
+    "digital-speed-in-dashboard": "capture-required (REMAINING_FEATURES #31, capture-diff, med): probably one bit of cluster 17 0600 (Carista only; seatcupra 3680064); bit unknown. Not mapped. Earlier search: searched digital|speed|tacho in Dashboard.cs and candidates: only 120 km/h warning, speed warnings (228C/0E46), and csadapt-10030 0D60 style (unlabelled values)",
+    "allow-media-settings-while-moving": "capture-required (REMAINING_FEATURES #44, capture-diff, low): 5F adaptation (over_threshold / Tuner / Region / Disclaimer per vag-coding Ibiza 6F, Scribd 505525645) with no byte source; identify the head unit first (not possible on a non-MIB unit). Not mapped. Earlier search: searched moving|nhtsa|media|standstill: only MIB3 0B1B byte23 dashboard-menu availability bits (10331-10336) and MQB_5F_NHTSA_NoSoftKeyboard (CarPlay keyboard only)",
+    "multimedia-safety-disclaimer": "capture-required (REMAINING_FEATURES #47, capture-diff, low): 5F adaptation (over_threshold / Tuner / Region / Disclaimer per vag-coding Ibiza 6F, Scribd 505525645) with no byte source; identify the head unit first (not possible on a non-MIB unit). Not mapped. Earlier search: searched disclaimer|warning screen|nhtsa: only csadapt-10333 (MIB3 dashboard-menu \"after disclaimer\" availability), catalogue says MIB3 unsupported; no MIB2 disclaimer bit",
+    "allow-phone-settings-while-moving": "capture-required (REMAINING_FEATURES #45, capture-diff, low): 5F adaptation (over_threshold / Tuner / Region / Disclaimer per vag-coding Ibiza 6F, Scribd 505525645) with no byte source; identify the head unit first (not possible on a non-MIB unit). Not mapped. Earlier search: searched moving|nhtsa|phone: no phone-menu speed lock (NHTSA_NoSoftKeyboard is CarPlay keyboard only)",
+    "allow-radio-settings-while-moving": "capture-required (REMAINING_FEATURES #46, capture-diff, low): 5F adaptation (over_threshold / Tuner / Region / Disclaimer per vag-coding Ibiza 6F, Scribd 505525645) with no byte source; identify the head unit first (not possible on a non-MIB unit). Not mapped. Earlier search: searched moving|nhtsa|tuner|radio: no tuner-menu speed lock",
+    "fm-radio-settings": "capture-required (REMAINING_FEATURES #43, capture-diff, low): 5F adaptation (over_threshold / Tuner / Region / Disclaimer per vag-coding Ibiza 6F, Scribd 505525645) with no byte source; identify the head unit first (not possible on a non-MIB unit). Not mapped. Earlier search: searched radio|fm|tuner|region|raster: only AM radio enable, RadioArtDB country list and csadapt-10083/10189 MIB3 country codes (not the EU/NAR/JP tuner raster)",
+    "soundaktor": "not-possible (REMAINING_FEATURES #42, high): needs a unit A9 sound actuator. Not mapped. Earlier search: searched sound|aktor|A9|soundaktor: only alarm siren, MIB sound datasets, 47 amp preset, 6D tailgate beep and lock confirmation sound; no unit A9 coding",
+    "csadapt-10335": "mqbadaptations.db '[MIB3] Dashboard settings in MMI: Over threshold high' = 5F 0B1B byte23 bit5, DISABLE 0 / ENABLE 1. The vendor marks it MIB3-only, and MIB2.5 units host a differently laid-out 0B1B (Seats.MQB_36_ComfortEntryDriverSide writes 0B1B byte14 with separate IsMIB3 branches), so the field is wrapped as an alt with a single 'mib3' variant (variant-select MIB rule, isMib3 from F19E/ASAM): a MIB2.5 head unit, or one whose generation cannot be read, refuses instead of having byte 23 of a foreign layout changed. Same DID, bit and values as before."
+  }
+}

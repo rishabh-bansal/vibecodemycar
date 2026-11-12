@@ -1,0 +1,44 @@
+{
+  "high-beam-assist-memory": {
+    "recipe": "csmqb-high-beam-assistant-save-state",
+    "note": "Unit 09 alt (new BCM 0A60 byte0 bit4 / old BCM 0D0C byte1 bit1), inverted: Enabled=0."
+  },
+  "hill-hold-assist": {
+    "recipe": "csmqb-mqb-03-hill-hold-control-activation",
+    "note": "03/0600 byte25 bit0, pw 20103."
+  },
+  "esc-asr-deactivation": {
+    "recipe": "csmqb-mqb-03-escmenu",
+    "note": "ESC off menu: 03/0600 byte29 low nibble (ops derived from MQB_03_ESCMenu)."
+  },
+  "hill-start-assist-settings": {
+    "recipe": "csadapt-10005",
+    "settings": {
+      "Normal": "res-codingdb-opt-normal",
+      "Early (low RPM)": "res-codingdb-opt-early",
+      "Late (high RPM)": "res-codingdb-opt-late"
+    },
+    "note": "Hill Start Assistant adaptation 03/0E0D."
+  },
+  "park-assist-switch-off-speed": {
+    "recipe": "csadapt-10044",
+    "note": "Unit 10 adaptation 25E9, 1 byte, km/h; free value bounded 5..15 km/h (catalogue card range)."
+  },
+  "lane-assist-setting-memory": {
+    "recipe": "assist:lane-assist-save-state",
+    "note": "A5/0600, device alt 3Q0 (byte14) / 2Q0 (byte9)."
+  },
+  "lane-assist-wheel-vibration": {
+    "recipe": "csadapt-10137",
+    "settings": {
+      "Disabled": "disabled",
+      "Enabled": "enabled",
+      "Adjustable via multimedia menu": "via-menu"
+    },
+    "note": "A5/0600 byte13 bits1-2 from mqbadaptations.db."
+  },
+  "adaptive-lane-guidance": {
+    "recipe": "assist:adaptive-lane-guidance",
+    "note": "Group: A5 0600 adaptive lane assist + 5F menu patch + A5 09A3/09A4. Writes only on a 3Q*980654 camera; on 2Q*980653 / 5WA980653 the 09A3/09A4 steps have no variant, so the whole change refuses before writing."
+  }
+}

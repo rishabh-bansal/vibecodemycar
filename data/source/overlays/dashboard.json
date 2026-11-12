@@ -1,0 +1,1511 @@
+{
+ "recipes": {
+  "csadapt-10136": {
+   "name": "Seat Belt Warning Style",
+   "kind": "field",
+   "did": "0600",
+   "password": null,
+   "field": {
+    "byteOffset": 0,
+    "bitOffset": 2,
+    "bitLength": 3,
+    "byteOrder": "big"
+   },
+   "choices": [
+    {
+     "id": "disabled",
+     "label": "Off",
+     "value": 0
+    },
+    {
+     "id": "ncap",
+     "label": "Euro NCAP",
+     "value": 1
+    },
+    {
+     "id": "north-america",
+     "label": "North America",
+     "value": 2
+    },
+    {
+     "id": "ncap2",
+     "label": "Euro NCAP 2",
+     "value": 3
+    },
+    {
+     "id": "ncap2-enhanced",
+     "label": "Euro NCAP 2 enhanced",
+     "value": 4
+    }
+   ],
+   "auxWrites": [],
+   "toggle": false,
+   "issues": []
+  },
+  "csadapt-10128": {
+   "name": "Units Volume",
+   "kind": "field",
+   "did": "0600",
+   "password": null,
+   "field": {
+    "byteOffset": 6,
+    "bitOffset": 5,
+    "bitLength": 2,
+    "byteOrder": "big"
+   },
+   "choices": [
+    {
+     "id": "liter",
+     "label": "Liters",
+     "value": 0
+    },
+    {
+     "id": "gallons-uk",
+     "label": "Gallons (UK)",
+     "value": 1
+    },
+    {
+     "id": "gallons-us",
+     "label": "Gallons (US)",
+     "value": 2
+    }
+   ],
+   "auxWrites": [],
+   "toggle": false,
+   "issues": []
+  },
+  "csadapt-10132": {
+   "kind": "field",
+   "did": "0600",
+   "password": null,
+   "field": {
+    "byteOffset": 7,
+    "bitOffset": 2,
+    "bitLength": 2,
+    "byteOrder": "big"
+   },
+   "choices": [
+    {
+     "id": "mpg-uk",
+     "label": "mpg (UK)",
+     "value": 0
+    },
+    {
+     "id": "mpg-us",
+     "label": "mpg (US)",
+     "value": 1
+    },
+    {
+     "id": "l-100km",
+     "label": "l/100km",
+     "value": 2
+    },
+    {
+     "id": "km-l",
+     "label": "km/l",
+     "value": 3
+    }
+   ],
+   "auxWrites": [],
+   "toggle": false,
+   "issues": []
+  },
+  "csadapt-10131": {
+   "name": "Units Date Format",
+   "kind": "field",
+   "did": "0600",
+   "password": null,
+   "field": {
+    "byteOffset": 7,
+    "bitOffset": 0,
+    "bitLength": 2,
+    "byteOrder": "big"
+   },
+   "choices": [
+    {
+     "id": "dd-mm-yy",
+     "label": "DD.MM.YY",
+     "value": 0
+    },
+    {
+     "id": "mm-dd-yy",
+     "label": "MM.DD.YY",
+     "value": 1
+    },
+    {
+     "id": "yy-mm-dd",
+     "label": "YY.MM.DD",
+     "value": 2
+    }
+   ],
+   "auxWrites": [],
+   "toggle": false,
+   "issues": []
+  },
+  "csadapt-10327": {
+   "kind": "ops",
+   "did": "0600",
+   "password": "20103",
+   "choices": [
+    {
+     "id": "res-enable",
+     "label": "ENABLE",
+     "ops": [
+      {
+       "byte": 2,
+       "bit": 3,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 3,
+       "bit": 7,
+       "len": 1,
+       "value": 1
+      }
+     ]
+    },
+    {
+     "id": "res-disable",
+     "label": "DISABLE",
+     "ops": [
+      {
+       "byte": 2,
+       "bit": 3,
+       "len": 1,
+       "value": 0
+      },
+      {
+       "byte": 3,
+       "bit": 7,
+       "len": 1,
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "issues": []
+  },
+  "csadapt-10041": {
+   "scalar": {
+    "byteOffset": 0,
+    "dataLength": 1,
+    "multiplier": 1,
+    "offset": 0,
+    "min": 85,
+    "max": 115,
+    "unit": "%"
+   }
+  },
+  "csmqb-mqb-5-f-eco-driving": {
+   "kind": "alt",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B3C",
+     "password": "20103",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 37,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 37,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 37,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 37,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 37,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 37,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 37,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 37,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       37,
+       0
+      ],
+      [
+       37,
+       1
+      ],
+      [
+       37,
+       2
+      ],
+      [
+       37,
+       3
+      ]
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B1B",
+     "password": "20103",
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 35,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 35,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 35,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 35,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 35,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 35,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 35,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 4,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 35,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 1,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 35,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "group:show-offroad-screen-in-multimedia-system": {
+   "name": "Show Offroad Screen In Multimedia System",
+   "kind": "group",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ]
+  }
+ },
+ "steps": {
+  "csmqb-mqb-5-f-offroad-mode-display-in-mmi-var2-part1-p1": {
+   "kind": "alt",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B3C",
+     "password": null,
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 16,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 16,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       16,
+       0
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B1B",
+     "password": null,
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 16,
+         "bit": 5,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 16,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 16,
+         "bit": 5,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 16,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 16,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "csmqb-mqb-5-f-offroad-mode-display-in-mmi-var2-part2-p2": {
+   "kind": "alt",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B3D",
+     "password": null,
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       21,
+       0
+      ]
+     ]
+    },
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0B1D",
+     "password": null,
+     "kind": "ops",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 21,
+         "bit": 6,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": true
+       },
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 21,
+         "bit": 6,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "when": {
+        "mib3": false
+       },
+       "ops": [
+        {
+         "byte": 21,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "newRecipes": {
+  "dash-seat-belt-warning": {
+   "id": "dash-seat-belt-warning",
+   "name": "Seat Belt Warning",
+   "kind": "alt",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": null,
+   "did": "22B9",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "22B9",
+     "password": "47115",
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 0,
+      "bitLength": 8,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "value": 0
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 1
+      }
+     ],
+     "auxWrites": []
+    },
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0600",
+     "password": null,
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 2,
+      "bitLength": 3,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled (Euro NCAP)",
+       "value": 1
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0
+      }
+     ],
+     "auxWrites": []
+    }
+   ]
+  },
+  "dash-speed-warning": {
+   "id": "dash-speed-warning",
+   "name": "Speed Warning",
+   "kind": "ops",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": null,
+   "did": "228C",
+   "choices": [
+    {
+     "id": "disabled",
+     "label": "Off",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 0
+      }
+     ]
+    },
+    {
+     "id": "kmh-50",
+     "label": "50 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 50
+      }
+     ]
+    },
+    {
+     "id": "kmh-60",
+     "label": "60 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 60
+      }
+     ]
+    },
+    {
+     "id": "kmh-70",
+     "label": "70 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 70
+      }
+     ]
+    },
+    {
+     "id": "kmh-80",
+     "label": "80 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 80
+      }
+     ]
+    },
+    {
+     "id": "kmh-90",
+     "label": "90 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 90
+      }
+     ]
+    },
+    {
+     "id": "kmh-100",
+     "label": "100 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 100
+      }
+     ]
+    },
+    {
+     "id": "kmh-110",
+     "label": "110 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 110
+      }
+     ]
+    },
+    {
+     "id": "kmh-120",
+     "label": "120 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 120
+      }
+     ]
+    },
+    {
+     "id": "kmh-130",
+     "label": "130 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 130
+      }
+     ]
+    },
+    {
+     "id": "kmh-140",
+     "label": "140 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 140
+      }
+     ]
+    },
+    {
+     "id": "kmh-150",
+     "label": "150 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 150
+      }
+     ]
+    },
+    {
+     "id": "kmh-160",
+     "label": "160 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 160
+      }
+     ]
+    },
+    {
+     "id": "kmh-170",
+     "label": "170 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 170
+      }
+     ]
+    },
+    {
+     "id": "kmh-180",
+     "label": "180 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 180
+      }
+     ]
+    },
+    {
+     "id": "kmh-190",
+     "label": "190 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 190
+      }
+     ]
+    },
+    {
+     "id": "kmh-200",
+     "label": "200 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 200
+      }
+     ]
+    },
+    {
+     "id": "kmh-210",
+     "label": "210 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 210
+      }
+     ]
+    },
+    {
+     "id": "kmh-220",
+     "label": "220 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 220
+      }
+     ]
+    },
+    {
+     "id": "kmh-230",
+     "label": "230 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 230
+      }
+     ]
+    },
+    {
+     "id": "kmh-240",
+     "label": "240 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 240
+      }
+     ]
+    },
+    {
+     "id": "kmh-250",
+     "label": "250 km/h",
+     "ops": [
+      {
+       "byte": 0,
+       "bit": 0,
+       "len": 1,
+       "value": 1
+      },
+      {
+       "byte": 1,
+       "bit": 0,
+       "len": 8,
+       "value": 250
+      }
+     ]
+    }
+   ],
+   "stateBits": [
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "dash-speed-warning-india": {
+   "id": "dash-speed-warning-india",
+   "name": "Speed Warning for India",
+   "kind": "alt",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": "47115",
+   "did": "0E46",
+   "variants": [
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0E46",
+     "password": "47115",
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 0,
+      "bitLength": 8,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "value": 49
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0
+      }
+     ],
+     "auxWrites": []
+    },
+    {
+     "selector": "MQBAlternativeContainer",
+     "requiresNewBcm": false,
+     "did": "0600",
+     "password": null,
+     "kind": "field",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 6,
+      "bitLength": 1,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled (120 km/h chime)",
+       "value": 1
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0
+      }
+     ],
+     "auxWrites": []
+    }
+   ]
+  },
+  "dash-speed-limiter-activation": {
+   "id": "dash-speed-limiter-activation",
+   "name": "Speed Limiter Activation",
+   "kind": "group",
+   "unit": "17",
+   "requestId": "714",
+   "responseId": "77E",
+   "password": "20103",
+   "did": "0AEA",
+   "choices": [
+    {
+     "id": "enabled",
+     "label": "Enabled"
+    },
+    {
+     "id": "disabled",
+     "label": "Disabled"
+    }
+   ],
+   "steps": [
+    {
+     "id": "dash-speed-limiter-17-0aea",
+     "name": "Speed Limiter: steps 1+2 (17 / 0AEA)",
+     "kind": "ops",
+     "unit": "17",
+     "requestId": "714",
+     "responseId": "77E",
+     "password": "20103",
+     "did": "0AEA",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 0,
+         "bit": 0,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 0,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    {
+     "id": "dash-speed-limiter-17-0ae7",
+     "name": "Speed Limiter: step 3 (17 / 0AE7)",
+     "kind": "field",
+     "unit": "17",
+     "requestId": "714",
+     "responseId": "77E",
+     "password": "20103",
+     "did": "0AE7",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 0,
+      "bitLength": 1,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "value": 1
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0
+      }
+     ],
+     "auxWrites": []
+    },
+    {
+     "id": "dash-speed-limiter-17-0e4f",
+     "name": "Speed Limiter: step 4 (17 / 0E4F)",
+     "kind": "field",
+     "unit": "17",
+     "requestId": "714",
+     "responseId": "77E",
+     "password": "20103",
+     "did": "0E4F",
+     "field": {
+      "byteOffset": 0,
+      "bitOffset": 0,
+      "bitLength": 1,
+      "byteOrder": "big"
+     },
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "value": 1
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "value": 0
+      }
+     ],
+     "auxWrites": []
+    },
+    {
+     "id": "dash-speed-limiter-13-0600",
+     "name": "Speed Limiter: steps 5+6 (13 / 0600)",
+     "kind": "ops",
+     "unit": "13",
+     "requestId": "757",
+     "responseId": "7C1",
+     "password": "20103",
+     "did": "0600",
+     "choices": [
+      {
+       "id": "enabled",
+       "label": "Enabled",
+       "ops": [
+        {
+         "byte": 2,
+         "bit": 3,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 3,
+         "bit": 7,
+         "len": 1,
+         "value": 1
+        },
+        {
+         "byte": 6,
+         "bit": 2,
+         "len": 1,
+         "value": 1
+        }
+       ]
+      },
+      {
+       "id": "disabled",
+       "label": "Disabled",
+       "ops": [
+        {
+         "byte": 2,
+         "bit": 3,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 3,
+         "bit": 7,
+         "len": 1,
+         "value": 0
+        },
+        {
+         "byte": 6,
+         "bit": 2,
+         "len": 1,
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "stateBits": [
+      [
+       2,
+       3
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       6,
+       2
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "notes": {
+  "csadapt-10136": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) record uid 10136 (SeatBeltsAlertsStyle, AD 0600, RQH 714, PWD empty): VL BIT:0:4/0:3/0:2 per option -> contiguous 3-bit field byte0 bit2 (LSB index, same convention as BitHelpers.SwitchBitInByte / Dashboard.cs). Password null -> unit-17 default.",
+  "csadapt-10128": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10128 (UnitsVolume): Liter BIT:6:6=0;6:5=0, GallonsUk 6:6=0;6:5=1, GallonsUs 6:6=1;6:5=0 -> field byte6 bit5 len2 values 0/1/2.",
+  "csadapt-10132": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10132 (UnitsFuelConsumptionGasolineDiesel): MpgUk 7:3=0;7:2=0, MpgUs 0;1, L100Km 1;0, KmL 1;1 -> field byte7 bit2 len2 values 0..3.",
+  "csadapt-10131": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10131 (UnitsDateFormat): DdMmYy 7:1=0;7:0=0, MmDdYy 0;1, YyMmDd 1;0 -> field byte7 bit0 len2 values 0..2.",
+  "csadapt-10327": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10327 (Speed Limiter Activation step 5, AD 0600 RQH 757 PWD 20103): ENABLE BIT:2:3=1;3:7=1, DISABLE both 0 -> ops.",
+  "csadapt-10041": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10041 (FuelConsumptionCorrection, AD 2234, SBI0 DL1 MUL1 OFS0, VT1 input). min/max 85..115 % from the catalogue card range.",
+  "csmqb-mqb-5-f-eco-driving": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Multimedia.decompiled.cs MQB_5F_EcoDriving (line 371): 0B3C enable 37.0=1,37.1=0,37.2=1,37.3=0 / disable all 0; 0B1B IsMIB3(): enable 35.7=1,35.6=0,35.5=1,35.4=0 / disable all 0, else enable 35.0=1,35.1=0,35.2=1,35.3=0 / disable all 0. Ordered first-match over 0B3C then 0B1B (MQBAlternativeCoding container order).",
+  "group:show-offroad-screen-in-multimedia-system": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Multimedia.decompiled.cs MQB_5F_OffroadModeDisplayInMMI_Var2 (line 176): MQBMultipleCoding of 3 MQBAlternativeCoding parts, all applied. Part3 (mib25 0600 24.2 / mib3 0558 1.7 pwd 20103) is already a parsed field in the corpus. Vendor part3 has PostWriteCommands \"1102\" (ECU reset) which this contract has no key for. Container passwords are \"\" -> unit-5F default 20103 (vendor DefaultGetStateDelegate also forces 20103 on MIB3 773).",
+  "csmqb-mqb-5-f-offroad-mode-display-in-mmi-var2-part1-p1": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Multimedia.decompiled.cs lines 178-218: container 0B3C enable 16.0=1,16.2=1 / disable 0,0; container 0B1B IsMIB3(): 16.7,16.5 = 1,1 / 0,0, else 16.0,16.2 = 1,1 / 0,0. Corpus had lost the 0B3C container and the 0B1B bytes.",
+  "csmqb-mqb-5-f-offroad-mode-display-in-mmi-var2-part2-p2": "VAGCoder/fixtures/private/coding-artifact-review/managed/CarScannerMaui.Coding.DB.MQB.Multimedia.decompiled.cs lines 220-265: container 0B3D enable 21.0=1 / disable 0; container 0B1D IsMIB3(): enable 21.7=0,21.6=1 / disable 21.7=0,21.6=0, else 21.0=1 / 0. Corpus had lost the 0B3D container and the 0B1D bytes.",
+  "dash-seat-belt-warning": "Alternatives on the cluster (unit 17): CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10035 SeatBeltsAlerts AD 22B9 (ENABLE 00 / DISABLE 01; corpus password 47115) first, then uid 10136 SeatBeltsAlertsStyle 0600 b0 bits4..2 for clusters without 22B9 (DISABLE 000; \"enabled\" writes Ncap 001, the Euro style - restore from backup returns the car's own original style).",
+  "dash-speed-warning": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uid 10087 SpeedWarning AD 228C BIT:0:0 (1 enable / 0 disable) + uid 10246 \"Speed warning: speed value\" AD 228C SBI1 DL1 MUL1 OFS0 (km/h) merged into one 228C ops write: Off clears 0.0 only; each preset sets 0.0=1 and byte1 = km/h (catalogue range 50..250).",
+  "dash-speed-warning-india": "Alternatives on unit 17: live-cluster-speed-warning-india (0E46 byte0, enabled 0x31 / disabled 0x00, password 47115 live-proven on Kushaq 6JM920310) first; else Dashboard.cs MQB_17_WarningWhen120kmh (0600 SwitchBitInByte(array,0,6)) for clusters without 0E46. csadapt-10247 excluded (enable value 01 contradicts the live capture).",
+  "dash-speed-limiter-activation": "CarScanner embedded mqbadaptations.db (decoded via VAGCoder/tools/extract-carscanner-adaptations.py TLV layout) uids 10323-10328 (\"Speed Limiter Activation: Step 1..6\"), all PWD 20103: step1 714/0AEA BIT:0:0, step2 714/0AEA BIT:0:2, step3 714/0AE7 BIT:0:0, step4 714/0E4F BIT:0:0, step5 757/0600 BIT:2:3+3:7, step6 757/0600 BIT:6:2 (label says U:01 but the DB record's RQH is 757, kept as recorded). Steps sharing a unit+DID are merged into one ops step so one backup/restore covers each DID. Audit 2026-11-03: steps 5/6 need unit 13 (757) to answer; cars without an ACC/distance module refuse at module identification before anything is written. The step-6 record is titled '(U:01)' but its RQH is 757; kept on 13 as the DB records it (no second source).",
+  "steering-angle-display": "no-implementation (capture-required, low, probably absent): REMAINING_FEATURES #90 - no source; only a VCDS keyword lead ('Lenkwinkel' on 17). C# corpus / candidates / mqbadaptations.db hits are wheel heater, Wheel Circumference (10191) and steering-assist recipes - none is a cluster wheel-angle view.",
+  "offroad-view-in-dashboard": "no-implementation (not-possible on MQB-A0-IN, low): REMAINING_FEATURES #86-88/#91 - Superb/Kodiaq/Tiguan Sport HMI, 4x4 or A5-camera only. C# corpus for Offroad|OffRoad (only MQB_5F_OffroadModeDisplayInMMI_Var2, a 5F MMI screen, used for offroad-information-screen); candidates + mqbadaptations.db for offroad (only 10249/10050 ambient-colour profiles). No unit-17 cluster offroad / wheel-angle view exists.",
+  "speedometer-scale-range": "no-implementation (capture-required: channel high / DID med-guess): REMAINING_FEATURES #89 - 17 'Tachometer end value' versions 0..5 (Taigo CS: 0 default, 1=280, 2=240, 3=300, 4=260+, 5=280+), digital cluster only. The only DID lead is csadapt-10030 ActiveInfoDisplaySpeedometerStyle 17/0D60 byte0, options 00..0F with no labels; nothing ties its values to the end-value table, and the same lead is claimed by engine-speed-rpm-in-dashboard. Needs read 0D60 + VCDS diff on a digital cluster before mapping. C# corpus has no codingDB hit for Speedometer|Tacho|Scale|260|MaxSpeed.",
+  "vehicle-path-display": "no-implementation (capture-required, low): REMAINING_FEATURES #92 - needs a 'high' rear-view camera unit 6C (gateway install list, 6C coding, 5F camera-type bits); the two forum sources disagree on byte numbers and no vendor routine touches 6C. Only RearCameraInstalled / camera washer / road-sign camera recipes exist.",
+  "traffic-sign-speed-warning": "no-implementation (not-possible on MQB-A0-IN, low): REMAINING_FEATURES #86-88/#91 - Superb/Kodiaq/Tiguan Sport HMI, 4x4 or A5-camera only. C# corpus for RoadSign|TrafficSign|SpeedLimit|Overspeed|VZE|warn.*speed; candidates + mqbadaptations.db for sign|traffic|overspeed. Only road-sign recognition activation (A5/17/5F groups, 3B63 patch, HUD 10237) and the fixed-threshold 228C / 0600 b0.6 warnings - no sign-based acoustic over-limit setting.",
+  "engine-power-display": "no-implementation (not-possible on MQB-A0-IN, low): REMAINING_FEATURES #86-88/#91 - Superb/Kodiaq/Tiguan Sport HMI, 4x4 or A5-camera only. C# corpus for EnginePower|Power|kW|SportView|Boost (only lighting/window/TSC hits); candidates + mqbadaptations.db for power|kw|sport.*view|leistung. Closest is csadapt-10082 DashboardSportViewCombination (0E42 ENABLE 01/DISABLE 00) with no description and no side/content selection, so it is not mapped as the kW display.",
+  "engine-torque-display": "no-implementation (not-possible on MQB-A0-IN, low): REMAINING_FEATURES #86-88/#91 - Superb/Kodiaq/Tiguan Sport HMI, 4x4 or A5-camera only. C# corpus for Torque|Drehmoment (only MQB_44 TorqueSteeringCompensation); candidates + mqbadaptations.db for torque (EngineDragTorqueControl, unrelated). csadapt-10082 caveat as engine-power-display."
+ }
+}

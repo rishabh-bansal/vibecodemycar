@@ -1,0 +1,66 @@
+{
+  "oil-service-reset": {
+    "recipe": "group:reset-oil-service-reminder",
+    "settings": {
+      "Reset": "start"
+    },
+    "note": "Zeroes 2243 (km since service), 2244 (days since service) and sets 2232 state = Reset on unit 17."
+  },
+  "inspection-service-reset": {
+    "recipe": "group:reset-inspection-service-reminder",
+    "settings": {
+      "Reset": "start"
+    },
+    "note": "Zeroes 22A6/22A7 on unit 17."
+  },
+  "inspection-service-distance": {
+    "recipe": "svc:inspection-service-distance"
+  },
+  "inspection-service-interval": {
+    "recipe": "svc:inspection-service-interval"
+  },
+  "oil-change-service-distance": {
+    "recipe": "svc:oil-change-service-distance",
+    "note": "Writes 17/2246 (max), 2245 (min) and 22A0 (clamp) with the same value (x100 km). Choices cover every card option incl. 25,000 km (Kylaq/Virtus)."
+  },
+  "oil-change-service-interval": {
+    "recipe": "svc:oil-change-service-interval"
+  },
+  "engine-oil-type": {
+    "recipe": "csadapt-10113",
+    "settings": {
+      "Regular": "res-codingdb-oilquality-poor",
+      "LongLife": "res-codingdb-oilquality-good"
+    }
+  },
+  "battery-capacity": {
+    "recipe": "csadapt-10133",
+    "settings": {
+      "44 Ah": "ah-44",
+      "51 Ah": "ah-51",
+      "59 Ah": "ah-59",
+      "60 Ah": "ah-60",
+      "61 Ah": "ah-61",
+      "68 Ah": "ah-68",
+      "69 Ah": "ah-69",
+      "70 Ah": "ah-70",
+      "72 Ah": "ah-72"
+    }
+  },
+  "battery-type": {
+    "recipe": "csadapt-10194",
+    "settings": {
+      "Lead-acid": "res-codingdb-opt-wet",
+      "EFB": "res-codingdb-opt-efb",
+      "AGM": "res-codingdb-opt-fleeceagm"
+    }
+  },
+  "throttle-pedal-response": {
+    "recipe": "csadapt-10006",
+    "settings": {
+      "Standard": "res-codingdb-opt-incrementalcontrolledovertime",
+      "Responsive": "res-codingdb-opt-directcontrolledoverthresholdvalue"
+    },
+    "note": "Writes unit 44 (EPS) DID 1922 byte0, the 'Driving profile switchover' channel (Standard = incremental over time 0, Responsive = direct over threshold 1, login 19249). The community sells this as sharper throttle response; the effect on the pedal is unverified and may be steering-side."
+  }
+}

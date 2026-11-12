@@ -1,0 +1,14 @@
+{
+  "name": "@obdcraft/obd-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-free OBD-II engine: transport, ELM327 session, ISO-TP, services 01-0A, scheduler, throughput tuner, emulator",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@obdcraft/definitions": "0.1.0"
+  },
+  "sideEffects": false
+}

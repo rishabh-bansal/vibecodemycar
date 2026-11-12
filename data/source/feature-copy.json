@@ -1,0 +1,1267 @@
+{
+ "80kmph-and-120kmph-speed-chime-warning": {
+  "displayName": "India Speed Chime",
+  "description": "The chime that sounds at 80 and 120 km/h on cars sold in India. Turn it off to stop the chime.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "acceleration-display": {
+  "displayName": "Acceleration Display",
+  "description": "Adds an acceleration readout to the instrument cluster display.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "acoustic-confirmation-lock-unlock-sound": {
+  "displayName": "Lock and Unlock Beep",
+  "description": "Beeps to confirm the car has locked or unlocked when you use the key remote.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "adaptive-lane-guidance": {
+  "displayName": "Adaptive Lane Guidance",
+  "description": "Lane Assist keeps the car centered in its lane instead of only steering back at the lane edge. Turning it on also adds the option to the multimedia menu.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "air-recirculation-memory": {
+  "displayName": "Air Recirculation Memory",
+  "description": "Remembers whether air recirculation was on or off and restores it the next time you switch on the ignition.",
+  "settingLabels": {
+   "res-codingdb-opt-notactive": "Off",
+   "res-codingdb-opt-active": "On",
+   "res-codingdb-opt-keepactivedependingonparkingtime": "Depends on parking time"
+  }
+ },
+ "allow-car-settings-while-moving": {
+  "displayName": "Car Settings While Driving",
+  "description": "Lets you open and change the car settings in the multimedia system while the car is moving. MIB3 multimedia systems only.",
+  "settingLabels": {
+   "res-enable": "Unlocked",
+   "res-disable": "Locked"
+  }
+ },
+ "am-radio": {
+  "displayName": "AM Radio",
+  "description": "Shows or hides the AM radio band in the multimedia system.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "anti-theft-alarm": {
+  "displayName": "Anti-Theft Alarm",
+  "description": "Turns on the factory anti-theft alarm.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "anti-theft-alarm-system": {
+  "displayName": "Anti-Theft Alarm",
+  "description": "Turns on the factory alarm, with the horn as the alarm sound, on cars without an alarm siren. It goes off if someone opens a door, the hood or the trunk while the car is locked.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "auto-fold-orvms-on-long-press-of-lock-button": {
+  "displayName": "Auto-Fold Mirrors",
+  "description": "Folds the side mirrors in when you lock the car with the key remote.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "auto-folding-mirrors": {
+  "displayName": "Auto-Fold Mirrors",
+  "description": "Folds the side mirrors in when you lock the car with the key remote, and adds the folding option to the multimedia menu.",
+  "settingLabels": {
+   "off": "Off",
+   "on": "Fold when locked"
+  }
+ },
+ "auto-headlights-settings": {
+  "displayName": "Auto Headlight Sensitivity",
+  "description": "Changes when the headlights switch on with the light switch at AUTO. Early turns them on while it is still fairly bright; Late waits until it is darker.",
+  "settingLabels": {
+   "disabled": "Early",
+   "enabled": "Normal",
+   "value-10": "Late"
+  }
+ },
+ "auto-lock-unlock": {
+  "displayName": "Auto Lock and Unlock",
+  "description": "Locks the doors automatically once you start driving, and unlocks them when you switch off the ignition.",
+  "settingLabels": {
+   "both": "Lock and unlock",
+   "lock-only": "Lock only",
+   "unlock-only": "Unlock only",
+   "off": "Off"
+  }
+ },
+ "auto-lock-upon-exit": {
+  "displayName": "Walk-Away Locking",
+  "description": "Locks the car by itself once you walk away with the key and all doors are closed, so you do not have to press anything.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "auto-unlock-when-parked": {
+  "displayName": "Unlock When in Park",
+  "description": "Unlocks the doors when you stop and shift into P. On manual cars, the doors unlock when you switch off the engine.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "auto-unlock-with-ignition": {
+  "displayName": "Unlock When Ignition Off",
+  "description": "Unlocks the doors automatically when you switch off the ignition.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "battery-capacity": {
+  "displayName": "Battery Capacity",
+  "description": "Tells the car the capacity of a newly fitted battery so it charges it correctly. Set Battery Type as well.",
+  "settingLabels": {
+   "ah-44": "44 Ah",
+   "ah-51": "51 Ah",
+   "ah-59": "59 Ah",
+   "ah-60": "60 Ah",
+   "ah-61": "61 Ah",
+   "ah-68": "68 Ah",
+   "ah-69": "69 Ah",
+   "ah-70": "70 Ah",
+   "ah-72": "72 Ah"
+  }
+ },
+ "battery-type": {
+  "displayName": "Battery Type",
+  "description": "Tells the car what kind of battery is fitted after a replacement so it charges it correctly. Set Battery Capacity as well.",
+  "settingLabels": {
+   "res-codingdb-opt-wet": "Standard (lead-acid)",
+   "res-codingdb-opt-efb": "EFB",
+   "res-codingdb-opt-fleeceagm": "AGM"
+  }
+ },
+ "beats-audio": {
+  "displayName": "Sound Preset (Beats Audio)",
+  "description": "Loads one of 16 sound tuning presets into the audio processing of newer (MIB3) multimedia systems.",
+  "settingLabels": {
+   "variant-001": "Preset 1",
+   "variant-002": "Preset 2",
+   "variant-003": "Preset 3",
+   "variant-004": "Preset 4",
+   "variant-005": "Preset 5",
+   "variant-006": "Preset 6",
+   "variant-007": "Preset 7",
+   "variant-008": "Preset 8",
+   "variant-009": "Preset 9",
+   "variant-010": "Preset 10",
+   "variant-011": "Preset 11",
+   "variant-012": "Preset 12",
+   "variant-013": "Preset 13",
+   "variant-014": "Preset 14",
+   "variant-015": "Preset 15",
+   "variant-016": "Preset 16"
+  }
+ },
+ "brake-lights-when-trunk-open": {
+  "displayName": "Brake Lights When Tailgate Open",
+  "description": "Lights both rear brake lights while the tailgate is open.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "central-lock-with-ignition": {
+  "displayName": "Remote Locking With Engine On",
+  "description": "Lets the key remote lock and unlock the car while the ignition is on or the engine is running.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "ch-lh-lights-variant": {
+  "displayName": "Coming Home Light Source",
+  "description": "Chooses which lights the Coming Home and Leaving Home lights use: the low beams or the front fog lights.",
+  "settingLabels": {
+   "disabled": "Low beams",
+   "enabled": "Fog lights"
+  }
+ },
+ "change-startup-logo-of-infotainment-screen": {
+  "displayName": "Startup Sound System Badge",
+  "description": "Adds a sound system badge to the multimedia startup screen.",
+  "settingLabels": {
+   "res-disable": "None",
+   "vw-fender-seat-sound": "Fender / Seat Sound",
+   "vw-dynaudio-skoda-canton": "Dynaudio / Canton"
+  }
+ },
+ "comfort-lane-change-indicator-5-flashes": {
+  "displayName": "Lane Change Blinks",
+  "description": "Sets how many times the indicators blink when you tap the indicator stalk to change lanes.",
+  "settingLabels": {
+   "value-2": "2 blinks",
+   "value-3": "3 blinks",
+   "value-4": "4 blinks",
+   "value-5": "5 blinks"
+  }
+ },
+ "comfort-operation-for-sunroof": {
+  "displayName": "Sunroof by Key Remote",
+  "description": "Open the sunroof by holding the unlock button on your key remote, and close it by holding the lock button.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "comfort-turn-signals": {
+  "displayName": "Lane Change Blinks",
+  "description": "Sets how many times the indicators blink when you tap the indicator stalk to change lanes.",
+  "settingLabels": {
+   "value-2": "2 blinks",
+   "value-3": "3 blinks",
+   "value-4": "4 blinks",
+   "value-5": "5 blinks"
+  }
+ },
+ "comfort-windows": {
+  "displayName": "Windows by Key Remote",
+  "description": "Close all the windows by holding the lock button on your key remote, and open them by holding the unlock button.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "coming-home-lights-activation-type": {
+  "displayName": "Coming Home Light Trigger",
+  "description": "Chooses when the Coming Home lights switch on as you leave the car: when you switch off the ignition, or when you open the driver door.",
+  "settingLabels": {
+   "disabled": "Ignition off",
+   "enabled": "Driver door opened"
+  }
+ },
+ "coming-home-lights-operation": {
+  "displayName": "Coming Home Lights",
+  "description": "Lights up the way when you leave the car in the dark. In Manual mode you flash the headlights before getting out with the light switch at 0; in Automatic mode they come on by themselves with the switch at AUTO.",
+  "settingLabels": {
+   "disabled": "Off",
+   "enabled": "Manual",
+   "value-10": "Automatic"
+  }
+ },
+ "coming-home-time": {
+  "displayName": "Coming Home Duration",
+  "description": "Sets how many seconds the Coming Home lights stay on after you leave the car.",
+  "settingLabels": {}
+ },
+ "consumption-display-correction": {
+  "displayName": "Fuel Consumption Correction",
+  "description": "Corrects the fuel consumption shown on the dashboard if it differs from what you really use, from 85% to 115%.",
+  "settingLabels": {}
+ },
+ "consumption-display-units": {
+  "displayName": "Fuel Consumption Units",
+  "description": "Chooses the units the dashboard uses for fuel consumption.",
+  "settingLabels": {
+   "mpg-uk": "mpg (UK)",
+   "mpg-us": "mpg (US)",
+   "l-100km": "L/100 km",
+   "km-l": "km/L"
+  }
+ },
+ "cornering-lights": {
+  "displayName": "Cornering Lights",
+  "description": "Uses the front fog lights to light up the area you are steering into when turning and parking. Turning it on also turns on Fog Lights When Reversing, which uses the same setting.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "cornering-lights-via-front-fog-lights": {
+  "displayName": "Cornering Lights",
+  "description": "Uses the front fog lights to light up the area you are steering into when turning and parking.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "date-display-format": {
+  "displayName": "Date Format",
+  "description": "Chooses how the date is shown on the dashboard.",
+  "settingLabels": {
+   "dd-mm-yy": "DD.MM.YY",
+   "mm-dd-yy": "MM.DD.YY",
+   "yy-mm-dd": "YY.MM.DD"
+  }
+ },
+ "disable-automatic-door-unlock-on-key-removal": {
+  "displayName": "Unlock When Ignition Off",
+  "description": "Unlocks the doors automatically when you switch off the ignition.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "disable-please-switch-on-the-lights-popup": {
+  "displayName": "Headlights-On Reminder",
+  "description": "The reminder that appears on the dashboard when you start the engine with the light switch at 0. Hide it if you do not need it.",
+  "settingLabels": {
+   "enabled": "Hidden",
+   "disabled": "Shown"
+  }
+ },
+ "display-automatic-climate-control-fan-blower-speed-in-ac-auto-mode": {
+  "displayName": "Fan Speed in AUTO Mode",
+  "description": "Shows the fan speed on the climate control panel even when the climate control is set to AUTO.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "display-eco-tips": {
+  "displayName": "Eco Driving Screen",
+  "description": "Adds the eco driving screen to the multimedia system, with statistics about your fuel consumption.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "display-offroad-menu-on-infotainment": {
+  "displayName": "Off-Road Screen",
+  "description": "Adds the off-road information screen to the multimedia system.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "distance-display-units": {
+  "displayName": "Distance Units",
+  "description": "Shows distances on the dashboard in kilometers or miles.",
+  "settingLabels": {
+   "res-codingdb-opt-kilometers": "Kilometers",
+   "res-codingdb-opt-miles": "Miles"
+  }
+ },
+ "drl-activation-deactivation": {
+  "displayName": "Daytime Running Lights",
+  "description": "Keeps your car visible during the day. Choose the dedicated DRL lamps, use the position or low-beam lights instead, or turn the daytime lights off.",
+  "settingLabels": {
+   "disabled": "Off",
+   "enabled": "DRL lamps",
+   "value-10": "Position or low-beam lights",
+   "value-11": "Special mode"
+  }
+ },
+ "drl-off-with-handbrake": {
+  "displayName": "DRL Off With Handbrake",
+  "description": "Switches off the daytime running lights while the handbrake is on, so they do not stay lit when you are parked.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "drl-on-with-auto": {
+  "displayName": "DRL Only in AUTO",
+  "description": "Switches off the daytime running lights when the light switch is at 0, so they only work with the switch at AUTO.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "drl-on-with-parking-lights": {
+  "displayName": "Full-Bright Side Lights",
+  "description": "Keeps the front side light lamps at full DRL brightness when the position or parking lights are on, instead of dimming them.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "drl-settings-in-multimedia": {
+  "displayName": "DRL Option in Multimedia",
+  "description": "Adds an option to turn the daytime running lights on or off to the light settings in the multimedia system.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "drl-with-fog-lights": {
+  "displayName": "Fog Lights as DRL",
+  "description": "Turns the front fog lights on together with the daytime running lights, at full brightness.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "dynamic-steering-weight": {
+  "displayName": "Power Steering Assistance",
+  "description": "Sets how much the power steering helps you turn the wheel. Lower values make the steering feel heavier.",
+  "settingLabels": {
+   "res-codingdb-opt-100": "100%",
+   "res-codingdb-opt-80": "80%",
+   "res-codingdb-opt-60": "60%",
+   "res-codingdb-opt-40": "40%",
+   "res-codingdb-opt-20": "20%"
+  }
+ },
+ "dynaudio-sound-signature-for-amplifier": {
+  "displayName": "Sound Preset (Dynaudio)",
+  "description": "Loads one of 16 sound tuning presets into the audio processing of newer (MIB3) multimedia systems.",
+  "settingLabels": {
+   "variant-001": "Preset 1",
+   "variant-002": "Preset 2",
+   "variant-003": "Preset 3",
+   "variant-004": "Preset 4",
+   "variant-005": "Preset 5",
+   "variant-006": "Preset 6",
+   "variant-007": "Preset 7",
+   "variant-008": "Preset 8",
+   "variant-009": "Preset 9",
+   "variant-010": "Preset 10",
+   "variant-011": "Preset 11",
+   "variant-012": "Preset 12",
+   "variant-013": "Preset 13",
+   "variant-014": "Preset 14",
+   "variant-015": "Preset 15",
+   "variant-016": "Preset 16"
+  }
+ },
+ "easy-convenient-entry-and-exit-for-driver-and-passenger-seats": {
+  "displayName": "Easy Entry (Passenger Seat)",
+  "description": "Moves the front passenger seat to make getting in and out easier, and adds the setting to the multimedia menu.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "easy-convenient-entry-and-exit-for-driver-seat": {
+  "displayName": "Easy Entry (Driver Seat)",
+  "description": "Moves the driver's seat to make getting in and out easier when you open the driver door, and adds the setting to the multimedia menu.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "easy-entry": {
+  "displayName": "Easy Entry (Driver Seat)",
+  "description": "Moves the driver's seat to make getting in and out easier when you open the driver door, and adds the setting to the multimedia menu.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "easy-entry-for-passenger": {
+  "displayName": "Easy Entry (Passenger Seat)",
+  "description": "Moves the front passenger seat to make getting in and out easier, and adds the setting to the multimedia menu.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "efficiency-assist-display": {
+  "displayName": "Eco Driving Screen",
+  "description": "Adds the eco driving screen to the multimedia system, with statistics about your fuel consumption.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "electronic-differential-lock-interaction": {
+  "displayName": "XDS Strength",
+  "description": "XDS brakes the inner wheel in fast corners for better grip and less understeer. Choose how strongly it steps in, or turn it off.",
+  "settingLabels": {
+   "res-codingdb-opt-notactive": "Off",
+   "res-codingdb-opt-default": "Standard",
+   "res-codingdb-opt-weak": "Weak",
+   "res-codingdb-opt-medium": "Medium",
+   "res-codingdb-opt-hard": "Strong"
+  }
+ },
+ "emergency-braking-lights": {
+  "displayName": "Emergency Braking Lights",
+  "description": "Warns drivers behind you when you brake hard, by flashing the brake lights, the turn signals, or both.",
+  "settingLabels": {
+   "disabled": "Off",
+   "brakes": "Brake lights",
+   "turn-signals": "Turn signals",
+   "both": "Brake lights and turn signals"
+  }
+ },
+ "emergency-stop-signal-flashing-panic-braking-lights": {
+  "displayName": "Hazard Lights After Hard Braking",
+  "description": "Switches on the hazard lights automatically when you brake hard.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "engine-oil-temperature-in-mid": {
+  "displayName": "Oil Temperature Display",
+  "description": "Adds an engine oil temperature view to the instrument cluster, so you can see when the engine is warmed up.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "engine-oil-type": {
+  "displayName": "Engine Oil Type",
+  "description": "Matches the oil service reminder to the oil you use. Regular uses fixed intervals; LongLife adjusts the interval to how you drive and should only be used with LongLife oil.",
+  "settingLabels": {
+   "res-codingdb-oilquality-poor": "Regular",
+   "res-codingdb-oilquality-good": "LongLife"
+  }
+ },
+ "engine-start-stop-button-pulsation": {
+  "displayName": "Pulsing Start Button",
+  "description": "Makes the light in the engine Start/Stop button pulse while the engine is off. It stops once the engine starts.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "enhanced-brake-assist-response-early-activation": {
+  "displayName": "Brake Assist Timing",
+  "description": "Sets how early brake assist adds extra braking force when you brake suddenly in an emergency.",
+  "settingLabels": {
+   "res-codingdb-opt-normal": "Normal",
+   "res-codingdb-opt-early": "Early",
+   "res-codingdb-opt-late": "Late",
+   "res-disable": "Off"
+  }
+ },
+ "esc-asr-deactivation": {
+  "displayName": "ESC Menu Options",
+  "description": "Chooses which stability control (ESC) and traction control (ASR) options appear in the car menu, so you can switch them off or pick ESC Sport when you need to.",
+  "settingLabels": {
+   "menu-01": "No menu",
+   "menu-02": "ESC On / ASR Off",
+   "menu-03": "ESC On / ESC Sport",
+   "menu-04": "ESC On / ESC Off",
+   "menu-05": "ESC On / ASR Off / ESC Off",
+   "menu-06": "ESC On / ESC Sport / ESC Off",
+   "menu-07": "ESC On / ASR Off / ESC Off (alternative)",
+   "menu-08": "ESC On / ESC Sport / ESC Off (alternative)",
+   "menu-09": "ESC On / ASR Off / ESC Sport",
+   "menu-0a": "ESC On / ASR Off / ESC Sport (alternative)"
+  }
+ },
+ "fan-level-display-when-auto": {
+  "displayName": "Fan Speed in AUTO Mode",
+  "description": "Shows the fan speed on the climate control panel even when the climate control is set to AUTO.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "fog-lights-with-flash-to-pass": {
+  "displayName": "Fog Lights with Headlight Flash",
+  "description": "Flashes the front fog lights together with the headlights when you pull the stalk to flash other drivers.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "fog-lights-with-high-beam": {
+  "displayName": "Fog Lights with High Beam",
+  "description": "Turns the front fog lights on together with the high beams.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "fogs-off-with-high-beams": {
+  "displayName": "Fog Lights Off with High Beam",
+  "description": "Switches the front fog lights off while the high beam is on. Cannot be used together with Fog Lights with High Beam or Fog Lights with Headlight Flash.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "front-fog-lights-on-flash-along-with-headlights": {
+  "displayName": "Fog Lights with High Beam",
+  "description": "Lets the front fog lights stay on together with the high beams.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "front-fog-lights-when-reversing": {
+  "displayName": "Fog Lights When Reversing",
+  "description": "Switches on the front fog lights when you select reverse, to help you see obstacles around the car.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "front-windshield-heater-duration": {
+  "displayName": "Heated Windshield Timer",
+  "description": "Sets how long the heated front windshield stays on before it switches off by itself.",
+  "settingLabels": {}
+ },
+ "gauge-test-needle-sweep": {
+  "displayName": "Needle Sweep",
+  "description": "Sweeps the instrument needles across their full range each time you switch on the ignition. For instrument clusters with physical needles.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "green-engineering-menu-discover": {
+  "displayName": "Multimedia Developer Menu",
+  "description": "Unlocks the hidden developer menu in the multimedia system, which shows technical details about the unit.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "haldex-awd-settings": {
+  "displayName": "All-Wheel Drive Mode",
+  "description": "Sets how the all-wheel drive shares power with the rear wheels: more for extra grip, or less for a quieter drive.",
+  "settingLabels": {
+   "res-codingdb-opt-normal": "Standard",
+   "res-codingdb-opt-highpower": "More traction",
+   "res-codingdb-opt-lownoise": "Less noise"
+  }
+ },
+ "hazard-switch-brightness": {
+  "displayName": "Hazard Switch Brightness",
+  "description": "Sets how brightly the hazard light switch glows while the ignition is on, from 0% (off) to 100%.",
+  "settingLabels": {}
+ },
+ "headlight-notification": {
+  "displayName": "Headlights-On Reminder",
+  "description": "The reminder that appears on the dashboard when you start the engine with the light switch at 0. Hide it if you do not need it.",
+  "settingLabels": {
+   "enabled": "Hidden",
+   "disabled": "Shown"
+  }
+ },
+ "headlight-washer": {
+  "displayName": "Headlight Washer Frequency",
+  "description": "Sets after how many windshield washes the headlight washers spray as well. A lower number cleans the headlights more often.",
+  "settingLabels": {}
+ },
+ "headlight-washer-activation-count": {
+  "displayName": "Headlight Washer Count",
+  "description": "Sets the number of windshield washes after which the headlight washers spray too.",
+  "settingLabels": {}
+ },
+ "headlight-washer-activation-delay": {
+  "displayName": "Headlight Washer Delay",
+  "description": "Sets how long you hold the washer stalk before the headlight washers spray too.",
+  "settingLabels": {}
+ },
+ "headlight-washer-activation-time": {
+  "displayName": "Headlight Washer Spray Time",
+  "description": "Sets how long each headlight wash lasts, which changes how much washer fluid is used.",
+  "settingLabels": {}
+ },
+ "heated-seats-memory": {
+  "displayName": "Heated Seats Memory",
+  "description": "Remembers your seat heating setting and turns it back on after you switch the ignition off and on again.",
+  "settingLabels": {
+   "res-codingdb-opt-notactive": "Off",
+   "res-codingdb-opt-active": "On",
+   "res-codingdb-opt-activefor10minutes": "On for 10 minutes"
+  }
+ },
+ "high-beam-assist-memory": {
+  "displayName": "High Beam Assist Memory",
+  "description": "Remembers whether High Beam Assist was on or off when you switch off the car, and keeps that setting next time.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "high-intensity-brake-light": {
+  "displayName": "Flashing Brake Lights",
+  "description": "Flashes the brake lights when you brake hard. When you come to a full stop, the hazard lights come on and switch off once you drive away.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "hill-hold-assist": {
+  "displayName": "Hill Hold",
+  "description": "Stops the car from rolling back on a slope by holding the brakes while you move your foot from the brake to the accelerator.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "hill-hold-control": {
+  "displayName": "Hill Hold",
+  "description": "Stops the car from rolling back on a slope by holding the brakes while you move your foot from the brake to the accelerator.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "hill-start-assist-settings": {
+  "displayName": "Hill Start Release Point",
+  "description": "Sets when Hill Start Assist lets go of the brakes as you pull away on a slope: at lower or higher engine speed.",
+  "settingLabels": {
+   "res-codingdb-opt-normal": "Normal",
+   "res-codingdb-opt-early": "Early (lower RPM)",
+   "res-codingdb-opt-late": "Late (higher RPM)"
+  }
+ },
+ "improve-torque-vectoring-with-xds-expanded-electronic-differential-lock": {
+  "displayName": "XDS Cornering Grip",
+  "description": "Turns on XDS, which brakes the inner wheel in fast corners for better grip. Pick the option that matches your engine power.",
+  "settingLabels": {
+   "disabled": "Off",
+   "enabled": "On (up to 110 kW)",
+   "value-10": "On (110 to 155 kW)",
+   "value-11": "On (162 kW and above)"
+  }
+ },
+ "indirect-tpms-tire-pressure-monitoring-system": {
+  "displayName": "Tire Pressure Monitoring",
+  "description": "Turns on tire pressure monitoring that works through the wheel speed sensors, with no sensors inside the tires.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "inspection-service-distance": {
+  "displayName": "Inspection Interval (Distance)",
+  "description": "Sets how many kilometers apart the inspection service reminders are. Check your service manual before choosing a longer interval.",
+  "settingLabels": {
+   "km-15000": "15,000 km",
+   "km-20000": "20,000 km",
+   "km-30000": "30,000 km",
+   "km-40000": "40,000 km",
+   "km-60000": "60,000 km"
+  }
+ },
+ "inspection-service-interval": {
+  "displayName": "Inspection Interval (Time)",
+  "description": "Sets how much time passes between inspection service reminders. Check your service manual before choosing a longer interval.",
+  "settingLabels": {
+   "days-365": "1 year",
+   "days-730": "2 years",
+   "days-1095": "3 years",
+   "days-1460": "4 years"
+  }
+ },
+ "inspection-service-reset": {
+  "displayName": "Inspection Reminder Reset",
+  "description": "Clears the inspection service reminder on the dashboard after the inspection is done.",
+  "settingLabels": {
+   "start": "Reset now"
+  }
+ },
+ "instrument-cluster-needle-sweep": {
+  "displayName": "Needle Sweep",
+  "description": "Sweeps the instrument needles across their full range each time you switch on the ignition. For instrument clusters with physical needles.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "lane-assist-setting-memory": {
+  "displayName": "Lane Assist at Start-Up",
+  "description": "Chooses whether Lane Assist is on or off each time you switch on the ignition, or remembers how you left it.",
+  "settingLabels": {
+   "disabled": "Off",
+   "enabled": "On",
+   "last-setting": "Remember last setting"
+  }
+ },
+ "lane-assist-wheel-vibration": {
+  "displayName": "Lane Assist Wheel Vibration",
+  "description": "Vibrates the steering wheel when you drift out of your lane. Turn it on or off, or choose it yourself in the multimedia menu.",
+  "settingLabels": {
+   "disabled": "Off",
+   "enabled": "On",
+   "via-menu": "Choose in multimedia menu"
+  }
+ },
+ "lap-timer": {
+  "displayName": "Lap Timer",
+  "description": "Adds a lap timer to the instrument cluster so you can time your laps and drives.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "led-license-plate-lamps": {
+  "displayName": "License Plate Bulb Type",
+  "description": "Tells the car which kind of license plate bulb is fitted, so LED bulbs work properly without fault warnings.",
+  "settingLabels": {
+   "5w": "5W bulb",
+   "led": "LED",
+   "led-low": "LED (low power)"
+  }
+ },
+ "license-plate-lights-with-drl": {
+  "displayName": "Number Plate Light with DRL",
+  "description": "Lights the number plate light whenever the daytime running lights are on.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "license-plate-lights-with-trunk-open": {
+  "displayName": "Number Plate Light When Tailgate Open",
+  "description": "Sets the number plate light to switch on, or switch off, while the tailgate is open. Default returns it to normal.",
+  "settingLabels": {
+   "enabled": "On when open",
+   "off-when-open": "Off when open",
+   "disabled": "Default"
+  }
+ },
+ "lock-unlock-acoustic-confirmation": {
+  "displayName": "Lock and Unlock Beep",
+  "description": "Beeps to confirm the car has locked or unlocked when you use the key remote.",
+  "settingLabels": {
+   "lock-and-unlock": "Lock and unlock",
+   "lock-only": "Lock only",
+   "unlock-only": "Unlock only",
+   "off": "Off"
+  }
+ },
+ "lock-unlock-sound-settings": {
+  "displayName": "Lock and Unlock Sound",
+  "description": "Chooses whether locking and unlocking are confirmed by the horn or by a separate alarm sounder.",
+  "settingLabels": {
+   "horn": "Horn",
+   "sounder": "Sounder"
+  }
+ },
+ "low-ambient-temperature-warning": {
+  "displayName": "Ice Warning Temperature",
+  "description": "Sets the outside temperature at which the dashboard warns you about possible ice on the road. The factory setting is 4°C.",
+  "settingLabels": {}
+ },
+ "microphone-sensitivity": {
+  "displayName": "Microphone Sensitivity",
+  "description": "Adjusts how sensitive the multimedia system microphone is, from -10 dB to +10 dB, for clearer sound with less background noise.",
+  "settingLabels": {}
+ },
+ "multimedia-startup-logo": {
+  "displayName": "Multimedia Startup Logo",
+  "description": "Changes the logo shown when the multimedia system starts. The system restarts once after the change.",
+  "settingLabels": {
+   "logo-0": "Standard",
+   "logo-1": "Skoda vRS (with stripes) / VW Twin Drive",
+   "logo-2": "Skoda Scout / VW GTD",
+   "logo-3": "Skoda Laurin & Klement / VW GTI",
+   "logo-4": "Skoda Greenline or Scout Line / VW BlueMotion",
+   "logo-5": "Skoda or Skoda Monte Carlo / VW e-Golf",
+   "logo-6": "VW R-Line",
+   "logo-7": "Skoda Monte Carlo / VW R",
+   "logo-8": "Skoda (facelift) / VW Alltrack",
+   "logo-9": "Skoda vRS (no stripes) / VW GTE",
+   "logo-10": "Skoda Scout (facelift) / VW Elegance",
+   "logo-11": "Skoda Laurin & Klement (facelift) / VW MAN",
+   "logo-12": "Skoda Monte Carlo (facelift)",
+   "logo-13": "Skoda Sportline / VW blank screen",
+   "logo-14": "Skoda vRS (facelift)",
+   "logo-15": "Style 15",
+   "logo-16": "VW Beats Audio",
+   "logo-17": "VW Family"
+  }
+ },
+ "navigation-compass-in-dashboard": {
+  "displayName": "Navigation in Dashboard",
+  "description": "Shows navigation directions or a compass in the instrument cluster.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "offroad-information-screen": {
+  "displayName": "Off-Road Screen",
+  "description": "Adds the off-road information screen to the multimedia system.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "oil-change-service-distance": {
+  "displayName": "Oil Change Interval (Distance)",
+  "description": "Sets how many kilometers apart the oil change reminders are. Check your service manual before choosing a longer interval.",
+  "settingLabels": {
+   "km-5000": "5,000 km",
+   "km-7500": "7,500 km",
+   "km-10000": "10,000 km",
+   "km-15000": "15,000 km",
+   "km-20000": "20,000 km",
+   "km-25000": "25,000 km",
+   "km-30000": "30,000 km"
+  }
+ },
+ "oil-change-service-interval": {
+  "displayName": "Oil Change Interval (Time)",
+  "description": "Sets how much time passes between oil change reminders. Check your service manual before choosing a longer interval.",
+  "settingLabels": {
+   "days-180": "6 months",
+   "days-365": "1 year",
+   "days-730": "2 years"
+  }
+ },
+ "oil-service-reset": {
+  "displayName": "Oil Service Reset",
+  "description": "Clears the oil change reminder on the dashboard after an oil service.",
+  "settingLabels": {
+   "start": "Reset now"
+  }
+ },
+ "oil-temperature-display": {
+  "displayName": "Oil Temperature Display",
+  "description": "Adds an engine oil temperature view to the instrument cluster, so you can see when the engine is warmed up.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "open-door-alarm": {
+  "displayName": "Open Door Chime",
+  "description": "The chime that sounds when a door is left open with the ignition on. Turn it off to silence it.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "opening-and-closing-driver-side-window-during-unlocking-and-locking-car": {
+  "displayName": "Driver Window by Key Remote",
+  "description": "Opens and closes the driver window when you hold the unlock or lock button on your key remote.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "park-assist-switch-off-speed": {
+  "displayName": "Parking Sensors Off Speed",
+  "description": "Sets the speed at which the parking sensor display switches off by itself as you drive away, from 5 to 15 km/h.",
+  "settingLabels": {}
+ },
+ "position-lights-with-turn-signals": {
+  "displayName": "Rear Lights Blink with Indicators",
+  "description": "Makes the rear position lights blink together with the rear turn signals.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "power-windows-with-ignition-off": {
+  "displayName": "Windows After Ignition Off",
+  "description": "Lets you use the driver's window for a set time (10 minutes by default) after you switch off the ignition.",
+  "settingLabels": {
+   "on": "On (10 minutes)",
+   "off": "Off"
+  }
+ },
+ "pulsation-of-start-button": {
+  "displayName": "Pulsing Start Button",
+  "description": "Makes the light in the engine Start/Stop button pulse while the engine is off. It stops once the engine starts.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "rear-windshield-heater-duration": {
+  "displayName": "Rear Window Heater Timer",
+  "description": "Sets how long the rear window heater stays on before it switches off by itself, from 2 to 30 minutes.",
+  "settingLabels": {}
+ },
+ "rear-wiper-automatic-activation": {
+  "displayName": "Automatic Rear Wiper",
+  "description": "Starts the rear wiper by itself when it rains, with the front wipers on auto and the car moving at 60 km/h or faster.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "refuel-quantity-in-dashboard": {
+  "displayName": "Refuel Amount Display",
+  "description": "Adds a view showing how much fuel it takes to fill the tank.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "remote-trunk-release": {
+  "displayName": "Open Trunk by Key Remote",
+  "description": "Lets you open the trunk with the button on your key remote.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "scandinavian-drls": {
+  "displayName": "Tail Lights with DRL",
+  "description": "Keeps the rear lights on together with the daytime running lights, as required in Scandinavian countries.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "scandinavian-rear-drl": {
+  "displayName": "Tail Lights with DRL",
+  "description": "Keeps the rear lights on together with the daytime running lights, as required in Scandinavian countries.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "seat-belt-warning": {
+  "displayName": "Seat Belt Warning",
+  "description": "The warning that sounds at the start of a drive when a seat belt is not fastened.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "seat-belt-warning-disable": {
+  "displayName": "Seat Belt Warning",
+  "description": "The warning that sounds at the start of a drive when a seat belt is not fastened.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "seat-belt-warning-type": {
+  "displayName": "Seat Belt Warning Style",
+  "description": "Chooses how the seat belt warning behaves. The European styles keep warning until the belt is fastened; the US style sounds 6 times and then stops.",
+  "settingLabels": {
+   "disabled": "Off",
+   "ncap": "Europe",
+   "north-america": "USA",
+   "ncap2": "Europe (NCAP 2)",
+   "ncap2-enhanced": "Europe (NCAP 2 enhanced)"
+  }
+ },
+ "selective-door-unlocking": {
+  "displayName": "Selective Unlocking",
+  "description": "Chooses which doors unlock when you press the unlock button: all doors, only the driver door, or the doors on one side.",
+  "settingLabels": {
+   "all-doors": "All doors",
+   "driver-door-only": "Driver door only",
+   "doors-one-side": "Doors on one side"
+  }
+ },
+ "speed-display-units": {
+  "displayName": "Speed Units",
+  "description": "Shows speed on the instrument cluster in km/h or mph.",
+  "settingLabels": {
+   "res-codingdb-opt-kmh": "km/h",
+   "res-codingdb-opt-mph": "mph"
+  }
+ },
+ "speed-limiter": {
+  "displayName": "Speed Limiter",
+  "description": "Turns on the speed limiter, which lets you set a top speed that the car will not go past.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "speed-warning": {
+  "displayName": "Speed Warning",
+  "description": "Shows a warning on the instrument cluster when you drive faster than the speed you choose, from 50 to 250 km/h.",
+  "settingLabels": {
+   "disabled": "Off",
+   "kmh-50": "50 km/h",
+   "kmh-60": "60 km/h",
+   "kmh-70": "70 km/h",
+   "kmh-80": "80 km/h",
+   "kmh-90": "90 km/h",
+   "kmh-100": "100 km/h",
+   "kmh-110": "110 km/h",
+   "kmh-120": "120 km/h",
+   "kmh-130": "130 km/h",
+   "kmh-140": "140 km/h",
+   "kmh-150": "150 km/h",
+   "kmh-160": "160 km/h",
+   "kmh-170": "170 km/h",
+   "kmh-180": "180 km/h",
+   "kmh-190": "190 km/h",
+   "kmh-200": "200 km/h",
+   "kmh-210": "210 km/h",
+   "kmh-220": "220 km/h",
+   "kmh-230": "230 km/h",
+   "kmh-240": "240 km/h",
+   "kmh-250": "250 km/h"
+  }
+ },
+ "speed-warning-for-india": {
+  "displayName": "India Speed Chime",
+  "description": "The chime that sounds at high speed (80 and 120 km/h) on cars sold in India. Turn it off to stop the chime.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "start-stop-system-deactivation": {
+  "displayName": "Start/Stop System",
+  "description": "Start/Stop switches the engine off when you stop to save fuel. Turn it off here to keep it off every drive, instead of pressing the button each time.",
+  "settingLabels": {
+   "res-enable": "On",
+   "res-disable": "Off"
+  }
+ },
+ "steering-response": {
+  "displayName": "Steering Feel",
+  "description": "Sets how light or heavy the steering feels: Comfort is lighter, Dynamic is heavier and sportier, Automatic changes with speed, or let it follow your driving mode.",
+  "settingLabels": {
+   "res-codingdb-opt-dependingoncurrentdrivemode": "Follow driving mode",
+   "res-codingdb-opt-comfort": "Comfort",
+   "res-codingdb-opt-automatic": "Automatic",
+   "res-codingdb-opt-dynamic": "Dynamic",
+   "res-codingdb-opt-default": "Standard"
+  }
+ },
+ "taillights-when-trunk-open": {
+  "displayName": "Tail Lights When Tailgate Open",
+  "description": "Lights both rear tail lights at full brightness while the tailgate is open.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "tear-drop-wiping": {
+  "displayName": "Teardrop Wipe",
+  "description": "After you spray the windshield, the wipers make one extra pass a few seconds later to clear the last drips.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "teardrop-wiping": {
+  "displayName": "Teardrop Wipe",
+  "description": "After you spray the windshield, the wipers make one extra pass a few seconds later to clear the last drips.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "temperature-display-units": {
+  "displayName": "Temperature Units",
+  "description": "Shows temperatures on the instrument cluster in Celsius or Fahrenheit.",
+  "settingLabels": {
+   "res-codingdb-opt-c": "Celsius",
+   "res-codingdb-opt-f": "Fahrenheit"
+  }
+ },
+ "third-brake-light-when-trunk-open": {
+  "displayName": "Third Brake Light When Tailgate Open",
+  "description": "Lights the high-mounted third brake light at full brightness while the tailgate is open.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "third-brake-light-with-coming-leaving-home-lights": {
+  "displayName": "Third Brake Light with Coming Home",
+  "description": "Lights the third brake light while the coming home and leaving home lights are on.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "third-brake-light-with-drl": {
+  "displayName": "Third Brake Light with DRL",
+  "description": "Lights the third brake light dimly (10%) whenever the daytime running lights are on. Braking still lights it fully.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "throttle-pedal-response": {
+  "displayName": "Accelerator Response",
+  "description": "Changes how the steering module switches its driving profile: gradually (Standard) or directly at a threshold (Responsive). Often described as a more direct throttle feel, but that effect is not verified.",
+  "settingLabels": {
+   "res-codingdb-opt-incrementalcontrolledovertime": "Standard",
+   "res-codingdb-opt-directcontrolledoverthresholdvalue": "Responsive"
+  }
+ },
+ "time-display-format": {
+  "displayName": "Time Format",
+  "description": "Shows the time on the instrument cluster in 24-hour or 12-hour (AM/PM) format.",
+  "settingLabels": {
+   "24": "24-hour",
+   "res-codingdb-opt-12ampm": "12-hour (AM/PM)"
+  }
+ },
+ "trunk-opening-closing-sound": {
+  "displayName": "Power Trunk Warning Sound",
+  "description": "Beeps while the power trunk opens or closes, to alert people nearby that it is moving.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "turn-onoff-central-locking-using-remote-key-when-engine-ignition-on": {
+  "displayName": "Remote Locking With Engine On",
+  "description": "Lets the key remote lock and unlock the car while the ignition is on or the engine is running.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "turn-signals-with-ch-lh": {
+  "displayName": "Front Indicators with Coming Home",
+  "description": "Lights both front indicators steadily at full brightness while the coming home and leaving home lights are on.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "turning-off-drl-using-hedlamp-control-switch-or-handbrake": {
+  "displayName": "DRL Off With Handbrake",
+  "description": "Switches off the daytime running lights while the handbrake is on, so they do not stay lit when you are parked.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "us-style-turn-lights": {
+  "displayName": "US-Style Front Indicators",
+  "description": "The front indicators also glow dimly as side marker lights. For cars with halogen front indicators.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ },
+ "video-in-motion-through-pen-drive": {
+  "displayName": "Video While Driving",
+  "description": "Lets videos from a USB drive keep playing while the car is moving. Choose whether they always play or stop above 180 km/h.",
+  "settingLabels": {
+   "always-on": "Always",
+   "kmh-180": "Up to 180 km/h"
+  }
+ },
+ "volume-display-units": {
+  "displayName": "Fuel Volume Units",
+  "description": "Shows fuel amounts on the instrument cluster in liters or gallons.",
+  "settingLabels": {
+   "liter": "Liters",
+   "gallons-uk": "Gallons (UK)",
+   "gallons-us": "Gallons (US)"
+  }
+ },
+ "windows-closing-after-locking": {
+  "displayName": "Close Windows by Key Remote",
+  "description": "Close all the windows by holding the lock button on your key remote, and open them by holding the unlock button.",
+  "settingLabels": {
+   "enabled": "On",
+   "disabled": "Off"
+  }
+ }
+}
